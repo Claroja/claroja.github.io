@@ -1,0 +1,136 @@
+// 博客整体面积
+
+.main {
+    width: 90%;
+}
+
+.main-inner {
+    padding-top: 0px;
+}
+
+// 文章头部去除
+.post-block:first-of-type {
+  padding-top: 0px;
+}
+
+.posts-expand .post-header {
+    display: none;
+}
+
+// 文章部分的字体
+.post-body {
+    font-size: 1em;
+}
+
+
+// 文章部分的行间距与缩进
+.post-body {
+    line-height: 1.2em; //行高
+}
+
+.post-body p {
+    margin: 0.75em; // 每个段落间隔
+}
+
+
+// 列表的调整
+.post-body li p {
+    margin: 0em; //列表内的`<p>`标签不空行
+}
+
+ol {
+    margin-block-start: 0.2em;  // 列表与上面的行间距
+    margin-block-end: 0.2em;  // 列表与下面的行间距
+    padding-inline-start: 3em;  // 列表缩进
+}
+
+ol ol {
+    padding-inline-start: 1.5em;  // 列表内的列表减半缩进
+}
+
+ol ul {
+    padding-inline-start: 1.5em;  // 列表内的列表减半缩进
+}
+
+// 列表颜色
+
+::marker {
+    color: #555;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+// 表格内距
+
+caption, th, td {
+    padding: 0px;
+}
+
+
+// 标题序号, 大小, 颜色
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0 5px;
+    color: blue;
+}
+
+.post-block {
+    .post-body {counter-reset: h1}
+            h1 {counter-reset: h2}
+            h2 {counter-reset: h3}
+            h3 {counter-reset: h4}
+            h4 {counter-reset: h5}
+            h5 {counter-reset: h6}
+}
+.post-body {
+    h1:before {counter-increment: h1; content: counter(h1) ". "}
+    h2:before {counter-increment: h2; content: counter(h1) "." counter(h2) ". "}
+    h3:before {counter-increment: h3; content: counter(h1) "." counter(h2) "." counter(h3) ". "}
+    h4:before {counter-increment: h4; content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". "}
+    h5:before {counter-increment: h5; content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
+    h6:before {counter-increment: h6; content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
+}
+
+
+
+
+
+// 音频样式
+audio::-webkit-media-controls-panel {
+    background-color: #ffffff;
+}
+audio::-webkit-media-controls-current-time-display {
+    display: none;
+}
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+audio::-webkit-media-controls-timeline {
+    display: none;
+}
+audio::-webkit-media-controls-mute-button {
+    display: none;
+}
+
+
+// 代码块设置
+code:not([class]) {
+    font-size: 1em;
+    padding: 0px;
+    font-weight: bold;
+    background: rgb(255 255 255 / 0%);
+    color: #ff4700;
+}
+

@@ -1,0 +1,26 @@
+## 标识符
+- 行内(inline)使用`$...$`
+- 块(block)使用`$$...$$`
+
+## 特殊符号:分组
+显示 | LaTeX语法
+-- | --
+$x^{10}$|`$x^{10}$`
+
+所以想要显示`{}`本身, 需要加上`\`转义符号, 既`\{\}`
+
+## 括号
+显示 | LaTeX语法
+-- | --
+$()$                     |`$()$`
+$[]$                     |`$[]$`
+$\{\}$                   |`$\{\}$`
+$\langle\rangle$         |`$\langle\rangle$`
+$\left(\frac x y \right)$|`$\left(\frac x y \right)$`
+
+`\left(`和`\right)`会和相邻的公式自适应
+
+
+参考:
+https://www.caam.rice.edu/~heinken/latex/symbols.pdf
+https://www.jianshu.com/p/a0aa94ef8ab2
