@@ -1,3 +1,0 @@
-# ConditionalProbability
-
-alg_ConditionalProbability

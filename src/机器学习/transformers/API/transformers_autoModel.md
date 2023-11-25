@@ -1,4 +1,0 @@
-# autoModel
-
-transformers_autoModel
-
