@@ -1,0 +1,37 @@
+import{_ as n}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as d,c as a,e as r}from"./app-O0xqlHfm.js";const e="/assets/2-MEe0g6Bc.png",i="/assets/1-UkV_cKv1.png",s={},o=r('<h1 id="网络配置" tabindex="-1"><a class="header-anchor" href="#网络配置" aria-hidden="true">#</a> 网络配置</h1><h2 id="virtualbox有五种网络连接方式" tabindex="-1"><a class="header-anchor" href="#virtualbox有五种网络连接方式" aria-hidden="true">#</a> virtualBox有五种网络连接方式：</h2><ul><li>Bridge Adapter(桥接)</li><li>Network Address Translation(NAT, 网络地址转换)</li><li>Host-only Adapter(内部网络)</li></ul><h3 id="nat" tabindex="-1"><a class="header-anchor" href="#nat" aria-hidden="true">#</a> NAT</h3><p>Network Address Translation，网络地址转换 虚拟机访问网络的所有数据都是由主机提供的，虚拟机并不真实的存在于网络上，主机和网络中的任何机器是不能查看和访问这个虚拟机的。</p><p>虚拟机与主机的关系：只能<strong>单向</strong>访问，虚拟机可以通过网络访问到主机，主机无法通过网络访问到虚拟机。 虚拟机与网络中其他主机的关系：只能<strong>单向</strong>访问，虚拟机可以访问到网络中其他主机，其他主机不能通过网络访问到虚拟机。 虚拟机与虚拟机的关系：相互<strong>不能</strong>访问，虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。 虚拟机与网络：可以访问</p><p>意味着此时虚拟机可以访问互联网，而且是可以ping通主机，但是主机ping不通虚拟机的，虚拟机之间也不可以ping通。</p><h3 id="桥接网卡-bridge-adapter" tabindex="-1"><a class="header-anchor" href="#桥接网卡-bridge-adapter" aria-hidden="true">#</a> 桥接网卡(Bridge Adapter)</h3><p>它是通过主机网卡，架设了一条桥，直接连入到网络中了。类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。网桥模式下的虚拟机，你把它认为是真实物理计算机就行了。</p><p>虚拟机与主机的关系：可以<strong>双向</strong>访问，因为虚拟机在真实网络段中有独立IP，主机与虚拟机处于同一网络段中，彼此可以通过各自IP相互访问。 虚拟机于网络中其他主机的关系：可以<strong>双向</strong>访问，同样因为虚拟机在真实网络段中有独立IP，虚拟机与所有网络其他主机处于同一网络段中，彼此可以通过各自IP相互访问。 虚拟机与虚拟机的关系：可以<strong>双向</strong>访问，原因同上。 虚拟机与网络：可以访问</p><h3 id="主机模式-host-only-adapter" tabindex="-1"><a class="header-anchor" href="#主机模式-host-only-adapter" aria-hidden="true">#</a> 主机模式(Host-only Adapter)</h3><p>Host-Only听名字就是只和主机建立关系。这种模式是将虚拟机与外网隔开，使得虚拟机成为一个独立的系统，只与主机相互通讯。</p><p>虚拟机与主机的关系：默认<strong>单向</strong>相互访问，双方不属于同一IP段，host-only网卡默认IP段为192.168.56.X 子网掩码为255.255.255.0，后面的虚拟机被分配到的也都是这个网段。 虚拟机与网络主机的关系：默认<strong>不能</strong>相互访问，原因同上，通过设置，可以实现相互访问。 虚拟机与虚拟机的关系：默认可以<strong>双向</strong>访问，都是同处于一个网段。</p><h2 id="实战" tabindex="-1"><a class="header-anchor" href="#实战" aria-hidden="true">#</a> 实战</h2><h3 id="原理" tabindex="-1"><a class="header-anchor" href="#原理" aria-hidden="true">#</a> 原理</h3><p><code>nat</code>来让虚拟机通过宿主机网络访问外网 <code>host-only</code>让宿主机访问虚拟机 使用<code>nat</code>和<code>host-only</code>实现</p><ul><li>nat(虚拟机访问互联网，使用10.0.2.x段)</li><li>host-only(虚拟机和主机互相通信，使用192.168.56.x段)</li></ul><h3 id="步骤" tabindex="-1"><a class="header-anchor" href="#步骤" aria-hidden="true">#</a> 步骤</h3><ol><li><p>首先给virtualbox配置一个<code>host-only</code>全局的网卡</p><figure><img src="'+e+'" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure></li><li><p>给虚拟机配置<code>nat</code>和<code>host-only</code>网卡</p><figure><img src="'+i+`" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure></li><li><p>进入虚拟机,使用<code>ip addr</code>命令查看 两个网卡</p><ul><li><code>ifcfg-enp0s3</code>对应<code>nat</code></li><li><code>ifcfg-enp0s8</code>对应<code>host-only</code></li></ul></li><li><p>默认<code>enp0s3</code>是不开启的, 所以不能访问外网, 比如<code>ping baidu.com</code>, 所以修改对应的<code>onboot</code>参数, 配置文件在:<code>/etc/etc/sysconfig/network-scripts/</code></p></li></ol><h3 id="hostonly配置静态地址" tabindex="-1"><a class="header-anchor" href="#hostonly配置静态地址" aria-hidden="true">#</a> hostonly配置静态地址</h3><p><code>vi /etc/sysconfig/network-scripts/ifcfg-enp0s8</code></p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=static
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=yes
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+NAME=enp0s8
+UUID=4ac7e364-b251-4457-8e2f-37abaaff2496 # 使用uuidgen生成
+DEVICE=enp0s8
+ONBOOT=yes
+IPADDR=192.168.56.101
+NETMASK=255.255.255.0
+GATEWAY=192.168.56.1
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="最终的结果" tabindex="-1"><a class="header-anchor" href="#最终的结果" aria-hidden="true">#</a> 最终的结果</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:06:4a:c2 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global noprefixroute dynamic enp0s3
+       valid_lft 85790sec preferred_lft 85790sec
+    inet6 fe80::4c60:ef23:88e8:2fb4/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: enp0s8: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:f9:68:90 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.101/24 brd 192.168.56.255 scope global noprefixroute enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fef9:6890/64 scope link 
+       valid_lft forever preferred_lft forever
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="virtualbox网络配置" tabindex="-1"><a class="header-anchor" href="#virtualbox网络配置" aria-hidden="true">#</a> virtualbox网络配置</h4><p>使用<code>nat</code>和<code>host-only</code>实现</p><ul><li><p>nat(虚拟机访问互联网，使用10.0.2.x段)</p></li><li><p>host-only(虚拟机和主机互相通信，使用192.168.56.x段)</p><figure><img src="`+i+'" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure></li></ul><p>进入虚拟机,使用<code>ip addr</code>查看, 如果未开启需要进入配置文件, 修改<code>onboot</code>参数, 配置文件在: <code>/etc/etc/sysconfig/network-scripts/</code> 两个网卡</p><ul><li><code>ifcfg-enp0s3</code>对应<code>nat</code></li><li><code>ifcfg-enp0s8</code>对应<code>host-only</code></li></ul><p>如果需要, 再给<code>host-only</code>配置静态地址.</p><p>默认<code>host-only</code>网络的配置在中</p><figure><img src="'+e+'" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure><p>refs: https://www.jianshu.com/p/bdf5d72e6ba4 https://bbs.huaweicloud.com/blogs/277368 https://www.danielw7.com/virtualbox%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/</p>',33),l=[o];function t(c,f){return d(),a("div",null,l)}const u=n(s,[["render",t],["__file","网络配置.html.vue"]]);export{u as default};
