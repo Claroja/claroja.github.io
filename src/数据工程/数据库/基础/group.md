@@ -67,7 +67,7 @@ SELECT `order_id`, SUM(`ext_price`) AS `order_total` FROM `order_detail` group B
 | 10005 | 8185.49 | 
 | 10006 | 3724.49 | 
 
-![](./sql_group/2.png)
+![](./group/2.png)
 
 同样的可以计算, 平均值, 个数等:
 

@@ -5,15 +5,15 @@
 seq2seq模型也称为Encoder-Decoder模型, 既该模型包含了Encoder(编码器)和Decoder(解码器).
 
 考虑将日语翻译成英语, 如下图:
-![](./nlp_seq2seq/1.png)
+![](./seq2seq/1.png)
 首先对"吾輩は猫である"这句话进行编码, 然后将编码好的信息传递给解码器, 由解码器生成目标文本.
-![](./nlp_seq2seq/2.png)
+![](./seq2seq/2.png)
 编码器利用LSTM将时序数据转换为隐状态$h$.隐状态$h$是LSTM层的最后一个隐状态, 其中编码了翻译输入文本所需的信息.隐状态$h$是一个固定长度的向量.
-![](./nlp_seq2seq/3.png)
+![](./seq2seq/3.png)
 解码器的结构和前面的神经网络相同, 不过也有稍许的差异, 就是LSTM会接收向量$h$. 在前面的神经网络中, LSTM层不接收任何信息(接收初始化为0的向量).
 
 `<eos>`在编码器中是生成文本的信号, 在解码器中是结束的信号. 在其他文献中也有使用`<go>`,`<start>`或者`_`作为分隔符的例子.
-![](./nlp_seq2seq/4.png)
+![](./seq2seq/4.png)
 上图是seq2seq完整的结构, 由两个LSTM层构成. LSTM层的隐状态是编码器和解码器的"桥梁".
 
 
@@ -23,7 +23,7 @@ seq2seq模型也称为Encoder-Decoder模型, 既该模型包含了Encoder(编码
 之前的word2vec中, 我们把文本以单词为单位进行分割. 而本节, 我们将不以单词为单位, 而是以字符为单位进行分割, 例如"57+5"会被处理为`['5','7','+','5']`.
 
 注意不同的加法问题("57+5"或"628+521")及其回答("62"或者"1149")的字符数是不相同的. 在使用批数据进行学习时, 需要保证一个批次内各个样本的数形状是一致的. 在处理可变长数据时, 最简单的方法是使用padding.
-![](./nlp_seq2seq/5.png)
+![](./seq2seq/5.png)
 本次将处理的问题限制在0~999的两个数的加法. 因此, 包括"+"在内, 输入的最大字符数是7. 另外, 加法的结果最大的是4个字符(最大为"999+999=1998").
 
 在输出的开始处加上了分隔符"_", 使得输出数据的字符统一为5. 这个分隔符作为通知解码器开始生成文本的信号使用. 对于解码器的输出, 可在监督标签中插入表示字符输出结束的分隔符("_63_").
@@ -35,7 +35,7 @@ seq2seq模型也称为Encoder-Decoder模型, 既该模型包含了Encoder(编码
 ### Encoder类
 Encoder类接收字符串, 将其转换为向量$h$.
 
-![](./nlp_seq2seq/6.png)
+![](./seq2seq/6.png)
 
 Encoder类由Embedding层和LSTM层组成. Embedding层将字符ID转化为字符向量, 然后将字符向量输入LSTM层.
 
@@ -85,7 +85,7 @@ def backward(self, dh):
 
 ## Decoder类
 Decoder类接收Encoder类输出的$h$, 输出目标字符串.
-![](./nlp_seq2seq/7.png)
+![](./seq2seq/7.png)
 这里使用了监督数据"_62"进行学习, 输入的数据是`['_','6','2',' ']`, 对应的输出是`['6','2',' ',' ']`.
 
 在使用RNN进行文本生成时, 学习时和生成时的数据输入方法不同. 
@@ -93,10 +93,10 @@ Decoder类接收Encoder类输出的$h$, 输出目标字符串.
 - 相对地, 在推理时(生成新字符串时), 则只能输入第1个通知开始的分隔符(本次为"_").然后, 输出1个字符, 并将这个字符作为下一个输入, 如此重复该过程.
 
 另外, 因为和生成文本不同, 我们需要确定性的文字, 所以使用argmax, 另外没有使用Softmax层, 而是从Affine层中选择最大的作为最终结果, 如下图:
-![](./nlp_seq2seq/8.png)
+![](./seq2seq/8.png)
 
 在解码器中, 学习和生成时处理Softmax层的方式是不一样的. 因此, Softmax with loss层交给伺候实现的seq2seq类处理, Decoder类仅承担Time Softmax with loss层之前的部分.
-![](./nlp_seq2seq/9.png)
+![](./seq2seq/9.png)
 python实现:
 ```python
 class Decoder:
@@ -184,7 +184,7 @@ class Seq2seq(BaseModel):
 
 
 ## 反转输入数据(Reverse)
-![](./nlp_seq2seq/10.png)
+![](./seq2seq/10.png)
 注意这里是直接反转, 而不是将之前的数据和反转的数据同时作为输入.
 
 为什么反转数据后, 学习进展快, 精度提高了呢?直观上的解释是:
@@ -198,17 +198,17 @@ class Seq2seq(BaseModel):
 ## 偷窥(Peeky)
 当前的seq2seq只有最开始时刻的LSTM层利用了$h$
 
-![](./nlp_seq2seq/11.png)
+![](./seq2seq/11.png)
 
 通过偷窥(Peeky)改进后, 将$h$分配给解码器的其它层.
 
-![](./nlp_seq2seq/12.png)
+![](./seq2seq/12.png)
 
 如上图, 编码器的$h$分配给所有时刻的Affine层和LSTM层. 即是其他层也能"偷窥"到编码信息, 这个改进的解码器称为Peeky Decoder. 称使用了Peeky Decoder的seq2seq为 Peeky seq2seq。
 
 有两个向量同时被输入到了LSTM层和Affine层, 这实际上表示两个向量的拼贴(concatenate), 如下图:
 
-![](./nlp_seq2seq/13.png)
+![](./seq2seq/13.png)
 
 python实现如下:
 ```python

@@ -29,7 +29,7 @@ DHCPServer:
     StartIPAddress: 192.168.1.4
     SubnetMask: 255.255.255.0
 
-[](./network_dhcp/1.png)
+[](./dhcp/1.png)
 
 
 ## 模拟dhcp请求
@@ -49,26 +49,26 @@ ipconfig /release
 
 client端在局域网内以广播的方式发起一个DHCP Discover包，目的是在子网络中发现能够给client端提供IP地址的server端。
 UDP 目标端口号为67    源IP 地址0.0.0.0    目的IP:255.255.255.255(广播地址)
-![](./network_dhcp/2.png)
+![](./dhcp/2.png)
 
 
 
 ### 提供阶段(DHCP Offer)
 局域网中DHCP server接受到Discover包之后，通过发送DHCP offer包给client端应答，主要是告知client端可以提供IP地址，以及相应的IP地址租约信息和其他配置信息也会在其中.
 UDP 目标68    源IP为DHCP服务器的IP   目的IP: Client端
-![](./network_dhcp/3.png)
+![](./dhcp/3.png)
 
 
 ### 请求阶段(DHCP Request)
 client只会接受收到offer报文，然后client端就会以广播的方式发送一个DHCP request报文请求分配IP地址。
 UDP 目标67    源IP为0.0.0.0   目的IP:255.255.255.255
-![](./network_dhcp/4.png)
+![](./dhcp/4.png)
 
 
 
 ### 确认阶段(DHCP ACK or DHCP NAK)
 server端在收到DHCP request报文之后，会判断”option”字段的serverIP地址是否是自己的IP地址，如果符合分配IP地址的条件，就会给client发送一个DHCP ACK包，如果不满足就发挥发送一个DHCP NAK 包。
-![](./network_dhcp/5.png)
+![](./dhcp/5.png)
 
 ### 没有响应
 注意：客户端执行DHCP-DISCOVER后，如果没有DHCP服务器响应客户端的请求，客户端会随机使用169.254.0.0/16网段中的一个IP地址配置到本机地址。

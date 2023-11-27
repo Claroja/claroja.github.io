@@ -19,17 +19,17 @@ DnsServer:
     MAC: 0090.2B92.4EC2
 
 如下图
-![](./network_udp-dns/1.png)
+![](./udp-dns/1.png)
 
 在DnsServer中添加映射: 域名:www.wxy.com  Http服务:192.168.1.2
 
 ## 模拟请求
 
 1. 在`PC1`浏览器中输入`www.wxy.com`后, 创建DNS包. 根据本机配置的DNS地址 发送给192.168.1.3
-![](./network_udp-dns/2.png)
+![](./udp-dns/2.png)
 
 2. `DnsServer`收到`PC1`的DNS包后, 将对应域名的IP返回
-![](./network_udp-dns/3.png)
+![](./udp-dns/3.png)
 
 3. `PC1`收到`DnsServer`返回的域名IP后, 开始发起TCP请求
-![](./network_udp-dns/4.png)
+![](./udp-dns/4.png)

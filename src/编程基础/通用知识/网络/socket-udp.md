@@ -82,7 +82,7 @@ udpSocket.close()
 ```
 
 ### udp⽹络通信过程
-[](./network_socket-udp/2.png)
+[](./socket-udp/2.png)
 
 ### 简单聊天室
 ```python

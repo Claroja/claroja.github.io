@@ -4,14 +4,14 @@
 ## 模型
 Wide&Deep 模型是由 Google 的应用商店团队 Google Play 提出的，在 Google Play 为用户推荐 APP 这样的应用场景下。Wide&Deep 模型的推荐目标：尽量推荐那些用户可能喜欢，愿意安装的应用。
 
-![](./alg_rec_deepWide/1.png)
+![](./deepWide/1.png)
 
 可以看到，
 - Deep部分就是常规的神经网络，将每个特征进行输入
 - Wide部分则是用的是"已安装应用"特征和"曝光应用"特征的交叉，也就是说wide想学的东西是“因为A所以B”的规则——如果安装了应用A，是否会安装B这样的规则。
 
 ## 推荐
-![](./alg_rec_deepWide/2.png)
+![](./deepWide/2.png)
 
 当一个用户访问app商店时，此时会产生一个请求，请求到达推荐系统后，推荐系统为该用户返回推荐的apps列表。
 在实际的推荐系统中，通常将推荐的过程分为两个部分，即上图中的Retrieval和Ranking，Retrieval负责从数据库中检索出与用户相关的一些apps，Ranking负责对这些检索出的apps打分，最终，按照分数的高低返回相应的列表给用户。

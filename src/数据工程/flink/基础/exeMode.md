@@ -59,7 +59,7 @@ For the above example Flink would group operations together as tasks like this:
 - Task2: map3, map4
 - Task3: map5, map6, and sink
 
-![](./pyflink_exeMode/1.svg)
+![](./exeMode/1.svg)
 
 
 

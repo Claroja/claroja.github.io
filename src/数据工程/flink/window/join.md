@@ -12,7 +12,7 @@
 
 ### Union
 联合操作要求必须流中的数据类型必须相同，合并之后的新流会包括所有流中的元素，数据类型不变。这种合流方式非常简单粗暴，就像公路上多个车道汇在一起一样。
-![](./pyflink_stream_join/2.png)
+![](./join/2.png)
 
 ```python
 from pyflink.common import  Types
@@ -39,7 +39,7 @@ env.execute()
 #### ConnectedStreams
 但我们知道一个 DataStream 中的数 据 只 能 有 唯 一 的 类 型 ， 所 以 连 接 得 到 的 并 不 是 DataStream ， 而 是 一个 “ 连 接 流 ”（ConnectedStreams）。连接流可以看成是两条流形式上的“统一”，被放在了一个同一个流中；事实上内部仍保持各自的数据形式不变，彼此之间是相互独立的。要想得到新的 DataStream，还需要进一步定义一个“同处理”（co-process）转换操作，用来说明对于不同来源、不同类型的数据，怎样分别进行处理转换、得到统一的输出类型。所以整体上来，两条流的连接就像是“一国两制”，两条流可以保持各自的数据类型、处理方式也可以不同，不过最终还是会统一到同一个 DataStream 中，如下图：
 
-![](./pyflink_stream_join/3.png)
+![](./join/3.png)
 
 
 

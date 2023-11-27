@@ -1,6 +1,6 @@
 # lambdaRank
 
-![](./alg_rec_lambdaRank/1.png)
+![](./lambdaRank/1.png)
 
 A set of urls ordered for a given query using a binary relevance measure. The light gray bars represent urls that are not relevant to the query,while the dark blue bars represent urls that are relevant to the query.
 Left: the total number of pairwise errors is thirteen.

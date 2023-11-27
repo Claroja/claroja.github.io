@@ -5,8 +5,8 @@
 在Linux上，进程中打开的一组文件描述符可以在路径/proc/pid/fd/下访问，其中PID是进程标识符。
 在类似Unix的系统中，文件描述符可以引用在文件系统中命名的任何Unix文件类型。除了常规文件之外，它还包括目录、Blockand字符设备(也称为“特殊文件”)、Unix域套接字和命名管道。文件描述符还可以引用文件系统中通常不存在的其他对象，例如匿名管道和网络套接字。
 
-![](./io_FileDescriptor/1.png)
-![](./io_FileDescriptor/2.png)
+![](./FileDescriptor/1.png)
+![](./FileDescriptor/2.png)
 
 
 ## 系统级底层读写

@@ -11,7 +11,7 @@ why we called it "cross", because we use $y_i$, the label, $\times$, $log(p_i)$,
 
 
 
-![](./alg_crossEntropy/1.png)
+![](./crossEntropy/1.png)
 
 ```python
 import torch
@@ -41,7 +41,7 @@ If the prediction for one label is really good, it will be close to 1 and if the
 
 In contrast, if we plug values for "p", from 0 to 1, into the squared residual, the change in Loss between 0 and 1 is not as large as it is for cross entropy.
 
-![](./alg_crossEntropy/2.png)
+![](./crossEntropy/2.png)
 
 
 refs:

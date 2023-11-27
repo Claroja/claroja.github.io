@@ -67,7 +67,7 @@ liability|dobj|shift|VERB|insurance
 toward|prep|shift|NOUN|manufacturers
 manufacturers|pobj|toward|ADP|
 
-[](./spacy_dep/1.png)
+[](./dep/1.png)
 
 
 ## scheme

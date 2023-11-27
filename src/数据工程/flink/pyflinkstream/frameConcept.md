@@ -7,16 +7,16 @@ parallelism 并行度 每个operator都可以进行并行计算
 `conf/flink.yaml,parallelism.default:1` 提交任务时设置
 
 
-![](./pyflink_stream_frameConcept/3.png)
+![](./frameConcept/3.png)
 
 ## dataflow dag
 one-to-one(forwarding): map,filter,flatMap 
 one-to-many(redistributing,shuffle):keyby
 在 one-to-one中 通过本地转发(local forward)方式进行连接成一个task，比如map->map两个算子。
-![](./pyflink_stream_frameConcept/1.svg)
+![](./frameConcept/1.svg)
 
 Every Flink application needs an execution environment, env in this example.
-![](./pyflink_stream_frameConcept/2.svg)
+![](./frameConcept/2.svg)
 
 
 FlinkMaster：集群服务器，一台物理机

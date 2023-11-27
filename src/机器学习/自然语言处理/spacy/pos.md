@@ -39,7 +39,7 @@ Shape: 词语的形状 – 大小写, 标点, 数字.
 is alpha: 是字母(alpha character)?
 is stop: 停止词 i.e. the most common words of the language?
 
-![](./spacy_pos/1.png)
+![](./pos/1.png)
 
 
 ## 词性标注

@@ -27,7 +27,7 @@ ax1.plot([1,2,3])
 ax2 = fig.add_subplot(221, facecolor='y')  # 覆盖第一次绘画的区域
 ax2.plot([1,2,3])
 ```
-![](./matplotlib_add_subplot/2.png)
+![](./subplot/2.png)
 
 
 

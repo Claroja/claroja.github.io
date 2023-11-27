@@ -7,7 +7,7 @@ Windows split the infinit stream into “buckets” of finite size, over which w
 ### TUMBLE
 Tumbling windows have a fixed size and do not overlap.
 
-![](./pyflink_sql_window/1.svg)
+![](./window/1.svg)
 
  In `streaming mode`, the time attribute field must be either `event` or `processing` time attributes. 
  In `batch mode`, the time attribute field of window table function must be an attribute of type `TIMESTAMP` or `TIMESTAMP_LTZ`.
@@ -54,7 +54,7 @@ Flink SQL> SELECT * FROM TABLE(
 
 ### HOP
 The HOP function assigns elements to windows of fixed length. Like a TUMBLE windowing function, the size of the windows is configured by the window size parameter. An additional window slide parameter controls how frequently a hopping window is started. Hence, hopping windows can be overlapping if the slide is smaller than the window size. 
-![](./pyflink_sql_window/2.svg)
+![](./window/2.svg)
 
  In `streaming mode`, the time attribute field must be either `event` or `processing` time attributes. 
  In `batch mode`, the time attribute field of window table function must be an attribute of type `TIMESTAMP` or `TIMESTAMP_LTZ`.
@@ -98,7 +98,7 @@ The HOP function assigns elements to windows of fixed length. Like a TUMBLE wind
 ### CUMULATE
 The `CUMULATE` function assigns elements to windows that cover rows within an initial interval of step size and expand to one more step size (keep window start fixed) every step until the max window size.You can think CUMULATE function as applying TUMBLE windowing with max window size first, and split each tumbling windows into several windows with same window start and window ends of step-size difference.
 
-![](./pyflink_sql_window/3.png)
+![](./window/3.png)
 
 In `streaming mode`, the time attribute field must be either `event` or `processing` time attributes. 
 In `batch mode`, the time attribute field of window table function must be an attribute of type `TIMESTAMP` or `TIMESTAMP_LTZ`.

@@ -3,19 +3,19 @@
 
 
 
-![](./deeplearn_gradproblem/1.png)
+![](./gradproblem/1.png)
 这里考虑长度为T的时序数据, 时间方向上的梯度, 可以反向传播经历了tanh, "+", MatMul运算.
 "+"的反向传播会将上游的穿戴的梯度原样传给下游, 因此梯度值不变.
 
 
 ## "tanh"
 当$y=tanh(x)$时, 导数是$\frac{dy}{dx}=1-y^2$, 如下图:
-![](./deeplearn_gradproblem/2.png)
+![](./gradproblem/2.png)
 虚线是导数, 可以看出, 它的值小于1, 并且随着x远离0, 它的值在变小. 当反向传播的梯度过tanh节点时, 它的值会越来越小. 因此如果经过tanh函数T次, 则梯度也会减小T次
 
 ## MatMul
 这里我们忽略tanh的计算
-![](./deeplearn_gradproblem/3.png)
+![](./gradproblem/3.png)
 从上游传来的梯度为$dh$, 此时通过MatMul节点的反向传播通过矩阵乘积$dhW_h^T$计算梯度. 之后, 根据时序数据的时间步长, 将计算重复相应次数. 注意, 每次矩阵乘积计算都是使用相同的权重$W_h$.
 
 通过python来实验, 反向传播时梯度的值通过MatMul节点时的变化.
@@ -36,7 +36,7 @@ for t in range(T):
 ```
 `np.ones()`初始化`dh`.然后根据反向传播的MatMul节点的数量更新`dh`相应次数, 并将各步的`dh`的大小添加到`norm_list`中.`dh`的大小是`mini-batch`中的平均`L2`范数.
 
-![](./deeplearn_gradproblem/4.png)
+![](./gradproblem/4.png)
 如图, 梯度的大小随着时间步长呈指数级增加, 这就是梯度爆炸(exploding gradients). 梯度爆炸会导致溢出, 出现`NaN`之类的值.
 
 下面实现梯度消失, 将`Wh`的值改一下.
@@ -44,7 +44,7 @@ for t in range(T):
 ## Wh = np.random.randn(H, H)      # before
 Wh = np.random.randn(H, H) * 0.5  # after
 ```
-![](./deeplearn_gradproblem/5.png)
+![](./gradproblem/5.png)
 如图, 梯度的大小随着时间步长呈指数级减小, 这就是梯度消失(vanishing gradients). 梯度消失会导致权重不能被更新, 模型无法学习长期的依赖关系.
 
 如果`Wh`是标量, 当`Wh`大于1时, 梯度呈现指数级增加, 当`Wh`小于1时, 梯度呈指数级减小.

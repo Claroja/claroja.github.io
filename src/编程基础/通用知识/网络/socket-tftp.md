@@ -36,10 +36,10 @@ TFTP服务器默认监听69号端⼝
 
 为了标记数据已经发送完毕， 所以规定， 当客户端接收到的数据⼩于516（2字节操作码+2个字节的序号+512字节数据） 时， 就意味着服务器发送完毕了
 TFTP数据包的格式如下:
-[](./network_socket-tftp/3.png)
+[](./socket-tftp/3.png)
 
 ftp的整个过程为:
-[](./network_socket-tftp/4.png)
+[](./socket-tftp/4.png)
 
 代码实现为:
 ```python

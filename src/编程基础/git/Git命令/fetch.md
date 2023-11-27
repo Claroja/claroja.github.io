@@ -35,18 +35,18 @@ git fetch origin branch1:branch2
 
 ## 原理
 1. 假设以下仓库, 通过`git clone`到本地
-![](./git_fetch/1.png)
+![](./fetch/1.png)
 本地会创建`origin/master`,`origin/dev`及`master`(`origin/master`复制的)三个分支, 且`HEAD`指针指向`master`分支.
 
 2. 远程仓库的两个分支`origin/master`和`origin/dev`都有了更新.
    - `git fetch`命令进行本地更新.
    `git fetch`是对所有`origin/*`(这里是`origin/master`,`origin/dev`)远程分支进行更新, 比如但不会对本地`master`分支进行更新
-   ![](./git_fetch/2.png)
+   ![](./fetch/2.png)
    如果需要更新本地的`master`分支, 则需要使用`git merge origin master`
 
    - 本地使用`git fetch origin dev`更新, 指定分支.
    本地没有`dev`分支, 不会创建, 即使有也不会更新. 因为`fetch`只更新`origin/*`的分支
-   ![](./git_fetch/3.png)
+   ![](./fetch/3.png)
 
 
 理解`fetch`的关键, 是理解`FETCH_HEAD`. 它的含义是某个`branch`在远程服务器上的最新状态. 这个列表保存在`.Git/FETCH_HEAD`文件中, 每一行对应一个分支.

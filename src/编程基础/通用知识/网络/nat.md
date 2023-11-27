@@ -26,7 +26,7 @@ Router-ISP:
         IP: 202.96.1.2
         MASK: 255.255.255.0
 
-![](./network_nat/1.png)
+![](./nat/1.png)
 
 
 
@@ -57,9 +57,9 @@ no shut
 ### 模拟ping
 
 1. 在`PC2`中输入`ping 202.96.1.3`, 尝试访问`Router-ISP`.
-![](./network_nat/2.png)
+![](./nat/2.png)
 `Router-ISP`成功接收到了包, 但是无法返回, 因为`Router-ISP`不在`192.168.1.0`网段中.
-![](./network_nat/3.png)
+![](./nat/3.png)
 在[network_router](/network_router/)一文中, 我们知道可以配置`Router-ISP`的转发规则, 比如将所有访问`192.168.1.0`的包全部转发给`Router`的`202.96.1.1`网卡.
 但是在实际中, ISP供应商不可能为我们配置, 所以只能自己来通过`Router`来配置. 所使用的的方式就是NAT
 

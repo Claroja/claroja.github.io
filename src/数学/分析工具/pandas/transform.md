@@ -62,7 +62,7 @@ order
 Name: ext price, dtype: float64
 """
 ```
-![](./pandas_transform/2.png)
+![](./transform/2.png)
 
 可以看到在**Combine**这一步时, 是将组内的数据进行**去重**了
 
@@ -89,7 +89,7 @@ df.groupby('order_id')["ext_price"].transform('sum')
 Name: ext price, dtype: float64
 """
 ```
-![](./pandas_transform/3.png)
+![](./transform/3.png)
 
 可以看到在**Combine**这一步时, 没有将组内的数据进行**去重**.
 

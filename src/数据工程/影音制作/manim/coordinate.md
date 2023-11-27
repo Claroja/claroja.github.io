@@ -31,7 +31,7 @@ class ShowScreenResolution(Scene):
 ```
 
 
-![](./manim_coordinate/1.png)
+![](./coordinate/1.png)
 
 在X轴和Y轴上每一个单元上画点
 ```python
@@ -48,7 +48,7 @@ class ShowScreenResolution(Scene):
             self.add(Dot(ORIGIN + RIGHT*(i+1)))
 ```
 
-![](./manim_coordinate/2.png)
+![](./coordinate/2.png)
 
 
 参考:

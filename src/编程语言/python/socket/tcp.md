@@ -89,6 +89,6 @@ print(conn1.recv(1024).decode()) # client1-1client1-2 直接受到客户端所�
 
 
 ## TCP UDP区别
-![](./python_socket_tcp/1.png)
+![](./tcp/1.png)
 
 

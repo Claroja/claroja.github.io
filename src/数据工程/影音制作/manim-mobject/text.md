@@ -28,4 +28,4 @@ class MultipleFonts(Scene):
         for i,mobj in enumerate(self.mobjects):
             mobj.shift(DOWN*(i-3))
 ```
-![](./manim_text/1.png)
+![](./text/1.png)

@@ -19,7 +19,7 @@ driver.execute_script("""
     div = tp.parentElement;
     document.body.appendChild(bg);
 """)
-driver.execute_script("""return document.querySelector('[alt="验证码滑块"]')""").screenshot(f"./slide_img/tp.png") 
+driver.execute_script("""return document.querySelector('[alt="验证码滑块"]')""").screenshot(f"./img/tp.png") 
 driver.execute_script("""
     tp = document.querySelector('[alt="验证码滑块"]');
     bg = document.querySelector('[alt="验证码背景"]');

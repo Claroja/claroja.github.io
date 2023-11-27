@@ -34,7 +34,7 @@ class ArgMinExample(Scene):
         self.wait()
 ```
 
-![](./manim_dotWithCurve/1.gif)
+![](./dotWithCurve/1.gif)
 
 
 

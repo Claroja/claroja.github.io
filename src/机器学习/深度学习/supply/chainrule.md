@@ -2,13 +2,13 @@
 
 
 Imagine we collected weight and height measurements from 3 people, and we a fit line to the data.
-![](./alg_chainrule/1.png)
+![](./chainrule/1.png)
 
 Imagine we collected height and shoe size measurements, and we fit a line to the data.
-![](./alg_chainrule/2.png)
+![](./chainrule/2.png)
 
 Now, if someone tells us weight, then we can predict their height and we can use the predicted height to predict shoe size.And if we change the value for weight, we see a change in shoe size.
-![](./alg_chainrule/3.gif)
+![](./chainrule/3.gif)
 
 Now let's focus on this green line that represents the relationship between weight and height.We see that for every 1 unit increase in weight, there is a 2 unit increase in height.In other words the slope of the line is $\frac{2}{1} = 2$. And since the slope is 2, the derivative, the change in height with respect to a change in weight is 2.
 $$ \frac{dHeight}{dWeight}=2 $$

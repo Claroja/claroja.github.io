@@ -14,7 +14,7 @@ class ValueTrackerExample(Scene):
         self.wait(2)
 ```
 
-![](./manim_mobject_ValueTracker/1.gif)
+![](./ValueTracker/1.gif)
 
 
 

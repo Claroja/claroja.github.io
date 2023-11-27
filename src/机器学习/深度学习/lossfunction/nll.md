@@ -4,7 +4,7 @@ Negative log-likelihood is a loss function used in multi-class classification. I
 $$L(y) = -log(y)$$
 where y is a prediction corresponding to the true label, after the Softmax Activation Function was applied. The loss for a mini-batch is computed by taking the mean or sum of all items in the batch.
 
-![](./alg_nll/1.png)
+![](./nll/1.png)
 
 ```python
 import torch

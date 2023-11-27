@@ -23,7 +23,7 @@
 ## Dropout
 如果网络的模型变得复杂, 仅靠权重衰减就难以对付了, 这种情况我们会用到Dropout方法.
 Dropout会在学习的过程中随机删除神经元, 被删除的神经元不再进行信号的传递. 训练时每传递一次数据, 就会随机选择要删除的神经元.
-![](./deeplearn_regularization/1.png)
+![](./regularization/1.png)
 
 python实现:
 ```python

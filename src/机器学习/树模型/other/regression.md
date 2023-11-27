@@ -18,60 +18,60 @@ In order to finde out the "best" split, we must minimize the RSS.
 
 ## Intuition
 This simulation uses a "dummy" dataset as follow:
-![](./alg_cartTree_regression/1.png)
+![](./regression/1.png)
 The decision tree as follow:
-![](./alg_cartTree_regression/2.png)
+![](./regression/2.png)
 
 
 ## CART process the splitting of the dataset (predictor =1)
 As mentioned before, In order to find out the "best" split, we must minimize the RSS. first, we calculate RSS by split into two regions, start with index 0:
 
 1. Start within index 0
-![](./alg_cartTree_regression/3.png)
+![](./regression/3.png)
 The data already split into two regions, we add up the squared residual for every index data.furthermore we calculate RSS each node using equation 2.0
-![](./alg_cartTree_regression/4.png)
+![](./regression/4.png)
 
 2. Start within index 1
 calculate Rss by split into two regions within index 1:
-![](./alg_cartTree_regression/5.png)
+![](./regression/5.png)
 after the data is divided into two regions then calculate RSS each node using equation 2.0:
-![](./alg_cartTree_regression/6.png)
+![](./regression/6.png)
 
 3. Start within index 2
 calculate RSS by split into two regions within index2:
-![](./alg_cartTree_regression/7.png)
+![](./regression/7.png)
 calculate RSS each node
-![](./alg_cartTree_regression/8.png)
+![](./regression/8.png)
 
 4. Last index
 This process continues until the calculation of RSS in the last index
-![](./alg_cartTree_regression/9.png)
+![](./regression/9.png)
 Price with threshold 19 has a smallest RSS, in R1 there are 10 data with in price $<19$, so we'll split the data in R1. In order to avoid overfitting, we define the minimum data for each region $>=6$. If the region has less than 6 data, the split process in that region stops.
 Split the data with threshold 19.
-![](./alg_cartTree_regression/10.png)
+![](./regression/10.png)
 
 5. calculate RSS in R1, the process in this section is the same as the previous process, only define for R1.
-![](./alg_cartTree_regression/11.png)
+![](./regression/11.png)
 
 6. Do the same thing on the right branch, so the end of the a tree in this case is:
-![](./alg_cartTree_regression/12.png)
+![](./regression/12.png)
 
 
 ## CART process the splitting of the dataset (predictor > 1)
 
 This simulation uses a dummy data as following:
-![](./alg_cartTree_regression/13.png)
+![](./regression/13.png)
 
 Find out minimum RSS each predictor.
 
 1. Price RSS = 3873.79
-![](./alg_cartTree_regression/14.png)
+![](./regression/14.png)
 
 2. Cleaning fee RSS = 64214.8
-![](./alg_cartTree_regression/15.png)
+![](./regression/15.png)
 
 3. License RSS = 11658.5
-[](./alg_cartTree_regression/16.png)
+[](./regression/16.png)
 
 We already have RSS every predictor, compare each RSS for each predictor, and fine the lowest RSS value. We find the License has the lowest value, so it becomes the root node.
 

@@ -6,7 +6,7 @@
 In contrast to the `static tables` that represent `batch data`, `dynamic tables` change over time.
 Querying dynamic tables yields a Continuous Query. A continuous query **never terminates** and **produces dynamic results** - another dynamic table. The query continuously updates its (dynamic) result table to reflect changes on its (dynamic) input tables.
 The following figure visualizes the relationship of streams, dynamic tables, and continuous queries:
-![](./pyflink_sql_dynamicTable/1.png)
+![](./dynamicTable/1.png)
 1. A stream is converted into a dynamic table.
 2. A continuous query is evaluated on the dynamic table yielding a new dynamic table.
 3. The resulting dynamic table is converted back into a stream.
@@ -14,7 +14,7 @@ NOTE: Dynamic tables are foremost a *logical concept**. Dynamic tables are **not
 
 ## Defining a Table on a Stream
 The following figure visualizes how the stream of click event (left-hand side) is converted into a table (right-hand side). The resulting table is continuously growing as more records of the click stream are inserted.
-![](./pyflink_sql_dynamicTable/2.png)
+![](./dynamicTable/2.png)
 NOTE: Remember, a table defined on a stream is internally **not materialized**.
 
 
@@ -26,7 +26,7 @@ A continuous query is evaluated on a dynamic table and produces a new dynamic ta
 
 ### groupby
 The following figure shows how the query is evaluated over time as the clicks table is updated with additional rows.
-![](./pyflink_sql_dynamicTable/3.png)
+![](./dynamicTable/3.png)
 When the query starts, the `clicks` table (left-hand side) is empty.
 The query computes the result table when the first row is `inserted`. After the first row `[Mary, ./home]` arrives, the result table (right-hand side, top) consists of a single row `[Mary, 1]`.
 When the second row `[Bob, ./cart]` is `inserted` into the clicks table, the query updates the result table and inserts a new row `[Bob, 1]`.
@@ -35,7 +35,7 @@ The third row, `[Mary, ./prod?id=1]` yields an `update` of an already computed r
 
 ### window
 The second query is similar to the first one but groups the `clicks` table in addition to the user attribute also on an `hourly tumbling window` before it counts the number of URLs.
-![](./pyflink_sql_dynamicTable/4.png)
+![](./dynamicTable/4.png)
 The query **continuously computes results every hour** and updates the result table.
 The clicks table contains four rows with timestamps (cTime) between 12:00:00 and 12:59:59.The query computes two results rows from this input (one for each user) and `appends` them to the result table.
 For the next window between 13:00:00 and 13:59:59, the clicks table contains three rows, which results in another two rows being `appended` to the result table.
@@ -60,7 +60,7 @@ A dynamic table can be continuously modified by `INSERT`, `UPDATE`, and `DELETE`
 - **Append-only stream**: A dynamic table that is only modified by INSERT changes can be converted into a stream by emitting the inserted rows.
 
 - **Retract stream**: A retract stream is a stream with two types of messages, `add messages` and `retract messages`.A dynamic table is converted into a retract stream by encoding an `INSERT` change as `add message`, a `DELETE` change as a `retract message`, and an `UPDATE` change as a `retract message for the updated (previous) row`, and an additional message for the updating (new) row.
-![](./pyflink_sql_dynamicTable/5.png)
+![](./dynamicTable/5.png)
 
 - **Upsert stream**: An upsert stream is a stream with two types of messages, `upsert messages` and `delete messages`. A dynamic table that is converted into an upsert stream requires a (possibly composite) **unique key**. A dynamic table with a unique key is transformed into a stream by encoding `INSERT` and `UPDATE` changes as `upsert messages` and `DELETE` changes as `delete messages`. **The stream consuming operator needs to be aware of the unique key attribute to apply messages correctly**. The main difference to a retract stream is that UPDATE changes are encoded with a single message and hence more efficient. 
 

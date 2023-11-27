@@ -3,7 +3,7 @@
 
 
 
-![](./python_process_multiprocessing/1.png)
+![](./multiprocessing/1.png)
 
 Ready：进程已分配到除CPU以为的所有必要的资源，只要获得处理机便可立即执行
 Running：当进程已获得处理机，其程序正在处理机上执行

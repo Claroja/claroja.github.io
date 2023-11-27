@@ -23,7 +23,7 @@ weight_decay = 10 ** np.random.uniform(-8, -4)
 lr = 10 ** np.random.uniform(-6, -2)
 ```
 多次使用各种超参数的值重复进行学习, 观察合乎逻辑的超参数在哪.如图:
-![](./deeplearn_hyperpara/1.png)
+![](./hyperpara/1.png)
 可以看到best前5学习都很顺利, 结果如下:
 ```python
 Best-1 (val acc:0.83) | lr:0.0092, weight decay:3.86e-07

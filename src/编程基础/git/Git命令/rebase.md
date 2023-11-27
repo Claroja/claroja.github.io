@@ -21,7 +21,7 @@ git rebase: 更改当前分支的根基(Move the base of a branch)
 
 `git rebase branch`
 
-![](./git_rebase/1.png)
+![](./rebase/1.png)
 
 
 ### 更改指定提交的信息

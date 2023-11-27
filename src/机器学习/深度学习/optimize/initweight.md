@@ -45,7 +45,7 @@ for i, a in activations.items():
     plt.hist(a.flatten(), 30, range=(0,1))
 plt.show()
 ```
-![](./deeplearn_initweight/1.png)
+![](./initweight/1.png)
 
 上图中, 可以看到各层的激活值偏向(0,1)分布. 这里使用的sigmoid函数式S型函数, 醉着输出不断的靠近0或1, 它的导数值逐渐接近0. 因此, 偏向0和1的数据分布会造成反向传播中梯度值不断变小, 最后消失. 这个问题称为梯度消失(gradient vanishing).
 
@@ -55,7 +55,7 @@ plt.show()
 ## w = np.random.randn(node_num, node_num) * 1
 w = np.random.randn(node_num, node_num) * 0.01
 ```
-![](./deeplearn_initweight/2.png)
+![](./initweight/2.png)
 
 这次呈集中在0.5附近的分布. 因为不像刚才的例子那样偏向0和1, 所以不会发生梯度消失的问题. 
 
@@ -65,7 +65,7 @@ w = np.random.randn(node_num, node_num) * 0.01
 
 推荐使用"Xavier初始值"来初始化参数, Xavier的论文中, 为了使各层的激活值呈现出具有相同广度的分布, 推导了合适的权重尺度. 结论是如果前一层的节点数为n, 则初始值使用标准差为$\frac{1}{\sqrt n}的分布.
 
-![](./deeplearn_initweight/3.png)
+![](./initweight/3.png)
 
 前一层的节点数越多, 设定为目标节点的初始值的权重尺度就越小.
 使用Xavier初始值进行实验, 只需替换如下代码即可:
@@ -73,7 +73,7 @@ w = np.random.randn(node_num, node_num) * 0.01
 node_num = 100 # 前一层的节点数
 w = np.random.randn(node_num, node_num) / np.sqrt(node_num)
 ```
-![](./deeplearn_initweight/4.png)
+![](./initweight/4.png)
 
 呈现了比之前更广度的分布, 所以sigmoid函数的表现力不受限制.
 
@@ -86,7 +86,7 @@ w = np.random.randn(node_num, node_num) / np.sqrt(node_num)
 Xavier 初始值是以激活函数是线性函数为前提而推导出来的, sigmoid 函数和tanh 函数左右对称，且中央附近可以视作线性函数. 但当激活函数使用ReLU时, 一般推荐ReLU专用的初始值, 由Kaiming He推荐的, 称为"He初始值":
 当前一层的节点为n时, He初始值使用标准差为$\sqrt \frac{2}{n}$的高斯分布, 直观上可以理解: 因为ReLU的负值区域的值为0, 为了使它更有广度, 所以需要2倍的系数.
 不同初始值的比较:
-![](./deeplearn_initweight/5.png)
+![](./initweight/5.png)
 - 当"std=0.01"时, 各层的激活值非常小, 神经网络上传递的是非常小的值, 说明逆向传播时权重的梯度也同样很小. 实际上学习基本上没有进展.
 - 当初始值为Xavier时, 随着层的加深, 偏向一点点变大. 实际身上, 层加深后, 激活值的偏向变大, 学习时会出现梯度消失的问题.
 - 当初始值为He时, 各层中分布的广度相同. 由于即使层加深, 数据的广度也能保持不变, 逆向传播时, 也会传递合适的值.

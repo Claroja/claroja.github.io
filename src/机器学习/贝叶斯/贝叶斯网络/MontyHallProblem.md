@@ -1,6 +1,6 @@
 # MontyHallProblem
 
-[](./pgmpy_MontyHallProblem/1.png)
+[](./MontyHallProblem/1.png)
 
 ## 背景
 假设你在一个游戏中, 你可以选择三扇门: 其中一扇门是汽车, 另外两个是山羊. 你先选择了一扇门, 比如第一扇门, 然后主持人(他之后每扇门背后是山羊还是车), 打开第三扇门, 里面是山羊. 然后, 他对你说:"你是否换到第二扇门?"
@@ -39,14 +39,14 @@ Monty_Hall_simulation('stick', 100000)
 ```
 一个直觉上的解释:
 汽车有1/3的概率在玩家第一次挑选的门的后面, 比如下面的第一扇门. 而有2/3个概率是在另外两扇门后面. 当主持人打开了第三扇门, 如果玩家此时更换选择, 相当于同时选择了两扇门(一扇门没有开, 另一扇门主持人打开为羊), 既概率为2/3.
-[](./pgmpy_MontyHallProblem/2.png)
+[](./MontyHallProblem/2.png)
 ## 贝叶斯网络
 我们有三个随机变量,
 1. 选择玩家(Contestant)的选择:$C \in {1, 2, 3}$, 玩家将随机选择门,所以$P(C=1) = P(C=2) = P(C=3) = \frac{1}{3}$
 2. 主持人(Host)的选择:$H :nbsphinx-math:in {1, 2, 3}$,$ P :nbsphinx-math:in {1, 2, 3 } $
 3. 奖品(Prize)随机放在门后, 所以$P(P=1) = P(P=2) = P(P=3) = :nbsphinx-math:\frac{1}{3}$
 所以可以构建如下的网络结构:
-[](./pgmpy_MontyHallProblem/3.png)
+[](./MontyHallProblem/3.png)
 
 
 假设玩家选了了第0扇门, 主持人开了第2扇门, 我们要算的就是获得奖品的概率:$P(P | H=2, C=0)$

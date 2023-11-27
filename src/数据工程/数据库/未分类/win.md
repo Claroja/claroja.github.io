@@ -2,19 +2,19 @@
 
 ## 1.下载MySQL8
 
-![](./mysql_win/1.png)
+![](./win/1.png)
 
 
 
-![](./mysql_win/2.png)
+![](./win/2.png)
 
-![](./mysql_win/3.png)
+![](./win/3.png)
 
-![](./mysql_win/4.png)
+![](./win/4.png)
 ## 2.配置环境变量
 将压缩包解压，并配置环境变量
 
-![](./mysql_win/5.png)
+![](./win/5.png)
 
 ##  3.初始化
 在MySQ文件夹根目录下创建my.ini文件,内容如下：
@@ -48,7 +48,7 @@ default-character-set=utf8mb4
 
 ## 4.注册服务
 以管理员身份打开cmd,以win10为例
-![](./mysql_win/6.png)
+![](./win/6.png)
 1. `mysqld --initialize --console` 初始化mysql,注意将密码记下
 2. `mysqld --install` 注册mysql服务
 3. `net start mysql`启动mysql服务

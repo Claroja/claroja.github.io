@@ -42,7 +42,7 @@ PC23:
     Subnet Mask: 255.255.255.0
     MAC Address: 000C.CF1E.B569
 
-![](./network_router/0.png)
+![](./router/0.png)
 
 
 ### 路由器的通信流程
@@ -79,7 +79,7 @@ show ip arp
 
 1. 在`PC12`上执行`ping 192.168.2.2`命令, 因为subnet不同, 所以ARP包会发给`PC12`配置的网关`192.168.1.1`.
 
-![](./network_router/1.png)
+![](./router/1.png)
 
 
 2. `switch1`拿到ARP包,首先记下`PC12`的MAC地址, 然后判断`DEST MAC`是`F...F`, 所以会发给该subnet下, 所有NIC.
@@ -95,7 +95,7 @@ show mac address-table
 ##    1    00d0.d3d6.ca86    DYNAMIC     Fa0/1
 ## ```
 ```
-![](./network_router/2.png)
+![](./router/2.png)
 
 3. `Router1`拿到ARP包后, 首先记录`PC12`的ARP信息, 然后反向发送给`switch1`, 告诉其`Router1 0/0`的MAC
 
@@ -107,7 +107,7 @@ show ip arp
 ## Internet  192.168.2.1             -   0050.0F2E.BE02  ARPA   FastEthernet0/1
 ```
 
-![](./network_router/3.png)
+![](./router/3.png)
 
 
 4. `Switch1`拿到ARP包后, 首先记录`Router1 0/0`显卡的MAC信息, 然后发送给`PC12`
@@ -124,7 +124,7 @@ show mac address-table
 
 ```
 
-![](./network_router/3-1.png)
+![](./router/3-1.png)
 
 
 
@@ -137,11 +137,11 @@ arp -a
 
 ```
 
-![](./network_router/4.png)
+![](./router/4.png)
 
 6. `Router1`拿到`ICMP`包后, 发现目的IP是`192.168.2.2`, 而目前`0/1`网卡并不知道其MAC地址, 所以将ICMP包丢弃, 然后`0/1`创建ARP包, 开始查询`192.168.2.2`的MAC地址. 过程和在`192.168.1.0`网段相同.
-![](./network_router/5.png)
-![](./network_router/6.png)
+![](./router/5.png)
+![](./router/6.png)
 
 7. 当ARP包返回到`Router1`之后, `Router1`记录`PC22`的MAC地址
 ```sh
@@ -158,19 +158,19 @@ show ip arp
 192.168.1.1(0050.0F2E.BE01) 可以查到192.168.2.1(0050.0F2E.BE02)
 192.168.2.1(0050.0F2E.BE02) 可以查到192.168.2.2(00E0.F747.6770)
 
-![](./network_router/7.png)
+![](./router/7.png)
 
 
 8. `PC12`开始发送ICMP包, 首先是根据MAC地址发送给`Router1` `0/0`网卡
-![](./network_router/8.png)
+![](./router/8.png)
 
 9. `Router 1 0/0`(192.168.1.1)将数据发送给`Router1 0/1`(192.168.2.1)网卡
-![](./network_router/9.png)
+![](./router/9.png)
 
 10. `PC22`收到ICMP包, 并返回
-![](./network_router/10.png)
-![](./network_router/11.png)
-![](./network_router/12.png)
+![](./router/10.png)
+![](./router/11.png)
+![](./router/12.png)
 
 
 ## 两台Router三台Switch
@@ -236,7 +236,7 @@ PC23:
     Subnet Mask: 255.255.255.0
     MAC Address: 000C.CF1E.B569
 
-![](./network_router/13.png)
+![](./router/13.png)
 
 
 ### 一台Router与两台Router的区别

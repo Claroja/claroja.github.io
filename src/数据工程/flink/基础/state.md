@@ -16,7 +16,7 @@ Some examples of stateful operations:
 
 ## Keyed State
 Keyed state is maintained in what can be thought of as an embedded key/value store. The state is partitioned and distributed strictly together with the streams that are read by the stateful operators.
-![](./pyflink_state/1.svg)
+![](./state/1.svg)
 
 
 

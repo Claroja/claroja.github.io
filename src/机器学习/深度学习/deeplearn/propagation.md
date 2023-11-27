@@ -8,12 +8,12 @@
 苹果单价100元, 买2个, 消费税是10%, 计算支付金额.
 计算公式为:`100*2*(1+0.1)=100*2*1.1`
 
-![](./deeplearn_propagation/1.png)
+![](./propagation/1.png)
 
 苹果价格上涨, 会在多大程度上影响最终的支付金额, 即求支付金额关于苹果的价格的导数. 设苹果的价格为$x$, 支付金额为$L$, 则相当于求$\frac{\partial L}{\partial x}$, 这个导数的值表示当苹果的价格稍微上涨时, 支付金额会增加多少.
 
 支付金额关于苹果的价格的导数的值, 可以通过计算图的反向传播来求, 如下图:
-![](./deeplearn_propagation/2.png)
+![](./propagation/2.png)
 反向传播使用与正方向相反的箭头表示, 反向传播传递"局部导数", 将导数值写在箭头下方. 在这个例子中, 反向传播从右向左传递导数的值(1->1.1->2.2), 从这个结果中可知, 支付金额关于苹果价格的导数的值是2.2. 意味着, 如果苹果的价格上涨1元, 最终的支付金额会增加2.2元, 严格的说, 如果苹果的价格增加某个微小的值, 则最终的支付金额将增加那个微小值的2.2倍.
 
 
@@ -22,7 +22,7 @@
 
 ### 计算图的反向传播
 假设存在$y=f(x)$的计算:
-![](./deeplearn_propagation/3.png)
+![](./propagation/3.png)
 反向传播的计算顺序是将信号E乘以节点的局部导数$\frac{\partial y}{\partial x}$, 然后将结果传递给下一个节点. 这里的局部导数就是正向传播$y=f(x)$的导数, 也就是y关于x的导数$\frac{\partial y}{\partial x}$. 比如, 假设$y=f(x)=x^2$, 则局部导数就是$\frac{\partial y}{\partial x}=2x$. 把这个局部导数,乘以上层传过来的值(本例中为E), 然后传递给前面的节点.
 
 ### 链式法则
@@ -40,11 +40,11 @@ $$\frac{\partial z}{\partial x}=\frac{\partial z}{\partial t}\frac{\partial t}{\
 
 ### 链式法则和计算图
 用`**2`节点表示平方运算, 将上式表示为计算图.
-![](./deeplearn_propagation/4.png)
+![](./propagation/4.png)
 反向传播的计算顺序是, 先将节点的输入信号乘以节点的局部导数, 然后再传递给下一个节点. 比如, 反向传播时, `**2`节点的输入是$\frac{\partial z}{\partial z}$, 将其乘以局部导数$\frac{\partial z}{\partial t}$(因为正向传播时输入是t, 输出是z, 所以这个节点的局部导数是$\frac{\partial z}{\partial t}$), 然后传递给下一个节点.
 反向传播最开始的信号$\frac{\partial z}{\partial z}$在前面的数学公式中没有出现, 是因为$\frac{\partial z}{\partial z}=1$, 在刚才对策式子中被省略了.
 计算后的结果如图:
-![](./deeplearn_propagation/5.png)
+![](./propagation/5.png)
 
 
 ### 加法节点的反向传播
@@ -54,9 +54,9 @@ $\frac{\partial z}{\partial y}=1$
 
 反向传播将从上游传过来的导数($\frac{\partial L}{\partial z}$)乘以1, 然后向下游传播, 因为加法节点的反向传播只乘以1, 所以输入的值会原封不动的流向下一个节点.
 
-![](./deeplearn_propagation/6.png)
+![](./propagation/6.png)
 看一个具体的例子, 比如`10+5=15`, 反向传播时, 上游传来值1.3:
-![](./deeplearn_propagation/7.png)
+![](./propagation/7.png)
 
 
 ### 乘法节点的反向传播
@@ -64,9 +64,9 @@ $\frac{\partial z}{\partial y}=1$
 $\frac{\partial z}{\partial x}=y$
 $\frac{\partial z}{\partial y}=x$
 乘法的反向传播将上游的值乘以正向传播时的输入信号另一个因子. 比如, 正向传播时信号是x的话, 反向传播时则是y; 正向传播时信号是y的话, 反向传播时则是x.
-![](./deeplearn_propagation/8.png)
+![](./propagation/8.png)
 看一个具体的例子, 有`10*5=50`, 反向传播时, 从上游传来值1.3:
-![](./deeplearn_propagation/9.png)
+![](./propagation/9.png)
 因为乘法的反向传播会乘以输入信号的另外一个因子, 所以可以按`1.3*5=6.5`和`1.3*10=13`计算.
 加法的反向传播只是将上游的值传给下游, 并不需要正向传播的输入信号. 但是乘法的反向传播需要正向传播时的输入信号值. 因此, 实现乘法节点的反向传播时, 要保存正向传播的输入信号.
 
@@ -76,7 +76,7 @@ $\frac{\partial z}{\partial y}=x$
 1. 支付金额关于苹果的价格的导数
 2. 支付金额关于苹果的个数的导数
 3. 支付金额关于苹果的消费税的导数
-![](./deeplearn_propagation/10.png)
+![](./propagation/10.png)
 1. 苹果价格的导数是2.2
 2. 苹果个数的导数是110
 3. 消费税的导数是200
@@ -147,7 +147,7 @@ class AddLayer:
 
 
 #### 结合加法层和乘法层
-![](./deeplearn_propagation/11.png)
+![](./propagation/11.png)
 
 ```python
 apple = 100
@@ -198,7 +198,7 @@ $$
 
 如果正向传播时的输入x大于0, 反向传播会将上游的 值原封不动的传给下游. 反过来, 如果正向传播时的x小于等于0, 则反向传播中传给下游的信号将停在此处.
 
-![](./deeplearn_propagation/12.png)
+![](./propagation/12.png)
 
 ```python
 class Relu:
@@ -223,7 +223,7 @@ ReLU层的作用就像电路中的开关一样. 正向传播时, 有电流通过
 #### Sigmoid层
 $$y=\frac{1}{1+exp(-x)}$$
 用计算图表示如下:
-![](./deeplearn_propagation/13.png)
+![](./propagation/13.png)
 
 分析反向传播的流程:
 1. 步骤1
@@ -231,29 +231,29 @@ $$y=\frac{1}{1+exp(-x)}$$
 $$\frac{\partial y}{\partial x}=-\frac{1}{x^2}=-y^2$$
 反向传播时, 会将上游的值乘以$-y^2$(正向传播的输出的平方乘以-1后的值)后,再传给下游, 计算图如下所示:
 
-![](./deeplearn_propagation/14.png)
+![](./propagation/14.png)
 
 
 2. 步骤2
 `+`节点将上游的值原封不动地传给下游
 
-![](./deeplearn_propagation/15.png)
+![](./propagation/15.png)
 
 3. 步骤3
 `exp`节点表示`y=exp(x)`, 它的导数为$\frac{\partial y}{\partial x}=exp(x)$
 
 计算图中, 上游的值乘以正向传播时的输出(这个例子中是`exp(-x)`)后, 再传给下游:
 
-![](./deeplearn_propagation/16.png)
+![](./propagation/16.png)
 
 4. 步骤4
 `x`节点将正向传播时的值反转后, 做乘法运算, 因此乘以-1
 
-![](./deeplearn_propagation/17.png)
+![](./propagation/17.png)
 
 结合上述步骤有:
 
-![](./deeplearn_propagation/18.png)
+![](./propagation/18.png)
 
 而进一步可以将上述的结果转换为:
 $$
@@ -265,7 +265,7 @@ $$
 $$
 
 上述公式可以简化为:
-![](./deeplearn_propagation/18.png)
+![](./propagation/18.png)
 
 python实现Sigmoind层:
 
@@ -291,7 +291,7 @@ affine层可以表示为$X \cdot W + B = Y$.
 $X,W,B$分别是形状为$(2,),(2,3),(3,)的多维数组$. $Y$经过激活函数转换后传入下一层
 
 affine层计算图:
-![](./deeplearn_propagation/20.png)
+![](./propagation/20.png)
 
 python实现affine层:
 ```python
@@ -309,19 +309,19 @@ Y = np.dot(X, W) + B
 $$\frac{\partial L}{\partial X}=\frac{\partial L}{\partial Y}\cdot W^T$$
 $$\frac{\partial L}{\partial W}=X^T \cdot \frac{\partial L}{\partial Y}$$
 
-![](./deeplearn_propagation/21.png)
+![](./propagation/21.png)
 
 注意$X$和$\frac{\partial L}{\partial X}$形状相同, $W$和$\frac{\partial L}{\partial W}形状相同.
 $$X=(x_0,x_1,...,x_n)$$
 $$\frac{\partial L}{\partial X}=\left(\frac{\partial L}{\partial x_0},\frac{\partial L}{\partial x_1}...,\frac{\partial L}{\partial x_n}\right)$$
 
 
-![](./deeplearn_propagation/22.png)
+![](./propagation/22.png)
 
 
 #### 批量版本的affine层
 前面的输入$X$是以单个数据为对象的, Affine也以是多个数据的形式, 既mini-batch.
-![](./deeplearn_propagation/23.png)
+![](./propagation/23.png)
 
 现在$X$的输入形状是(N,2).
 python实现:
@@ -349,11 +349,11 @@ class Affine:
 ### Softmax-with-Loss层
 神经网络中进行处理有推理(inference)和学习(learn)两个阶段. 推理过程通常不使用softmax层, 而是将最后一个affine层的输出作为识别结果, 最大值即为最终的分类.
 考虑到softmax也包含了损失函数的交叉熵误差(cross entropy error), 所以称为"softmax-with-loss"层.
-![](./deeplearn_propagation/24.png)
+![](./propagation/24.png)
 
 softmax函数记为softmax层, 交叉熵误差记为Cross Entropy Error层. 这里假设要进行3类分类, 从前面的层接收3个输入(得分). 如上图所示, Softmax层将输入$(a_1,a_2,a_3)$正规化, 输出$(y_1,y_2,y_3)$. Cross Entropy Error层接收Softmax的输入$(y_1,y_2,y_3)$和教师的标签$(t_1,t_2,t_3)$, 从这些数据中输出损失$L$.
 
-![](./deeplearn_propagation/25.png)
+![](./propagation/25.png)
 
 python实现Softmax-with-Loss层:
 ```python

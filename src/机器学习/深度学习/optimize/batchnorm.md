@@ -18,4 +18,4 @@ $$\hat{x}_i \leftarrow \frac{x_i-\mu_B}{\sqrt {\sigma_B^2+\epsilon}}$$
 $$y_i \leftarrow \gamma\hat{x}_i+\beta$$
 $\gamma$和$\beta$是参数, 一开始$\gamma=1,\beta=0$, 然后通过学习调整到合适的值.
 下图是BatchNorm的正向传播:
-![](./deeplearn_batchnorm/2.png)
+![](./batchnorm/2.png)

@@ -26,4 +26,4 @@ result_rdd.saveAsTextFile("./count.txt")
 ```
 
 
-![](./pyspark_wordCount/1.png)
+![](./wordCount/1.png)

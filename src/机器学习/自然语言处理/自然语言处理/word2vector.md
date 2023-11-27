@@ -14,19 +14,19 @@
 ## 神经网络单词的处理方法
 将单词转换为one-hot表示(one-hot向量), 只有一个元素是1, 其他元素都是0.比如在"you say goodbye and i say hello"语料中, 一共有7个单词("you","say","goodbye","and","i","say","hello","."). 转换为one-hot表示为:
 
-![](./nlp_word2vector/1.png)
+![](./word2vector/1.png)
 
 这样将单词转换为固定长度的向量, 神经网络的输入层的神经元个数就能固定下来:
 
-![](./nlp_word2vector/2.png)
+![](./word2vector/2.png)
 
 输入层由7个神经元表示, 分别对应一个单词的7维的one-hot表示.只要将单词表示为向量, 这些向量就可可以由构成神经网络的各种层来处理.
 
-![](./nlp_word2vector/3.png)
+![](./word2vector/3.png)
 
 也可以表示为:
 
-![](./nlp_word2vector/4.png)
+![](./word2vector/4.png)
 
 python实现全连接层变换:
 ```python
@@ -38,7 +38,7 @@ print(h)
 ## [[-0.70012195  0.25204755 -0.79774592]]
 ```
 c是one-hot表示, 单词ID对应的元素是1, 其他地方都是0, 因此c和w的矩阵乘积相当于"提取"权重的对应行向量.
-![](./nlp_word2vector/5.png)
+![](./word2vector/5.png)
 
 
 ## 简单的word2vec
@@ -46,7 +46,7 @@ c是one-hot表示, 单词ID对应的元素是1, 其他地方都是0, 因此c和w
 
 CBOW模型是根据上下文预测目标词的神经网络.它有两个输入层, 经过中间层到达输出层. 从输入层到中间层的变换由相同的全连接层($W_{in}$)完成, 从中间层到输出层神经元的变换由另一个全连接层($W_{out}$)完成. 因为我们对上下文仅考虑两个单词, 所以输入层有两个, 如果上下文考虑N个单词, 则输入层会有N个.
 
-![](./nlp_word2vector/6.png)
+![](./word2vector/6.png)
 
 中间层的神经元是各个输入层经全连接层变换后得到的值的"平均".如上例中: 经全连接层变换后, 第1个输入层转换为$h_1$, 第2个输入层转换为$h_2$, 那么中间层的神经元是$\frac{1}{2}(h_1+h_2)$.
 
@@ -54,7 +54,7 @@ CBOW模型是根据上下文预测目标词的神经网络.它有两个输入层
 
 从输入层到中间层的变换由全连接层($W_{in}$)完成. 此时, 全连接层的权重$W_{in}$是一个7*3的矩阵, 这个权重就是我们要的单词的分布式表示.
 
-![](./nlp_word2vector/7.png)
+![](./word2vector/7.png)
 
 $W_{in}$的各行保存着各个单词的分布式表示. 通过反复学习, 不断更更新各个单词的分布式表示, 以正确地从上下文预测出应当出现的单词.
 
@@ -62,7 +62,7 @@ $W_{in}$的各行保存着各个单词的分布式表示. 通过反复学习, �
 
 从层视角表示CBOW模型:
 
-![](./nlp_word2vector/8.png)
+![](./word2vector/8.png)
 
 SBOW模型宜开有两个MatMul层, 这两个层的输出被加在一起, 然后得到的值乘以0.5求均值, 得到中间层的神经元. 最后将另外一个MatMul层应用于中间层的神经元, 输出得分.
 
@@ -101,20 +101,20 @@ print(s)
 
 ## CBOW模型的学习
 
-![](./nlp_word2vector/9.png)
+![](./word2vector/9.png)
 如上图, 上下文是you和goodbye, 正确解标签是say.
 
 这里我们处理的模型是一个进行多分类的神经网络. 首先使用Softmax函数将得分转化为概率, 再求这些概率和监督标签之间的交叉熵误差, 并将其作为损失进行学习:
 
-![](./nlp_word2vector/10.png)
+![](./word2vector/10.png)
 
 将Softmax和Cross Entropy Error合并为Softmax with Loss层, 则可表示为:
 
-![](./nlp_word2vector/11.png)
+![](./word2vector/11.png)
 
 word2vec中使用的网络有两个权重, 分别是输入侧的全连接层的权重($W_{in}$)和输出侧的权重($W_{out}$).两个权重都保存了对单词含义的编码的向量.
 
-![](./nlp_word2vector/12.png)
+![](./word2vector/12.png)
 
 一般使用输入侧的$W_{in}$作为最终的单词的分布式表示.另外在GloVe方法中, 通过将两个权重相加, 也获得了良好的效果.
 
@@ -122,7 +122,7 @@ word2vec中使用的网络有两个权重, 分别是输入侧的全连接层的�
 
 从语料库生成上下文和目标词, 如图所示:
 
-![](./nlp_word2vector/13.png)
+![](./word2vector/13.png)
 
 我们对语料库中的单词操作, 得到右侧的contexts(上下文)和target(目标词).contexts的各行作为神经网络的输入, target的各行称为正确解标签.
 
@@ -141,7 +141,7 @@ print(id_to_word)
 ```
 然后从ID列表corpus生成contexts和target.
 
-![](./nlp_word2vector/14.png)
+![](./word2vector/14.png)
 
 contexts是二维数组, 第0维保存各个上下文的数据. 具体来说, `contexts[0]`保存的是第0个上下文. 同样的道理`target[0]`保存的是第0个目标词. python实现如下:
 
@@ -171,12 +171,12 @@ print(target)
 
 下面将上下文和目标词转换为one-hot表示:
 
-![](./nlp_word2vector/15.png)
+![](./word2vector/15.png)
 
 使用ID时contexts的形状是(6,2),将其转换为one-hot表示后, 其形状变成了(6,2,7).
 
 ## CBOW模型的实现
-![](./nlp_word2vector/16.png)
+![](./word2vector/16.png)
 
 python实现如下:
 
@@ -221,7 +221,7 @@ def forward(self, contexts, target):
 
 最后实现后向传播`backward()`函数
 
-![](./nlp_word2vector/17.png)
+![](./word2vector/17.png)
 
 
 ```python
@@ -252,25 +252,25 @@ $$L=-\frac{1}{T}\sum_{t=1}^{T}logP(w_t|w{t-1},w{t+1})$$
 ## skip-gram模型
 skip-gram是反转了CBOW模型.
 
-![](./nlp_word2vector/18.png)
+![](./word2vector/18.png)
 
 如上图, CBOW模型从上下文的多个单词预测中间的单词, 而skip-gram模型则从中间的单词预测周围的多个单词.
 
-![](./nlp_word2vector/19.png)
+![](./word2vector/19.png)
 
 输入层只有一个, 输出层的数量则与上下文的单词的个数相等. 因此, 首先要分别求出各个输出层的损失, 然后将他们加起来作为最后的损失.
 
 ##  Embedding
 假设词汇量有100万个, CBOW模型的中间层神经元有100个,则:
 
-![](./nlp_word2vector/20.png)
+![](./word2vector/20.png)
 
 输入层和输出层存在100万个神经元, 有两个地方的计算会出现瓶颈:
 输入层和one-hot表示和权重矩阵$W_{in}$的乘积. 比如在词汇量有100万个的情况下, 仅one-hot表示本身就需要占用100万个元素的内存大小. 此外还要计算one-hot表示的权重矩阵$W_{in}$的乘积.
 
 之前, 我们将单词转换为了one-hot表示, 并将其输入了MatMul层, 在MatMul层中计算one-hot表示和权重矩阵的乘积. 这里考虑词汇量是100万个的情况, 中间层的神经元个数是100, 则:
 
-![](./nlp_word2vector/21.png)
+![](./word2vector/21.png)
 
 因为语料库的词汇量有100万个, 则单词的one-hot表示的维数也是100万, 我们需要计算这个巨大向量和权重矩阵的乘积. 但是, 如图所示, 乘积所表达的意思无非是将矩阵的某个特定的行取出来.因此, 直觉上将单词转换为one-hot向量和处理和MatMul层中的矩阵乘法似乎没有必要.
 
@@ -318,7 +318,7 @@ class Embedding:
 `params`和`grads`作为成员变量, 并在成员变量`idx`中以数组的形式保存需要提取的行的索引(单词ID).
 
 接下来是反向传播. Embedding层的正向传播只是从权重矩阵$W$中提取特定的行, 并将该特定行的神经元原样传给下一层. 因此, 在反向传播时, 从上一层(输出层侧的层)传过来的梯度将原样传给下一层(输入侧的层). 不过, 从上一层传来的梯度会被应用到权重梯度$dW$的特定行(idx), 如图:
-![](./nlp_word2vector/22.png)
+![](./word2vector/22.png)
 python实现`backward()`:
 ```python
 def backward(self, dout):
@@ -338,7 +338,7 @@ def backward(self, dout):
 中间层之后的计算. 首先, 中间层和权重矩阵$W_{out}$的乘积需要大量的计算. 其次, 随着词汇量的增加, Softmax层的计算量也会增加.
 考虑词汇量为100万个, 中间层神经元个数为100个的word2vec(CBOW)模型, 如图:
 
-![](./nlp_word2vector/23.png)
+![](./word2vector/23.png)
 
 如上图, 输入层和输出层有100万个神经元.通过引入Embedding层, 节省了输入层中不必要的计算. 剩下的问题就是中间层之后的处理:
 - 中间层的神经元和权重矩阵$W_{out}$的乘积
@@ -354,11 +354,11 @@ $$y_k=\frac{exp(s_k)}{\sum_{i=1}^{1000000}exp(s_i)}$$
 
 我们考虑将多分类转换为二分类. 比如,神经网络来回答"当上下文是you和goodbye时, 目标词是say嘛"这个问题, 这时输出层值需要一个神经元即可, 如图:
 
-![](./nlp_word2vector/24.png)
+![](./word2vector/24.png)
 
 要计算中间层和输出侧的权重矩阵的乘积, 只需要提出say对应的列(单词向量), 并用它与中间层的神经元计算内积即可.
 
-![](./nlp_word2vector/25.png)
+![](./word2vector/25.png)
 
 输出侧的权重$W_{out}$中保存了各个单词ID对应的单词向量.此处, 我们提取say这个单词向量, 再求这个向量和中间层神经元的内积, 就是最终的结果.
 
@@ -371,13 +371,13 @@ $$L=-\sum_kt_klog{y_k}$$
 
 下面将多分类问题转换为二分类:
 
-![](./nlp_word2vector/26.png)
+![](./word2vector/26.png)
 
 上图中上下文是you和goodbye, 作为正解的目标词是say(you的id为0, say的id为1, goodbye的id为2).
 
 将上图的神经网络转化成二分类的神经网络:
 
-![](./nlp_word2vector/27.png)
+![](./word2vector/27.png)
 
 
 上述过程只解决了正解问题, 既只能正确的预测say, 但是对错误的词语还无法预测, 我需要对负例进行学习.不需要对所有的负例进行学习, 只使用少量负例即可(一般5~10个)这就是负采样的含义.
@@ -386,7 +386,7 @@ $$L=-\sum_kt_klog{y_k}$$
 
 负采样方法既可以求将正例作为目标词时的损失, 同时也可以采样若干个负例, 对这些负例求损失. 然后讲这些数据(正例+负例)的损失加起来, 作为最终的损失.
 
-![](./nlp_word2vector/28.png)
+![](./word2vector/28.png)
 
 如上图, 正例(say)和之前一样, 向Sigmoid with Loss层输入正确解标签1, 而因为负例(hello和i)是错误答案, 所以要想Sigmoid with Loss层输入正确解标签0. 然后, 将各个数据的损失相加, 作为最终输出.
 

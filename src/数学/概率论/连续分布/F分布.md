@@ -35,7 +35,7 @@ ax.legend()
 ax.set_xlim(0, 6)
 plt.show()
 ```
-![](./probability_连续_F分布/1.png)
+![](./F分布/1.png)
 通过观察可以确认$\frac{Y_1/5}{Y_2/10}$为F(5,10)分布.
 接下来看一下F分布随自由度$n_1,n_2$的变化情况. 将$n_2$固定为10, 让$n_1$在3,5,10中进行变化:
 ```python
@@ -51,7 +51,7 @@ for n1, ls in zip([3, 5, 10], linestyles):
 ax.legend()
 plt.show()
 ```
-![](./probability_连续_F分布/2.png)
+![](./F分布/2.png)
 
 F分布的特征有以下2个:
 1. 左右分布不对称, 向右偏斜

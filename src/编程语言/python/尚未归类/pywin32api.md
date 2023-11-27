@@ -101,7 +101,7 @@ win32api.keybd_event(18, 0, 2, 0)  # 释放Alt
 ## 按键和键值对应表
 
 ### 图片形式
-![](./python_pywin32api/1.png)
+![](./pywin32api/1.png)
 
 ### python字典形式 
 ```python

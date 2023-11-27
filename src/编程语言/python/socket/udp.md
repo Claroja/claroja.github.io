@@ -21,7 +21,7 @@ server.close() # 关闭套接字
 ```
 
 
-![](./python_socket_udp/1.png)
+![](./udp/1.png)
 
 
 ## UDP广播

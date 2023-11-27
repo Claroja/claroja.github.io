@@ -31,7 +31,7 @@ U2=46-6(6+1)/2=25
 
 当 $\alpha=0.05$时, 认为差异显著, 查Mann-Whitney Table可知$U_\alpha=5, U_1>U_\alpha$
 
-![](./Mann_Whitney_U/1.png)
+![](./U/1.png)
 
 
 参考:

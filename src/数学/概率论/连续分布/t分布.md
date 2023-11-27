@@ -35,7 +35,7 @@ ax.legend()
 ax.set_xlim(-3, 3)
 plt.show()
 ```
-![](./probability_连续_t分布/1.png)
+![](./t分布/1.png)
 可以确认$\frac{Z}{\sqrt{Y/10}}$是t(10)分布.
 
 接下来看一下t分布随自由度n是怎样变化的. 让自由度n在3,5,10中进行变化, 其分布图像如下:
@@ -54,7 +54,7 @@ ax.plot(xs, rv.pdf(xs), label='N(0, 1)')
 ax.legend()
 plt.show()
 ```
-![](./probability_连续_t分布/2.png)
+![](./t分布/2.png)
 
 
 t分布的特征有以下3个:

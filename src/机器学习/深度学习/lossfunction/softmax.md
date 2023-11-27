@@ -10,7 +10,7 @@ $\sum^k_j e^{z_j}$|The term on the bottom of the formula is the normalization te
 $k$|The number of classes in the multi-class classifier.
 given a three-class example below, the scores $y_i$ are computed from the forward propagation of the network. We then take the softmax and obtain the probabilities as shown:
 
-![](./alg_softmax/1.png)
+![](./softmax/1.png)
 
 
 ```python

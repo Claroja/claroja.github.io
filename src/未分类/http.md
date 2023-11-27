@@ -27,7 +27,7 @@ Content-Type: text/html
 
 
 ## Requests
-![](./http_http/1.png)
+![](./http/1.png)
 1. `Method`: 客户端获取资源使用`GET`, 想要发送信息给服务器, 使用`POST`
 2. `path`: 资源在服务器上的路径, 省去了==protocol==(`http://`),==domain==(`developer.mozilla.org`),==port==(`80`)
 3. `version of the protocol`:协议版本
@@ -40,7 +40,7 @@ Content-Type: text/html
 
 
 ## Response
-![](./http_http/2.png)
+![](./http/2.png)
 1. `version of the protocol`:协议版本
 2. `Status code`: 请求是否成功
 3. `status message`: 和`Status code`对应
@@ -62,7 +62,7 @@ HTTP的请求和响应, 有相同的结构:
 4. body: 多行, 请求中是`POST`方法的数据;响应中是响应结果
 
 `start-line`和`HTTP header`一般统称为`head`, 而`body`也称为`payload`.
-![](./http_http/3.png)
+![](./http/3.png)
 
 
 

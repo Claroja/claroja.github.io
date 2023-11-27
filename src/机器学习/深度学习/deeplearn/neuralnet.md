@@ -26,7 +26,7 @@ y=&h(a)
 \end{array}
 \right.
 $$
-[](./deeplearn_neuralnet/1.png)
+[](./neuralnet/1.png)
 
 
 ## sigmoid函数
@@ -49,7 +49,7 @@ plt.plot(x, y)
 plt.ylim(-0.1, 1.1) # 指定y轴的范围
 plt.show()
 ```
-[](./deeplearn_neuralnet/2.png)
+[](./neuralnet/2.png)
 
 感知机中的神经元是0/1的二元信号, 而神经网络中的神经元是连续的实数值信号.二者共性是:
 - 输入小时, 输出接近为0
@@ -72,7 +72,7 @@ def relu(x):
     return np.maximum(0, x)
 ```
 
-[](./deeplearn_neuralnet/3.png)
+[](./neuralnet/3.png)
 
 
 
@@ -80,7 +80,7 @@ def relu(x):
 下图神经网络省略了偏置和激活函数.
 
 要注意$X,W,Y$的形状, 特别是$X,W$对应维度的元素个数是否一致.
-[](./deeplearn_neuralnet/3.png)
+[](./neuralnet/3.png)
 python实现:
 ```python
 X = np.array([1, 2])
@@ -99,10 +99,10 @@ Y = np.dot(X, W)
 ## 三层网络实现
 $w_{12}^{(1)}$表示前一层第2个神经元$x_2$到后一层第1个神经元$a_1^{(1)}$的权重
 
-[](./deeplearn_neuralnet/4.png)
+[](./neuralnet/4.png)
 
 下图是从输入层, 到第1层的第一个神经元的信号传递过程:
-[](./deeplearn_neuralnet/5.png)
+[](./neuralnet/5.png)
 公式如下:
 $$a_1^{(1)}=w_{11}^{(1)}x_1+w_{12}^{(1)}x_2+b_1^{(1)}$$
 矩阵公式如下:
@@ -138,7 +138,7 @@ print(Z1) # [0.57444252, 0.66818777, 0.75026011]
 
 ```
 
-[](./deeplearn_neuralnet/6.png)
+[](./neuralnet/6.png)
 
 
 python实现第二层的网络传播:
@@ -151,7 +151,7 @@ print(B2.shape) # (2,)
 A2 = np.dot(Z1, W2) + B2
 Z2 = sigmoid(A2)
 ```
-[](./deeplearn_neuralnet/7.png)
+[](./neuralnet/7.png)
 
 
 python实现第三层的网络传播:
@@ -171,7 +171,7 @@ Y = identity_function(A3) # 或者Y = A3
 - 回归问题使用identity函数
 - 二元分类使用sigmoid函数
 - 多元分类使用softmax函数
-[](./deeplearn_neuralnet/8.png)
+[](./neuralnet/8.png)
 
 
 
@@ -180,7 +180,7 @@ Y = identity_function(A3) # 或者Y = A3
 一般而言, 回归问题用identity函数, 分类问题用softmax函数.
 identity函数表示:
 输入信号原封不动的输出
-[](./deeplearn_neuralnet/9.png)
+[](./neuralnet/9.png)
 
 
 
@@ -194,7 +194,7 @@ y_k=
 $$
 `exp(x)`表示的是$e^x$的指数函数, `e`是Napier常数,加入输出层有n个神经元, 计算第k个神经元的输出$y_k$.softmax函数的分子是输入信号$a_k$的指数函数, 分母是所有输入信号的指数函数的和.
 softmax 函数的输出通过箭头与所有的输入信号相连。这是因为softmax的分母与输出层的各个神经元都受到所有输入信号的影响。
-[](./deeplearn_neuralnet/10.png)
+[](./neuralnet/10.png)
 python实现:
 ```python
 def softmax(a):

@@ -21,7 +21,7 @@ class CoorExample(Scene):
         # creates the T_label
         self.add(axes, line )
 ```
-![](./manim_mobject_Axes/1.png)
+![](./Axes/1.png)
 
 
 
@@ -46,7 +46,7 @@ class CoorExample(Scene):
         # creates the T_label
         self.add(axes, line )
 ```
-![](./manim_mobject_Axes/2.png)
+![](./Axes/2.png)
 
 ### 给坐标轴添加标签
 `get_axis_labels()`获得x,y轴
@@ -70,7 +70,7 @@ class TLabelExample(Scene):
         )
         self.add(axes, labels)
 ```
-![](./manim_mobject_Axes/5.png)
+![](./Axes/5.png)
 
 
 ### 改变坐标标度
@@ -94,7 +94,7 @@ class LogScalingExample(Scene):
         self.add(ax, graph)
 ```
 
-![](./manim_mobject_Axes/9.png)
+![](./Axes/9.png)
 
 `axis_config`和`y_axis_config`配置项可以参考[NumberLine](https://docs.manim.community/en/stable/reference/manim.mobject.graphing.number_line.NumberLine.html#manim.mobject.graphing.number_line.NumberLine)
 
@@ -122,7 +122,7 @@ class TLabelExample(Scene):
         self.add(axes, line, t_label)
 ```
 
-![](./manim_mobject_Axes/3.png)
+![](./Axes/3.png)
 
 
 ### 绘制曲线面积
@@ -149,7 +149,7 @@ class TLabelExample(Scene):
         )
         self.add(axes, line, area)
 ```
-![](./manim_mobject_Axes/4.png)
+![](./Axes/4.png)
 
 
 
@@ -178,7 +178,7 @@ class TLabelExample(Scene):
         )
         self.add(axes,line, label)
 ```
-![](./manim_mobject_Axes/6.png)
+![](./Axes/6.png)
 
 
 ### 获得水平或垂直线
@@ -215,7 +215,7 @@ class GetLinesToPointExample(Scene):
         lines_2 = ax.get_lines_to_point(circ.get_corner(DL), color=BLUE_B)
         self.add(ax, lines_1, lines_2, circ)
 ```
-![](./manim_mobject_Axes/8.png)
+![](./Axes/8.png)
 
 
 

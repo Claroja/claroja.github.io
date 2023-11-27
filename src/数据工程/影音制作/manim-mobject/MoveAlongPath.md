@@ -16,7 +16,7 @@ class MoveAlongPathExample(Scene):
 ```
 
 
-![](./manim_animations_MoveAlongPath/1.gif)
+![](./MoveAlongPath/1.gif)
 
 
 

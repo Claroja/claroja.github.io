@@ -8,7 +8,7 @@
 read_more_btn: false
 ```
 
-[](./hexo_next查看更多功能/1.png)
+[](./next查看更多功能/1.png)
 
 
 ## 配置custom_file_path
@@ -57,5 +57,5 @@ custom_file_path:
 ## 最终效果
 这种样式配合`<--more-->`摘要,可以将首页文章展示做小,而不是展示文章所有内容.
 
-[](./hexo_next查看更多功能/2.png)
+[](./next查看更多功能/2.png)
 

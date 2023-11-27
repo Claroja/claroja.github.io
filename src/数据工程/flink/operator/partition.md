@@ -5,7 +5,7 @@
 通过调用 DataStream 的.shuffle()方法，将数据随机地分配到下游算子的并行任务中去。随机分区服从均匀分布（uniform distribution），所以可以把流中的数据随机打乱，均匀地传递到下游任务分区
 经过随机分区之后，得到的依然是一个 DataStream。 
 
-![](./pyflink_stream_partition/1.png)
+![](./partition/1.png)
 
 
 ## rebalance
@@ -13,7 +13,7 @@
 使用的是 Round-Robin 负载均衡算法，可以将输入流数据平均分配到下游的并行任务中去。 
 注：Round-Robin 算法用在了很多地方，例如 Kafka 和 Nginx。 
 
-![](./pyflink_stream_partition/2.png)
+![](./partition/2.png)
 
 ## rescale
 当调用 rescale()方法时，其实底层也是使用 Round-Robin
@@ -24,7 +24,7 @@
 当下游任务（数据接收方）的数量是上游任务（数据发送方）数量的整数倍时，rescale
 的效率明显会更高。比如当上游任务数量是 2，下游任务数量是 6 时，上游任务其中一个分区
 的数据就将会平均分配到下游任务的 3 个分区中。
-![](./pyflink_stream_partition/3.png)
+![](./partition/3.png)
 
 ## broadcast
 这种方式其实不应该叫做“重分区”，因为经过广播之后，数据会在不同的分区都保留一

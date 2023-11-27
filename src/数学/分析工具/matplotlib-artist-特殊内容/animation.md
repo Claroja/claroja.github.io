@@ -67,7 +67,7 @@ anim = FuncAnimation(fig, animate, frames=len(x)+1, interval=30, blit=True)
 anim.save('sin.gif')
 ```
 
-![](./matplotlib_animation/1.gif)
+![](./animation/1.gif)
 
 
 ## 文本案例

@@ -11,7 +11,7 @@ broadcast.value
 
 ```
 
-![](./pyspark_broadcast/1.png)
+![](./broadcast/1.png)
 
 
 ```python

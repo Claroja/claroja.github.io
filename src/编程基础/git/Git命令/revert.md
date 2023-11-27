@@ -3,15 +3,15 @@
 
 ## idea演示
 1.准备数据,每次提交一行
-![](./git_revert/1.png)
+![](./revert/1.png)
 2.revert 到version2
-![](./git_revert/2.png)
+![](./revert/2.png)
 3.弹出冲突
-![](./git_revert/3.png)
+![](./revert/3.png)
 4.处理冲突
-![](./git_revert/4.png)
+![](./revert/4.png)
 5.跳出正常的commit处理界面
-![](./git_revert/5.png)
+![](./revert/5.png)
 
 
 ## git 命令操作

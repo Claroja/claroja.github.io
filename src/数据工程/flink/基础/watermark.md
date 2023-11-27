@@ -9,14 +9,14 @@
 
 ## Messages arrive without delay
 Suppose the source generated three messages of the type a at times 13th second, 13th second and 16th second respectively. 
-![](./pyflink_watermark/1.png)
+![](./watermark/1.png)
 We will create a SlidingWindow of size 10 seconds which slides every 5 seconds and at the end of the window.
 These messages will fall into the windows as follows. The first two messages that were generated at 13th sec will fall into both window1(5s-15s) and window2(10s-20s) and the third message generated at 16th second will fall into window2(10s-20s) and window3(15s-25s). The final counts emitted by each window will be (a,2), (a,3) and (a,1) respectively.
-![](./pyflink_watermark/2.png)
+![](./watermark/2.png)
 
 ## Messages arrive in delay
 Now suppose one of the messages (generated at 13th second) arrived at a delay of 6 seconds(at 19th second), may be due to some network congestion.
-![](./pyflink_watermark/3.png)
+![](./watermark/3.png)
 The delayed message fell into window 2 and 3, since 19 is within the range 10-20 and 15-25. It did not cause any problem to the calculation in window2 (because the message was anyways supposed to fall into that window) but it affected the result of window1 and window3. We will now try to fix this problem by using EventTime processing.
 
 
@@ -35,7 +35,7 @@ class TimestampExtractor extends AssignerWithPeriodicWatermarks[String] with Ser
 }
 ```
 The result of running the above code is shown in the diagram below.
-![](./pyflink_watermark/4.png)
+![](./watermark/4.png)
 
 The results look better, the windows 2 and 3 now emitted correct result, but window1 is still wrong. Flink did not assign the delayed message to window 3 because it now checked the message’s event time and understood that it did not fall in that window. But why didn’t it assign the message to window 1?. The reason is that by the time the delayed message reached the system(at 19th second), the evaluation of window 1 has already finished (at 15th second). Let us now try to fix this issue by using the Watermark.
 
@@ -50,7 +50,7 @@ override def getCurrentWatermark(): Watermark = {
   }
 }
 ```
-![](./pyflink_watermark/5.png)
+![](./watermark/5.png)
 Finally we have the correct result, all the three windows now emit counts as expected - which is (a,2), (a,3) and (a,1).
 
 

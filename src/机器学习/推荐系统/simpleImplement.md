@@ -79,7 +79,7 @@ svd 矩阵分解
 就是将不同的排序给权重, 然后融合, 给出综合的排序
 
 kaggle里面代码的流程图
-[](./alg_rec_simpleImplement/1.jpg)
+[](./simpleImplement/1.jpg)
 
 参考:
 https://www.kaggle.com/code/gspmoreira/recommender-systems-in-python-101/notebook

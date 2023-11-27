@@ -139,9 +139,9 @@ rdd.sortByKey(ascending=True, numPartitions=1, keyfunc=lambda key: str(key).lowe
 
 ## groupByKey vs reduceByKey
 `groupByKey+reduce`逻辑流程，执行的是先分组(shuffle)后聚合
-![](./pyspark_transformationFunc/1.png)
+![](./transformationFunc/1.png)
 `reduceByKey`先在分区内预聚合，然后分组(shuffle)，最后再聚合
-![](./pyspark_transformationFunc/2.png)
+![](./transformationFunc/2.png)
 
 
 

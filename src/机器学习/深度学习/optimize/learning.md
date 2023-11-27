@@ -46,7 +46,7 @@ mean_squared_error(np.array(y), np.array(t))  # 0.59750000000000003
 $E=-\sum_kt_k\log y_k$
 `log`表示以`e`为底数的自然对数$log_e$. $y_k$是神经网络的输出, $t_k$是正确的标签. 
 $t_k$中只有正确的标签为1, 其他均为0(one-hot), 因此只计算对应正确标签的输出的自然对数. 比如, 假设正确标签的索引是"2", 与之对应的神经网络的输出为0.6, 则交叉熵误差是-log0.6=0.51. 也就是说, 交叉熵误差的值是正确标签所对应的输出结果决定的.
-![](./deeplearn_learning/2.png)
+![](./learning/2.png)
 
 python实现:
 ```python

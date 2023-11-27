@@ -17,7 +17,7 @@ class NextToUpdater(Scene):
 
 
 
-![](./manim_animations_addUpdater/1.gif)
+![](./addUpdater/1.gif)
 
 
  
@@ -40,7 +40,7 @@ class DtUpdater(Scene):
 
 
 
-![](./manim_animations_addUpdater/2.gif)
+![](./addUpdater/2.gif)
 
 
 

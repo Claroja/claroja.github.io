@@ -17,7 +17,7 @@ In keeping with the tree analogy, the terminology was adopted from the terminolo
 
 ## Decision Tree Intuition
 Let's consider the following example that a decision tree to decide tree to predict an salary on a baseball player case:
-![](./alg_tree/1.png)
+![](./tree/1.png)
 
 we predict a baseball players's Salary based on `Years` and `Hits`
 
@@ -30,7 +30,7 @@ as the image shows us:
 2. Players with $Years >= 4.5$ are assigned to the right branch and then that group is further subdivided by $Hits < 177.5$ having mean los salary of 6.
 3. Players with $Years >= 4.5$ are assigned to the right branch and then that group is further subdivided by $hits >= 177.5$ having mean los salary of 6.74.
 
-![](./alg_tree/2.png)
+![](./tree/2.png)
 
 In this case, it can be seen that the decision tree makes a segment into three regions where this region determines to the salaries of baseball players and it can be said that the region is a decision boundary.
 These three regions can be written as
@@ -68,7 +68,7 @@ In this simulation, only use the sex, fbs(fasting blood sugar), exang(exercise i
 
 
 ### How to measure Gini Impurity
-![](./alg_tree/3.png)
+![](./tree/3.png)
 
 Gini Impurity - Left Node
 $$ I_{Left-Sex} = 1 - (\frac{24}{24+114})^2 - (\frac{114}{24+114})^2 = 0.29 $$
@@ -97,7 +97,7 @@ In the same case and same data set, we need a way to measure and compare Entropy
 We need calculate entropy in Target attribute first:
 $$ Entropy_{Target} = -(\frac{138}{138+165})log_2(\frac{138}{138+165}) - (\frac{165}{138+165})log_2(\frac{165}{138+165}) = 0.994 $$
 measure Entropy in Sex attribute:
-![](./alg_tree/4.png)
+![](./tree/4.png)
 Entropy-Sex = 0
 $$ Entropy_{Sex0} = -(\frac{24}{24+114})log_2(\frac{24}{24+114})-(\frac{114}(24+114))log_2(\frac{114}{24+114}) = 0.666$$
 Entropy-Sex =1

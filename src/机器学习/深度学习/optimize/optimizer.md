@@ -44,14 +44,14 @@ for i in range(10000):
 虽然SGD简单, 但是在解决某些问题时可能没有效率.考虑如下公式:
 $$f(x,y)=\frac{1}{20}x^2+y^2$$
 该函数是向x轴方向延伸的"碗"状函数, 等高线呈向x轴方向延伸的椭圆状.
-![](./deeplearn_optimizer/1.png)
+![](./optimizer/1.png)
 而它的梯度如下图所示:
-![](./deeplearn_optimizer/2.png)
+![](./optimizer/2.png)
 这个梯度的特征是, y轴方向上打, x轴方向上小. 换句话说就是y轴方向的坡度大, 而x轴方向的坡度小. 虽然最小值在$(x,y)=(0,0)$处, 但是很多梯度并没有指向$(0,0)$.
 
 如下图, 假设从$(x,y)=(-7.0,2.0)$处开始搜索, SGD呈"之"字形移动, 相当的低效.
 
-![](./deeplearn_optimizer/3.png)
+![](./optimizer/3.png)
 
 
 ## Momentum
@@ -62,7 +62,7 @@ $W$表示需要更新的权重参数, $\frac{\partial L}{\partial W}$表示梯�
 $\alpha v$表示物体不受任何力时, 物体逐渐衰减的力, 对应地面摩擦力或空气阻力.
 
 如图:
-![](./deeplearn_optimizer/4.png)
+![](./optimizer/4.png)
 
 python实现:
 ```python
@@ -83,7 +83,7 @@ class Momentum:
 $v$会保存物体的速度, 初始化时, $v$中什么都不保存, 但当第一次调用`update`时, `v`会以字典型变量的形式保存与参数结构相同的数据.
 
 和SGD相比, "之"字形的"程度"减轻了. 这时因为虽然x轴方向上受到的力非常小, 但是一直在同一方向受力, 所以同一个方向会有一定的加速. 反过来, 虽然在y轴方向受到的力很大, 但是因为交互地受到正方向和反方向的力, 它们会相互低效, 所以y轴方向的速度不稳定. 和SGD相比, 会更快地朝x轴方向靠近.
-![](./deeplearn_optimizer/5.png)
+![](./optimizer/5.png)
 
 
 ## AdaGrad
@@ -124,7 +124,7 @@ class AdaGrad:
 
 ## adam
 Momentum 参照小球在碗中滚动的物理规则进行移动，AdaGrad 为参数的每个元素适当地调整更新步伐。将这两个融合到一起就是Adam方法.
-![](./deeplearn_optimizer/7.png)
+![](./optimizer/7.png)
 Adam会设置三个超参数:
 1. 学习率
 2. 一次momentum系数$\beta_1=0.9$

@@ -2,7 +2,7 @@
 
 Spark Apache Spark是用于大规模数据（large-scala data）处理的统一（unified）分析引擎。最早源于一篇论文: Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing.
 
-![](./pyspark_intro/1.png)
+![](./intro/1.png)
 
 
 ## spark vs hadoop
@@ -28,7 +28,7 @@ xxx|hadoop|spark
 - **Executor** 管理单个节点计算资源。 类比：YARN的TASK
 
 
-![](./pyspark_intro/2.png)
+![](./intro/2.png)
 
 执行过程：
 1. 创建的 SparkContext 实例会连接到 ClusterManager，根据设置的 CPU 和内存等信息为本次提交分配计算资源，启动 Executor。
@@ -50,7 +50,7 @@ xxx|hadoop|spark
 
 ## python on spark 原理
 PySpark宗旨是在不破坏Spark已有的运行时架构，在Spark架构外层包装一层Python API，借助Py4j实现Python和Java的交互，进而实现通过Python编写Spark应用程序：
-![](./pyspark_intro/3.png)
+![](./intro/3.png)
 
 
 

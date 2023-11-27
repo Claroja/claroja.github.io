@@ -4,9 +4,9 @@ let's start with the nasty looking equation.
 $$ pr(x|\mu,\sigma) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x-\mu)^2/2\sigma^2} $$
 It is the equation for the normal distribution or normal curve.It has two parameters:
 The first parameter: the greek character $\mu$, determine the location of the normal distribution's mean.The smaller value for $\mu$ moves the mean of the distribution to the left.And a larger value fot the $\mu$ moves the mean of the distribution to the right.
-![](./alg_maximumLikelihood/1.png)
+![](./maximumLikelihood/1.png)
 The second parameter, the greek character $\sigma$, is the standard deviation and determines the normal distribution's width.A large value for $\sigma$ makes the normal curve shorter and wider, and a smaller value for $\sigma$ makes the normal curve taller and narrower.
-![](./alg_maximumLikelihood/2.png)
+![](./maximumLikelihood/2.png)
 we are going to use the likelihood of the normal distribution to find the optimal values for $\mu$ and $\sigma$ given some data, $x$.
 $$ L(\mu,\sigma|x) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x-\mu)^2/2\sigma^2} $$
 
@@ -14,9 +14,9 @@ For example, if we start with the mean of the distribution over here on the left
 $$ L(\mu=20|x=32,\simgma=2) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x-\mu)^2/2\sigma^2} =0.0000000003 $$
 and then we can plot the likelihood on a graph, the y-axis is likelihood value and the x-axis is for different values that we plug in $\mu$.Each time we change $\mu$, we calculate the likelihood and plot it.
 We can identify the peek in the likelihood graph by determining where the slope of the curve = $0$. In this case, $slope = 0$ when $\mu=32$.
-![](./alg_maximumLikelihood/3.png)
+![](./maximumLikelihood/3.png)
 Now, we can fix $\mu=32$ and treat it like a give, just like the data and we can plug in different values for $\sigma$ to find one that gives the maximum likelihood.That said, if we had more data then we could plot the likelihoods for different values of $\sigma$ and the maximum likelihood estimate for $\sigma$ would be at the peak, where the slope of the curve = $0$.
-![](./alg_maximumLikelihood/4.png)
+![](./maximumLikelihood/4.png)
 
 
 ## two dataset
@@ -29,7 +29,7 @@ Because $x_1=32 and x_2 = 34$ measurements are independent(i.e. weighing $x_1$ d
 The likelihood of a normal distribution with $\mu=28$ and $\sigma=2$ given the data, $x_1=32$ and $x_2=34$ is just the likelihood of the distribution given $x_1$ times the likelihood of the distribution given $x_2$.
 
 $$L(\mu=28,\sigma=2|x_1=32 and x_2 = 34) = L(\mu=28,\sigma=2|x_1=32) \cdot L(\mu=28,\simga=2|x_2=34)=0.000006$$
-![](./alg_maximumLikelihood/5.png)
+![](./maximumLikelihood/5.png)
 
 ## n dataset
 With $n$ data points, we add all $n$ data points to the "given" side of the overall likelihood function.
@@ -41,13 +41,13 @@ $$L(\mu,\sigma|x_1,x_2,...,x_n)$$
 $$= L(\mu,\sigma|x_1) \cdot ... \cdot L(\mu,\sigma|x_n)$$
 $$= \frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_1-\mu)^2/2\sigma^2}\cdot ... \cdot  \frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_n-\mu)^2/2\sigma^2} $$
 what we need to do is take two different derivatives of this equation.One derivative will be with respect $\mu$, when we treat $\sigma$ like it's a constant and we can find the maximum likelihood estimate for $\mu$ by finding where this derivate = 0.
-![](./alg_maximumLikelihood/6.png)
+![](./maximumLikelihood/6.png)
 The other derivative will be with respect $\sigma$, when we treat $\mu$ like it's a constant. and we can find the maximum likelihood estimate for $\sigma$ by finding where this derivative = 0.
-![](./alg_maximumLikelihood/7.png)
+![](./maximumLikelihood/7.png)
 But before we try to take any derivatives, we take the log of the likelihood function. We do this because it makes taking the derivative way,way easier. And the likelihood function and the log of the likelihood function both peak at the same values for $\mu$ and $\sigma$.
 $$ln(L(\mu,\sigma|x_1,x_2,...,x_n))$$
 $$= ln(\frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_1-\mu)^2/2\sigma^2}\cdot ... \cdot  \frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_n-\mu)^2/2\sigma^2}) $$
-![](./alg_maximumLikelihood/8.png)
+![](./maximumLikelihood/8.png)
 First, the log transforms the multiplication into addition
 $$= ln(\frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_1-\mu)^2/2\sigma^2}) + ln(\frac{1}{\sqrt{2\pi\sigma^2}}e^{-(x_n-\mu)^2/2\sigma^2}) $$
 
@@ -79,7 +79,7 @@ $$ = 0 - 0 + \frac{(x_1-\mu)}{\sigma^2} + \frac{(x_n-\mu)}{\sigma^2} $$
 $$ = \frac{1}{\sigma^2}((x_1+...+x_n)-n\mu)  =0$$
 $$ \mu = \frac{x_1+...+x_n}{n}  $$
 So that is where the center of our normal curve will go.
-![](./alg_maximumLikelihood/9.png)
+![](./maximumLikelihood/9.png)
 
 
 
@@ -88,7 +88,7 @@ $$\frac{\partial}{\partial\sigma}ln(L(\mu,\sigma)|x_1,...,x_n) $$
 $$= -\frac{n}{\sigma}+ \frac{1}{\sigma^3}((x_1-\mu)^2+...+(x_n-\mu)^2)=0$$
 $$ \sigma^2 = \frac{(x_1-\mu)^2+...+(x_n-\mu)^2}{n} $$
 Thus, we use the formula for the standard deviation to determine the width of the normal curve that, given the data, has the maximum likelihood.
-![](./alg_maximumLikelihood/10.png)
+![](./maximumLikelihood/10.png)
 
 we have the math that proves that our intuition is correct.
 

@@ -24,13 +24,13 @@ def plot_unit_gaussian_samples(D):
 
 show(plot_unit_gaussian_samples(2))
 ```
-![](./gaussian_processes/1.png)
+![](./processes/1.png)
 
 如果升级到20D,则
 ```python
 show(plot_unit_gaussian_samples(20))
 ```
-![](./gaussian_processes/2.png)
+![](./processes/2.png)
 如上图, 我们这在$x=0,0.1,0.2,...,2$分别根据高斯分布取值.
 
 multivariate Gaussian 有两个参数, 分别是mean and covariance matrix. 
@@ -81,7 +81,7 @@ p.add_layout(color_bar, 'right')
 show(p)
 ```
 
-![](./gaussian_processes/3.png)
+![](./processes/3.png)
 
 假设有两个随机变量$y_i,y_j$,在$x_i,x_j$ 有 $\text{cov}(y_i, y_j)=\kappa(x_i, x_j)$(既离得越近就有更高的covariance)
 
@@ -99,7 +99,7 @@ for color in Category10[10]:
 show(p)
 ```
 
-![](./gaussian_processes/4.png)
+![](./processes/4.png)
 
 似乎有点规律可寻了
 
@@ -120,7 +120,7 @@ show(p)
 
 ```
 
-![](./gaussian_processes/5.png)
+![](./processes/5.png)
 
 ## Making Predictions using the Prior & Observations
 现在我们已经通过functions来获得一个distribution, 那么如何训练数据来获得hidden function呢.
@@ -149,7 +149,7 @@ p = figure(plot_width=800, plot_height=400, x_axis_label='x',
 p.line(xs, ys, line_width=2)
 show(p)
 ```
-![](./gaussian_processes/6.png)
+![](./processes/6.png)
 
 
 ### Getting into the Maths
@@ -220,7 +220,7 @@ p.line(x_s, mu_s, line_width=3, color='blue', alpha=0.4, legend='Mean')
 show(p)
 
 ```
-![](./gaussian_processes/7.png)
+![](./processes/7.png)
 
 参考:
 http://bridg.land/posts/gaussian-processes-1

@@ -68,7 +68,7 @@ c_n|batch中, 每条序列, 所有layer的最后时刻的cell_state, shape为(D*
 
 - many2one
 我们需要最后一个事件点的输出, 比如分类问题, 时间序列预测, 仅仅将最后一个时间点的输入喂入全连接层.
-[](./pytorch_nn_lstm/1.png)
+[](./lstm/1.png)
 ```python
 import torch
 from torch import nn, optim
@@ -102,7 +102,7 @@ print(output.shape)
 
 - many2many
 我们需要每个时间点的输出, 比如文本生成, 每个时间点的输出可以被放入全连接层.
-[](./pytorch_nn_lstm/1.png)
+[](./lstm/1.png)
 
 
 参考:

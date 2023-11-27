@@ -11,7 +11,7 @@ y=\begin{cases}
 $$
 $x_1,x_2$是输入信号, $y$是输出信号, $w_1,w_2$是权重.○是神经元. 输入信号在神经元内与权重相乘$(w_1x_1,w_2x_2)$,权重越大, 对应信号的重要性越高.
 之后计算总和, 当超过某个阈值$\theta$时, 输出1, 这时称神经元被激活.
-![](./deeplearn_perceptron/1.png)
+![](./perceptron/1.png)
 
 
 ## 简单逻辑电路
@@ -117,10 +117,10 @@ $x_1$|$x_2$|$y$
 1|1|0
 我们无法通过简单的$(w_1,w_2,b)$设置来实现异或门.
 如下图, 我们无法将○和△使用一条直线分开:
-![](./deeplearn_perceptron/2.png)
+![](./perceptron/2.png)
 
 ○和△无法用一条直线分开，但是如果将“直线”这个限制条件去掉，就可以实现了.
-![](./deeplearn_perceptron/3.png)
+![](./perceptron/3.png)
 曲线分割而成的空间称为**非线性空间**，由直线分割而成的空间称为**线性空间**.
 
 #### 异或门的实现
@@ -144,5 +144,5 @@ def XOR(x1, x2):
     y = AND(s1, s2)
     return y
 ```
-![](./deeplearn_perceptron/4.png)
+![](./perceptron/4.png)
 

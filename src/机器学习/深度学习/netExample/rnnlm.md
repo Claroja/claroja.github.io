@@ -3,7 +3,7 @@
 
 
 基于 RNN 的语言模型称为 RNNLM(RNN Language Model)
-![](./deeplearn_rnnlm/1.png)
+![](./rnnlm/1.png)
 第一层是Embedding层, 将单词转换为词向量
 第二层是Time RNN, 向下一层输出隐状态, 同时也向下一时刻的RNN层输出隐状态
 第三层是Affine层, 输入是Time RNN的隐状态
@@ -11,23 +11,23 @@
 
 以"you say goodbye and i say hello"为例
 
-![](./deeplearn_rnnlm/2.png)
+![](./rnnlm/2.png)
 
 第一时刻, 作为第一个单词ID为0的you被输入.此时, 查看Softmax层输出的概率分布, 可知say的概率最高, 这表明正确预测出了you后面出现的单词say.
 
 同样我们可以把单个的RNN层, Embedding, Affine层都处理成Time RNN, Time Embedding, Time Affine. 就可以写成下图的形式:
-![](./deeplearn_rnnlm/3.png)
+![](./rnnlm/3.png)
 Time Affine层是将T个Affine层分别处理各个时刻的数据.
-![](./deeplearn_rnnlm/4.png)
+![](./rnnlm/4.png)
 同样的道理, Time Embedding层也是将T个Embedding层分别处理各个时刻的数据.
 在 Softmax 中一并实现损失误差 Cross Entropy Error 层。
-![](./deeplearn_rnnlm/5.png)
+![](./rnnlm/5.png)
 上图中$x_0,x_1$等数据表示从下方出来的得分,$t_0,t_1$表示正确解的标签. T个时刻各自计算出损失, 然后将它们加在一起取平均作为最终的损失. 公式如下:
 $L=\frac{1}{T}(L_0+L_1+...+L_{T-1})$
 
 
 ## RNNLM实现
-![](./deeplearn_rnnlm/6.png)
+![](./rnnlm/6.png)
 
 python实现:
 ```python

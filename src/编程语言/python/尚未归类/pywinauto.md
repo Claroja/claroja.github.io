@@ -292,13 +292,13 @@ child_window(title="无标题 - 记事本", control_type="Window")
 ...
 """
 ```
-![](./python_pywinauto/1.png)
+![](./pywinauto/1.png)
 
 #### inspect
 `C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64`
 
 
-![](./python_pywinauto/2.png)
+![](./pywinauto/2.png)
 
 
 

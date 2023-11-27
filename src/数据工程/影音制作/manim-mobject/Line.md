@@ -12,7 +12,7 @@ class MovingDots(Scene):
         self.add(l1)
 ```
 直接使用`updater`的`dt`无法控制动画的长短
-![](./manim_mobject_Line/2.gif)
+![](./Line/2.gif)
 
 
 ```python
@@ -31,7 +31,7 @@ class MovingDots(Scene):
 
 
 
-[](./manim_mobject_Line/3.gif)
+[](./Line/3.gif)
 
 
 
@@ -57,4 +57,4 @@ class MovingDots(Scene):
 ```
 
 
-![](./manim_mobject_Line/1.gif)
+![](./Line/1.gif)
