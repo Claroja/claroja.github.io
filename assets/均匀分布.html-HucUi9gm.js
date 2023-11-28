@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o,c as _,a as e}from"./app-yeyEmHfz.js";const s="/assets/1-KU0zIkgZ.png",c={},n=e("figure",null,[e("img",{src:s,alt:"",tabindex:"0",loading:"lazy"}),e("figcaption")],-1),a=[n];function r(i,l){return o(),_("div",null,a)}const d=t(c,[["render",r],["__file","均匀分布.html.vue"]]);export{d as default};
