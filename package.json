@@ -4,9 +4,9 @@
   "description": "A project of vuepress-theme-hope",
   "type": "module",
   "scripts": {
-    "docs:build": "vuepress build src",
-    "docs:clean-dev": "vuepress dev src --clean-cache",
-    "docs:dev": "vuepress dev src",
+    "docs:build": "python ./src/.vuepress/code/genIndex.py && vuepress build src",
+    "docs:clean-dev": "python ./src/.vuepress/code/genIndex.py && vuepress dev src --clean-cache",
+    "docs:dev": "python ./src/.vuepress/code/genIndex.py && vuepress dev src",
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {

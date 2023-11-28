@@ -9,7 +9,7 @@ export default hopeTheme({
 
   pageInfo: false, // 关闭文章信息
   breadcrumb: false, // 关闭面包屑导航
-
+  sidebarSorter:["filename"], //按字母或拼音先后顺序
   
   hostname: "https://claroja.github.io",
 
@@ -30,7 +30,7 @@ export default hopeTheme({
   navbar,
 
   // sidebar
-  sidebar: "structure",
+  sidebar,
 
   footer: "个人原创文章, 未经许可不得转载. 如果内容侵权请联系, 63183535@qq.com",
 
