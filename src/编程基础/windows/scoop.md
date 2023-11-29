@@ -18,15 +18,11 @@ cache|软件下载后安装包暂存目录。
 persit|用于储存一些用户数据，不会随软件更新而替换。
 shims|和系统的`PATH`建立链接, 不需要我们自己再添加环境变量
 
-
-
-
 ## 配置代理或源
 1. 设置Scoop代理。在命令行中输入（PowerShell或者CMD中都行）`scoop config proxy 127.0.0.1:7890`让scoop网络连接走代理，后面的ip地址和端口根据自己的代理设置。
 2. 使用Gitee镜像源。可能备份更新得不是那么勤快，以及实际下载软件包同样会有网络问题，所以不推荐。在命令行中输入`scoop config SCOOP_REPO https://gitee.com/squallliu/scoop`修改仓库源的地址。
 
 或者更直接点，找到Scoop配置文件，路径C:\Users\username\.config\scoop\config.json，然后直接修改里面的配置
-
 
 ## 常用命令
 Scoop的操作命令基本结构是`scoop + 动词 + 对象`
@@ -35,13 +31,14 @@ Scoop的操作命令基本结构是`scoop + 动词 + 对象`
 命令|描述
 --|--
 help|查询帮助
-search|搜索仓库中是否有相应软件。
-install|安装软件。
-uninstall|卸载软件。
+install|安装软件
+uninstall|卸载软件
+export|导出文件列表
+import|导入文件俩表并安装
 update|更新软件
 hold|锁定软件阻止其更新。
 info|查询软件简要信息。
-home|打开浏览器进入软件官网。
+
 
 ## 仓库
 默认安装Scoop后仅有main仓库，其中主要是面向程序员的工具，对于一般用户而言并不是那么实用。好在Scoop本身考虑到了这一点，添加了面向一般用户的软件仓库extras，其中收录大量好用的小软件，足够日常的使用。

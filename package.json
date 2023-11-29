@@ -7,6 +7,7 @@
     "docs:build": "vuepress build src",
     "docs:clean-dev": "python ./src/.vuepress/code/genIndex.py && vuepress dev src --clean-cache",
     "docs:dev": "python ./src/.vuepress/code/genIndex.py && vuepress dev src",
+    "docs:deploy": "git add ./ && git commit -m 'update' && git push",
     "docs:update-package": "npx vp-update"
   },
   "devDependencies": {

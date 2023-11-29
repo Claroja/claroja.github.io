@@ -88,7 +88,7 @@ export default hopeTheme({
 
   plugins: {
     copyright: {
-      triggerWords:10,
+      triggerLength:10,
       global: true,
       disableCopy: false,
       disableSelection: false,
