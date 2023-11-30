@@ -66,6 +66,6 @@ content = [
 
 with open('./src/.vuepress/sidebar.ts','w',encoding='utf8') as f:
     f.write('\n'.join(content))
-
+# 火影忍者终极风暴羁绊/NARUTO X BORUTO
 
 print("索引完成")
