@@ -81,3 +81,36 @@
   - 无需文章是指阅读没有先后次序, 无论是`sidebar: "structure"`还是通过`genIndex.py`自动生成`sidebar.ts`文件, 都是默认按照拼音字母排序
 
 
+
+
+# 自定组件
+1. 参考官网步骤[register-components](https://v2.vuepress.vuejs.org/zh/reference/plugin/register-components.html#register-components)
+
+
+1. 配置插件目录
+```ts
+// .vuepress/config.ts
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { getDirname, path } from '@vuepress/utils'
+
+const __dirname = getDirname(import.meta.url)
+export default {
+  plugins: [
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components'),
+    }),
+  ],
+}
+
+```
+3. 创建`.vuepress/components`, 里面的`*.vue`文件既可以被直接调用
+
+
+
+
+
+参考[Vuepress2.x Markdown 中使用 Vue 组件](https://blog.csdn.net/sinat_31213021/article/details/119385175)
+
+
+
+

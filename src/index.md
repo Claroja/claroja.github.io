@@ -27,6 +27,7 @@
 	- log ✋[JavaLog](./编程语言/java/log/JavaLog.md)✋[JavaLog4j2](./编程语言/java/log/JavaLog4j2.md)✋[JavaLogger](./编程语言/java/log/JavaLogger.md)✋[JavaSlf4j](./编程语言/java/log/JavaSlf4j.md)✋[JavaSpringBootLog](./编程语言/java/log/JavaSpringBootLog.md)✋[Reflection](./编程语言/java/log/Reflection.md)✋[javaLog4j](./编程语言/java/log/javaLog4j.md)
 	- 其他 ✋[Annotation](./编程语言/java/其他/Annotation.md)✋[Collections](./编程语言/java/其他/Collections.md)✋[Generics](./编程语言/java/其他/Generics.md)✋[JWT](./编程语言/java/其他/JWT.md)✋[Jackson](./编程语言/java/其他/Jackson.md)✋[JavaLogback](./编程语言/java/其他/JavaLogback.md)
 	- 线程安全 ✋[JavaImmutableObject](./编程语言/java/线程安全/JavaImmutableObject.md)✋[JavaUtilConcurrent](./编程语言/java/线程安全/JavaUtilConcurrent.md)
+- nodejs ✋[eslint](./编程语言/nodejs/eslint.md)✋[npm](./编程语言/nodejs/npm.md)✋[prettier](./编程语言/nodejs/prettier.md)
 - python
 	- 安装与配置 ✋[Python安装](./编程语言/python/安装与配置/Python安装.md)✋[pip](./编程语言/python/安装与配置/pip.md)✋[python虚拟环境](./编程语言/python/安装与配置/python虚拟环境.md)
 	- 标准方法 ✋[.md](./编程语言/python/标准方法/.md)✋[contextlib](./编程语言/python/标准方法/contextlib.md)✋[with](./编程语言/python/标准方法/with.md)
@@ -64,20 +65,20 @@
 ## 法学
 - 基础 ✋[law](./法学/基础/law.md)✋[通则](./法学/基础/通则.md)
 - 民法
-	- 第二编_物权
-		- 第二分编_所有权 ✋[4一般规定](./法学/民法/第二编_物权/第二分编_所有权/4一般规定.md)✋[5国家所有权和集体所有权、私人所有权](./法学/民法/第二编_物权/第二分编_所有权/5国家所有权和集体所有权、私人所有权.md)✋[6业主的建筑物区分所有权](./法学/民法/第二编_物权/第二分编_所有权/6业主的建筑物区分所有权.md)✋[7相邻关系](./法学/民法/第二编_物权/第二分编_所有权/7相邻关系.md)✋[8共有](./法学/民法/第二编_物权/第二分编_所有权/8共有.md)✋[9所有权取得的特别规定](./法学/民法/第二编_物权/第二分编_所有权/9所有权取得的特别规定.md)
-		- 第三分编_用益物权 ✋[10一般规定](./法学/民法/第二编_物权/第三分编_用益物权/10一般规定.md)✋[11土地承包经营权](./法学/民法/第二编_物权/第三分编_用益物权/11土地承包经营权.md)✋[12建设用地使用权](./法学/民法/第二编_物权/第三分编_用益物权/12建设用地使用权.md)✋[13宅基地使用权](./法学/民法/第二编_物权/第三分编_用益物权/13宅基地使用权.md)✋[14居住权](./法学/民法/第二编_物权/第三分编_用益物权/14居住权.md)✋[15地役权](./法学/民法/第二编_物权/第三分编_用益物权/15地役权.md)
-		- 第四分编_担保物权 ✋[16一般规定](./法学/民法/第二编_物权/第四分编_担保物权/16一般规定.md)✋[17抵押权](./法学/民法/第二编_物权/第四分编_担保物权/17抵押权.md)✋[18质权](./法学/民法/第二编_物权/第四分编_担保物权/18质权.md)✋[19留置权](./法学/民法/第二编_物权/第四分编_担保物权/19留置权.md)✋[20占有](./法学/民法/第二编_物权/第四分编_担保物权/20占有.md)
-		- 第一分编_通则 ✋[1一般规定](./法学/民法/第二编_物权/第一分编_通则/1一般规定.md)✋[2物权的设立、变更、转让和消灭](./法学/民法/第二编_物权/第一分编_通则/2物权的设立、变更、转让和消灭.md)✋[3物权的保护](./法学/民法/第二编_物权/第一分编_通则/3物权的保护.md)
-	- 第六编_继承 ✋[1一般规定](./法学/民法/第六编_继承/1一般规定.md)✋[2法定继承](./法学/民法/第六编_继承/2法定继承.md)✋[3遗嘱继承和遗赠](./法学/民法/第六编_继承/3遗嘱继承和遗赠.md)✋[4遗产的处理](./法学/民法/第六编_继承/4遗产的处理.md)
-	- 第七编_侵权责任 ✋[10物和物件损害责任](./法学/民法/第七编_侵权责任/10物和物件损害责任.md)✋[1一般规定](./法学/民法/第七编_侵权责任/1一般规定.md)✋[2损害赔偿](./法学/民法/第七编_侵权责任/2损害赔偿.md)✋[3责任主体的特殊规定](./法学/民法/第七编_侵权责任/3责任主体的特殊规定.md)✋[4产品责任](./法学/民法/第七编_侵权责任/4产品责任.md)✋[5机动车交通事故责任](./法学/民法/第七编_侵权责任/5机动车交通事故责任.md)✋[6医疗损害责任](./法学/民法/第七编_侵权责任/6医疗损害责任.md)✋[7污染和生态破坏责任](./法学/民法/第七编_侵权责任/7污染和生态破坏责任.md)✋[8高度危险责任](./法学/民法/第七编_侵权责任/8高度危险责任.md)✋[9饲养动物损害责任](./法学/民法/第七编_侵权责任/9饲养动物损害责任.md)
-	- 第三编_合同
-		- 第二分编_典型合同 ✋[10供用电、水、气、热力合同](./法学/民法/第三编_合同/第二分编_典型合同/10供用电、水、气、热力合同.md)✋[11赠与合同](./法学/民法/第三编_合同/第二分编_典型合同/11赠与合同.md)✋[12借款合同](./法学/民法/第三编_合同/第二分编_典型合同/12借款合同.md)✋[13保证合同](./法学/民法/第三编_合同/第二分编_典型合同/13保证合同.md)✋[14租赁合同](./法学/民法/第三编_合同/第二分编_典型合同/14租赁合同.md)✋[15融资租赁合同](./法学/民法/第三编_合同/第二分编_典型合同/15融资租赁合同.md)✋[16保理合同](./法学/民法/第三编_合同/第二分编_典型合同/16保理合同.md)✋[17承揽合同](./法学/民法/第三编_合同/第二分编_典型合同/17承揽合同.md)✋[18建设工程合同](./法学/民法/第三编_合同/第二分编_典型合同/18建设工程合同.md)✋[19运输合同](./法学/民法/第三编_合同/第二分编_典型合同/19运输合同.md)✋[20技术合同](./法学/民法/第三编_合同/第二分编_典型合同/20技术合同.md)✋[21保管合同](./法学/民法/第三编_合同/第二分编_典型合同/21保管合同.md)✋[22仓储合同](./法学/民法/第三编_合同/第二分编_典型合同/22仓储合同.md)✋[23委托合同](./法学/民法/第三编_合同/第二分编_典型合同/23委托合同.md)✋[24物业服务合同](./法学/民法/第三编_合同/第二分编_典型合同/24物业服务合同.md)✋[25纪合同](./法学/民法/第三编_合同/第二分编_典型合同/25纪合同.md)✋[26中介合同](./法学/民法/第三编_合同/第二分编_典型合同/26中介合同.md)✋[27合伙合同](./法学/民法/第三编_合同/第二分编_典型合同/27合伙合同.md)✋[9买卖合同](./法学/民法/第三编_合同/第二分编_典型合同/9买卖合同.md)
-		- 第三分编_准合同 ✋[28无因管理](./法学/民法/第三编_合同/第三分编_准合同/28无因管理.md)✋[29不当得利](./法学/民法/第三编_合同/第三分编_准合同/29不当得利.md)
-		- 第一分编_通则 ✋[1一般规定](./法学/民法/第三编_合同/第一分编_通则/1一般规定.md)✋[2合同的订立](./法学/民法/第三编_合同/第一分编_通则/2合同的订立.md)✋[3合同的效力](./法学/民法/第三编_合同/第一分编_通则/3合同的效力.md)✋[4合同的履行](./法学/民法/第三编_合同/第一分编_通则/4合同的履行.md)✋[5合同的保全](./法学/民法/第三编_合同/第一分编_通则/5合同的保全.md)✋[6合同的变更和转让](./法学/民法/第三编_合同/第一分编_通则/6合同的变更和转让.md)✋[7合同的权利义务终止](./法学/民法/第三编_合同/第一分编_通则/7合同的权利义务终止.md)✋[8违约责任](./法学/民法/第三编_合同/第一分编_通则/8违约责任.md)
-	- 第四编_人格权 ✋[1一般规定](./法学/民法/第四编_人格权/1一般规定.md)✋[2生命权、身体权和健康权](./法学/民法/第四编_人格权/2生命权、身体权和健康权.md)✋[3姓名权和名称权](./法学/民法/第四编_人格权/3姓名权和名称权.md)✋[4肖像权](./法学/民法/第四编_人格权/4肖像权.md)✋[5名誉权和荣誉权](./法学/民法/第四编_人格权/5名誉权和荣誉权.md)✋[6隐私权和个人信息保护](./法学/民法/第四编_人格权/6隐私权和个人信息保护.md)
-	- 第五编_婚姻家庭 ✋[1一般规定](./法学/民法/第五编_婚姻家庭/1一般规定.md)✋[2](./法学/民法/第五编_婚姻家庭/2.md)✋[3家庭关系](./法学/民法/第五编_婚姻家庭/3家庭关系.md)✋[4离婚](./法学/民法/第五编_婚姻家庭/4离婚.md)✋[5收养](./法学/民法/第五编_婚姻家庭/5收养.md)
-	- 第一编_总则 ✋[10期间计算](./法学/民法/第一编_总则/10期间计算.md)✋[1基本规定](./法学/民法/第一编_总则/1基本规定.md)✋[2自然人](./法学/民法/第一编_总则/2自然人.md)✋[3法人](./法学/民法/第一编_总则/3法人.md)✋[4非法人组织](./法学/民法/第一编_总则/4非法人组织.md)✋[5民事权利](./法学/民法/第一编_总则/5民事权利.md)✋[6民事法律行为](./法学/民法/第一编_总则/6民事法律行为.md)✋[7代理](./法学/民法/第一编_总则/7代理.md)✋[8民事责任](./法学/民法/第一编_总则/8民事责任.md)✋[9诉讼时效](./法学/民法/第一编_总则/9诉讼时效.md)
+	- 第1编_总则 ✋[10期间计算](./法学/民法/第1编_总则/10期间计算.md)✋[1基本规定](./法学/民法/第1编_总则/1基本规定.md)✋[2自然人](./法学/民法/第1编_总则/2自然人.md)✋[3法人](./法学/民法/第1编_总则/3法人.md)✋[4非法人组织](./法学/民法/第1编_总则/4非法人组织.md)✋[5民事权利](./法学/民法/第1编_总则/5民事权利.md)✋[6民事法律行为](./法学/民法/第1编_总则/6民事法律行为.md)✋[7代理](./法学/民法/第1编_总则/7代理.md)✋[8民事责任](./法学/民法/第1编_总则/8民事责任.md)✋[9诉讼时效](./法学/民法/第1编_总则/9诉讼时效.md)
+	- 第2编_物权
+		- 第1分编_通则 ✋[1一般规定](./法学/民法/第2编_物权/第1分编_通则/1一般规定.md)✋[2物权的设立、变更、转让和消灭](./法学/民法/第2编_物权/第1分编_通则/2物权的设立、变更、转让和消灭.md)✋[3物权的保护](./法学/民法/第2编_物权/第1分编_通则/3物权的保护.md)
+		- 第3分编_所有权 ✋[4一般规定](./法学/民法/第2编_物权/第3分编_所有权/4一般规定.md)✋[5国家所有权和集体所有权、私人所有权](./法学/民法/第2编_物权/第3分编_所有权/5国家所有权和集体所有权、私人所有权.md)✋[6业主的建筑物区分所有权](./法学/民法/第2编_物权/第3分编_所有权/6业主的建筑物区分所有权.md)✋[7相邻关系](./法学/民法/第2编_物权/第3分编_所有权/7相邻关系.md)✋[8共有](./法学/民法/第2编_物权/第3分编_所有权/8共有.md)✋[9所有权取得的特别规定](./法学/民法/第2编_物权/第3分编_所有权/9所有权取得的特别规定.md)
+		- 第3分编_用益物权 ✋[10一般规定](./法学/民法/第2编_物权/第3分编_用益物权/10一般规定.md)✋[11土地承包经营权](./法学/民法/第2编_物权/第3分编_用益物权/11土地承包经营权.md)✋[12建设用地使用权](./法学/民法/第2编_物权/第3分编_用益物权/12建设用地使用权.md)✋[13宅基地使用权](./法学/民法/第2编_物权/第3分编_用益物权/13宅基地使用权.md)✋[14居住权](./法学/民法/第2编_物权/第3分编_用益物权/14居住权.md)✋[15地役权](./法学/民法/第2编_物权/第3分编_用益物权/15地役权.md)
+		- 第4分编_担保物权 ✋[16一般规定](./法学/民法/第2编_物权/第4分编_担保物权/16一般规定.md)✋[17抵押权](./法学/民法/第2编_物权/第4分编_担保物权/17抵押权.md)✋[18质权](./法学/民法/第2编_物权/第4分编_担保物权/18质权.md)✋[19留置权](./法学/民法/第2编_物权/第4分编_担保物权/19留置权.md)✋[20占有](./法学/民法/第2编_物权/第4分编_担保物权/20占有.md)
+	- 第3编_合同
+		- 第1分编_通则 ✋[1一般规定](./法学/民法/第3编_合同/第1分编_通则/1一般规定.md)✋[2合同的订立](./法学/民法/第3编_合同/第1分编_通则/2合同的订立.md)✋[3合同的效力](./法学/民法/第3编_合同/第1分编_通则/3合同的效力.md)✋[4合同的履行](./法学/民法/第3编_合同/第1分编_通则/4合同的履行.md)✋[5合同的保全](./法学/民法/第3编_合同/第1分编_通则/5合同的保全.md)✋[6合同的变更和转让](./法学/民法/第3编_合同/第1分编_通则/6合同的变更和转让.md)✋[7合同的权利义务终止](./法学/民法/第3编_合同/第1分编_通则/7合同的权利义务终止.md)✋[8违约责任](./法学/民法/第3编_合同/第1分编_通则/8违约责任.md)
+		- 第2分编_典型合同 ✋[10供用电、水、气、热力合同](./法学/民法/第3编_合同/第2分编_典型合同/10供用电、水、气、热力合同.md)✋[11赠与合同](./法学/民法/第3编_合同/第2分编_典型合同/11赠与合同.md)✋[12借款合同](./法学/民法/第3编_合同/第2分编_典型合同/12借款合同.md)✋[13保证合同](./法学/民法/第3编_合同/第2分编_典型合同/13保证合同.md)✋[14租赁合同](./法学/民法/第3编_合同/第2分编_典型合同/14租赁合同.md)✋[15融资租赁合同](./法学/民法/第3编_合同/第2分编_典型合同/15融资租赁合同.md)✋[16保理合同](./法学/民法/第3编_合同/第2分编_典型合同/16保理合同.md)✋[17承揽合同](./法学/民法/第3编_合同/第2分编_典型合同/17承揽合同.md)✋[18建设工程合同](./法学/民法/第3编_合同/第2分编_典型合同/18建设工程合同.md)✋[19运输合同](./法学/民法/第3编_合同/第2分编_典型合同/19运输合同.md)✋[20技术合同](./法学/民法/第3编_合同/第2分编_典型合同/20技术合同.md)✋[21保管合同](./法学/民法/第3编_合同/第2分编_典型合同/21保管合同.md)✋[22仓储合同](./法学/民法/第3编_合同/第2分编_典型合同/22仓储合同.md)✋[23委托合同](./法学/民法/第3编_合同/第2分编_典型合同/23委托合同.md)✋[24物业服务合同](./法学/民法/第3编_合同/第2分编_典型合同/24物业服务合同.md)✋[25纪合同](./法学/民法/第3编_合同/第2分编_典型合同/25纪合同.md)✋[26中介合同](./法学/民法/第3编_合同/第2分编_典型合同/26中介合同.md)✋[27合伙合同](./法学/民法/第3编_合同/第2分编_典型合同/27合伙合同.md)✋[9买卖合同](./法学/民法/第3编_合同/第2分编_典型合同/9买卖合同.md)
+		- 第3分编_准合同 ✋[28无因管理](./法学/民法/第3编_合同/第3分编_准合同/28无因管理.md)✋[29不当得利](./法学/民法/第3编_合同/第3分编_准合同/29不当得利.md)
+	- 第4编_人格权 ✋[1一般规定](./法学/民法/第4编_人格权/1一般规定.md)✋[2生命权、身体权和健康权](./法学/民法/第4编_人格权/2生命权、身体权和健康权.md)✋[3姓名权和名称权](./法学/民法/第4编_人格权/3姓名权和名称权.md)✋[4肖像权](./法学/民法/第4编_人格权/4肖像权.md)✋[5名誉权和荣誉权](./法学/民法/第4编_人格权/5名誉权和荣誉权.md)✋[6隐私权和个人信息保护](./法学/民法/第4编_人格权/6隐私权和个人信息保护.md)
+	- 第5编_婚姻家庭 ✋[1一般规定](./法学/民法/第5编_婚姻家庭/1一般规定.md)✋[2结婚](./法学/民法/第5编_婚姻家庭/2结婚.md)✋[3家庭关系](./法学/民法/第5编_婚姻家庭/3家庭关系.md)✋[4离婚](./法学/民法/第5编_婚姻家庭/4离婚.md)✋[5收养](./法学/民法/第5编_婚姻家庭/5收养.md)
+	- 第6编_继承 ✋[1一般规定](./法学/民法/第6编_继承/1一般规定.md)✋[2法定继承](./法学/民法/第6编_继承/2法定继承.md)✋[3遗嘱继承和遗赠](./法学/民法/第6编_继承/3遗嘱继承和遗赠.md)✋[4遗产的处理](./法学/民法/第6编_继承/4遗产的处理.md)
+	- 第7编_侵权责任 ✋[10物和物件损害责任](./法学/民法/第7编_侵权责任/10物和物件损害责任.md)✋[1一般规定](./法学/民法/第7编_侵权责任/1一般规定.md)✋[2损害赔偿](./法学/民法/第7编_侵权责任/2损害赔偿.md)✋[3责任主体的特殊规定](./法学/民法/第7编_侵权责任/3责任主体的特殊规定.md)✋[4产品责任](./法学/民法/第7编_侵权责任/4产品责任.md)✋[5机动车交通事故责任](./法学/民法/第7编_侵权责任/5机动车交通事故责任.md)✋[6医疗损害责任](./法学/民法/第7编_侵权责任/6医疗损害责任.md)✋[7污染和生态破坏责任](./法学/民法/第7编_侵权责任/7污染和生态破坏责任.md)✋[8高度危险责任](./法学/民法/第7编_侵权责任/8高度危险责任.md)✋[9饲养动物损害责任](./法学/民法/第7编_侵权责任/9饲养动物损害责任.md)
 	- 法条原文 ✋[公司法](./法学/民法/法条原文/公司法.md)✋[民法典](./法学/民法/法条原文/民法典.md)✋[有关担保制度的解释](./法学/民法/法条原文/有关担保制度的解释.md)
 - 民诉
 	- 法条原文 ✋[民事诉讼法](./法学/民诉/法条原文/民事诉讼法.md)✋[民事诉讼法解释](./法学/民诉/法条原文/民事诉讼法解释.md)✋[最高人民法院关于民事诉讼证据的若干规定](./法学/民诉/法条原文/最高人民法院关于民事诉讼证据的若干规定.md)
@@ -207,18 +208,14 @@
 	- 未分类 ✋[js_debounceAndthrottle](./前端/javaScript/未分类/js_debounceAndthrottle.md)
 	- 文件读写 ✋[blob](./前端/javaScript/文件读写/blob.md)✋[encode](./前端/javaScript/文件读写/encode.md)✋[json](./前端/javaScript/文件读写/json.md)
 - vue
-	- 插件 ✋[pinia](./前端/vue/插件/pinia.md)✋[plugin](./前端/vue/插件/plugin.md)✋[router](./前端/vue/插件/router.md)✋[vuex](./前端/vue/插件/vuex.md)
-	- 基础 ✋[安装配置](./前端/vue/基础/安装配置.md)✋[createApp](./前端/vue/基础/createApp.md)✋[intro](./前端/vue/基础/intro.md)✋[script](./前端/vue/基础/script.md)✋[setup](./前端/vue/基础/setup.md)
-	- 生命周期 ✋[lifecycle](./前端/vue/生命周期/lifecycle.md)
-	- 数据交互 ✋[v-bind](./前端/vue/数据交互/v-bind.md)✋[v-model](./前端/vue/数据交互/v-model.md)✋[v-on](./前端/vue/数据交互/v-on.md)
-	- vite ✋[eslint](./前端/vue/vite/eslint.md)✋[npm](./前端/vue/vite/npm.md)✋[prettier](./前端/vue/vite/prettier.md)✋[redux](./前端/vue/vite/redux.md)✋[router](./前端/vue/vite/router.md)✋[vite](./前端/vue/vite/vite.md)✋[vuex](./前端/vue/vite/vuex.md)
-	- vue2 ✋[$set](./前端/vue/vue2/$set.md)✋[methods](./前端/vue/vue2/methods.md)✋[mixin](./前端/vue/vue2/mixin.md)✋[vue-filter](./前端/vue/vue2/vue-filter.md)
-	- vue_cli ✋[cli](./前端/vue/vue_cli/cli.md)✋[component](./前端/vue/vue_cli/component.md)✋[jsconfigjson](./前端/vue/vue_cli/jsconfigjson.md)✋[project](./前端/vue/vue_cli/project.md)✋[vueconfigjs](./前端/vue/vue_cli/vueconfigjs.md)
-	- vue对象 ✋[$ref](./前端/vue/vue对象/$ref.md)✋[computed](./前端/vue/vue对象/computed.md)✋[customRef](./前端/vue/vue对象/customRef.md)✋[emits](./前端/vue/vue对象/emits.md)✋[eventBus](./前端/vue/vue对象/eventBus.md)✋[provide&inject](./前端/vue/vue对象/provide&inject.md)✋[raw](./前端/vue/vue对象/raw.md)✋[reactive](./前端/vue/vue对象/reactive.md)✋[readonly](./前端/vue/vue对象/readonly.md)✋[ref](./前端/vue/vue对象/ref.md)✋[toRefs](./前端/vue/vue对象/toRefs.md)✋[watch](./前端/vue/vue对象/watch.md)✋[watchEffect](./前端/vue/vue对象/watchEffect.md)
-	- 未分类 ✋[cloak](./前端/vue/未分类/cloak.md)✋[css](./前端/vue/未分类/css.md)✋[event](./前端/vue/未分类/event.md)✋[其他](./前端/vue/未分类/其他.md)
-	- 应用
-	- 指令渲染 ✋[show](./前端/vue/指令渲染/show.md)✋[suspense](./前端/vue/指令渲染/suspense.md)✋[teleport](./前端/vue/指令渲染/teleport.md)✋[v-for](./前端/vue/指令渲染/v-for.md)✋[v-html](./前端/vue/指令渲染/v-html.md)✋[v-once](./前端/vue/指令渲染/v-once.md)✋[v-pre](./前端/vue/指令渲染/v-pre.md)✋[v-text](./前端/vue/指令渲染/v-text.md)✋[vue-directive](./前端/vue/指令渲染/vue-directive.md)
-	- 组件 ✋[hook](./前端/vue/组件/hook.md)✋[props](./前端/vue/组件/props.md)✋[slot](./前端/vue/组件/slot.md)✋[vue-component](./前端/vue/组件/vue-component.md)
+	- 1基础 ✋[1安装配置](./前端/vue/1基础/1安装配置.md)✋[2createApp](./前端/vue/1基础/2createApp.md)✋[3setup](./前端/vue/1基础/3setup.md)✋[4script&setup](./前端/vue/1基础/4script&setup.md)✋[css](./前端/vue/1基础/css.md)✋[event](./前端/vue/1基础/event.md)✋[总览](./前端/vue/1基础/总览.md)
+	- 2指令 ✋[v-cloak](./前端/vue/2指令/v-cloak.md)✋[v-for](./前端/vue/2指令/v-for.md)✋[v-html](./前端/vue/2指令/v-html.md)✋[v-if&v-show](./前端/vue/2指令/v-if&v-show.md)✋[v-once](./前端/vue/2指令/v-once.md)✋[v-pre](./前端/vue/2指令/v-pre.md)✋[v-text](./前端/vue/2指令/v-text.md)✋[异步组件suspense](./前端/vue/2指令/异步组件suspense.md)✋[指定位置teleport](./前端/vue/2指令/指定位置teleport.md)✋[自定义指令directive](./前端/vue/2指令/自定义指令directive.md)
+	- 3数据事件交互 ✋[单向绑定v-bind](./前端/vue/3数据事件交互/单向绑定v-bind.md)✋[事件绑定v-on](./前端/vue/3数据事件交互/事件绑定v-on.md)✋[双向绑定v-model](./前端/vue/3数据事件交互/双向绑定v-model.md)
+	- 4对象 ✋[获取当前标签ref](./前端/vue/4对象/获取当前标签ref.md)✋[利用缓存计算computed](./前端/vue/4对象/利用缓存计算computed.md)✋[readonly](./前端/vue/4对象/readonly.md)✋[使用不同组件方法eventBus](./前端/vue/4对象/使用不同组件方法eventBus.md)✋[使用父组件方法emits](./前端/vue/4对象/使用父组件方法emits.md)✋[toRaw与markRaw](./前端/vue/4对象/toRaw与markRaw.md)✋[toRefs](./前端/vue/4对象/toRefs.md)✋[watch](./前端/vue/4对象/watch.md)✋[watchEffect](./前端/vue/4对象/watchEffect.md)✋[响应式reactive](./前端/vue/4对象/响应式reactive.md)✋[响应式ref](./前端/vue/4对象/响应式ref.md)✋[自定义customRef](./前端/vue/4对象/自定义customRef.md)✋[祖孙组件通信provide&inject](./前端/vue/4对象/祖孙组件通信provide&inject.md)
+	- 5组件 ✋[1组间基础component](./前端/vue/5组件/1组间基础component.md)✋[2属性传值props](./前端/vue/5组件/2属性传值props.md)✋[3标签传值slot](./前端/vue/5组件/3标签传值slot.md)
+	- 6生命周期 ✋[hook](./前端/vue/6生命周期/hook.md)✋[lifecycle](./前端/vue/6生命周期/lifecycle.md)
+	- 7插件 ✋[pinia](./前端/vue/7插件/pinia.md)✋[plugin](./前端/vue/7插件/plugin.md)✋[router](./前端/vue/7插件/router.md)✋[vite](./前端/vue/7插件/vite.md)✋[vuex](./前端/vue/7插件/vuex.md)
+- 未分类 ✋[其他](./前端/未分类/其他.md)
 ## 嵌入式开发
 ✋[c](./嵌入式开发/c.md)✋[mcu](./嵌入式开发/mcu.md)
 ## 数据工程
@@ -247,13 +244,16 @@
 	- 基础 ✋[DAG](./数据工程/spark/基础/DAG.md)✋[SparkContxt](./数据工程/spark/基础/SparkContxt.md)✋[accumulator](./数据工程/spark/基础/accumulator.md)✋[createRDD](./数据工程/spark/基础/createRDD.md)✋[intro](./数据工程/spark/基础/intro.md)✋[rdd](./数据工程/spark/基础/rdd.md)✋[wordCount](./数据工程/spark/基础/wordCount.md)
 - 中间件 ✋[Nacos](./数据工程/中间件/Nacos.md)
 ## 数学
-- cda ✋[第二章数据处理](./数学/cda/第二章数据处理.md)✋[第六章用户标签体系与用户画像](./数学/cda/第六章用户标签体系与用户画像.md)✋[第七章使用统计学方法进行变量有效性测试](./数学/cda/第七章使用统计学方法进行变量有效性测试.md)✋[第三章指标体系与数据可视化](./数学/cda/第三章指标体系与数据可视化.md)✋[第四章数据采集与数据预处理](./数学/cda/第四章数据采集与数据预处理.md)✋[第五章宏观业务分析方法](./数学/cda/第五章宏观业务分析方法.md)✋[第一章EDIT模型概述](./数学/cda/第一章EDIT模型概述.md)✋[level1](./数学/cda/level1.md)✋[level2](./数学/cda/level2.md)
+- cda
+	- level1 ✋[level1](./数学/cda/level1/level1.md)
+	- level2 ✋[第1章EDIT模型概述](./数学/cda/level2/第1章EDIT模型概述.md)✋[第2章数据处理](./数学/cda/level2/第2章数据处理.md)✋[第3章指标体系与数据可视化](./数学/cda/level2/第3章指标体系与数据可视化.md)✋[第4章数据采集与数据预处理](./数学/cda/level2/第4章数据采集与数据预处理.md)✋[第5章宏观业务分析方法](./数学/cda/level2/第5章宏观业务分析方法.md)✋[第6章用户标签体系与用户画像](./数学/cda/level2/第6章用户标签体系与用户画像.md)✋[第7章使用统计学方法进行变量有效性测试](./数学/cda/level2/第7章使用统计学方法进行变量有效性测试.md)✋[level2](./数学/cda/level2/level2.md)
 - 分析工具
-	- matplotlib ✋[bar2](./数学/分析工具/matplotlib/bar2.md)✋[matplotlib](./数学/分析工具/matplotlib/matplotlib.md)✋[vhline](./数学/分析工具/matplotlib/vhline.md)
-	- matplotlib-artist-基础 ✋[artist](./数学/分析工具/matplotlib-artist-基础/artist.md)✋[axes](./数学/分析工具/matplotlib-artist-基础/axes.md)✋[axis](./数学/分析工具/matplotlib-artist-基础/axis.md)✋[figure](./数学/分析工具/matplotlib-artist-基础/figure.md)✋[subplot](./数学/分析工具/matplotlib-artist-基础/subplot.md)✋[tick](./数学/分析工具/matplotlib-artist-基础/tick.md)
-	- matplotlib-artist-特殊内容 ✋[animation](./数学/分析工具/matplotlib-artist-特殊内容/animation.md)✋[color](./数学/分析工具/matplotlib-artist-特殊内容/color.md)✋[patch](./数学/分析工具/matplotlib-artist-特殊内容/patch.md)✋[path](./数学/分析工具/matplotlib-artist-特殊内容/path.md)
-	- matplotlib-artist-图像 ✋[hist](./数学/分析工具/matplotlib-artist-图像/hist.md)✋[plot](./数学/分析工具/matplotlib-artist-图像/plot.md)✋[scatter](./数学/分析工具/matplotlib-artist-图像/scatter.md)✋[step](./数学/分析工具/matplotlib-artist-图像/step.md)
-	- matplotlib-未分类 ✋[annotate](./数学/分析工具/matplotlib-未分类/annotate.md)✋[bar](./数学/分析工具/matplotlib-未分类/bar.md)✋[boxplot](./数学/分析工具/matplotlib-未分类/boxplot.md)✋[jointplot](./数学/分析工具/matplotlib-未分类/jointplot.md)✋[text](./数学/分析工具/matplotlib-未分类/text.md)✋[twin](./数学/分析工具/matplotlib-未分类/twin.md)
+	- matplotlib
+		- artist基础 ✋[artist](./数学/分析工具/matplotlib/artist基础/artist.md)✋[axes](./数学/分析工具/matplotlib/artist基础/axes.md)✋[axis](./数学/分析工具/matplotlib/artist基础/axis.md)✋[figure](./数学/分析工具/matplotlib/artist基础/figure.md)✋[subplot](./数学/分析工具/matplotlib/artist基础/subplot.md)✋[tick](./数学/分析工具/matplotlib/artist基础/tick.md)
+		- artist特殊内容 ✋[animation](./数学/分析工具/matplotlib/artist特殊内容/animation.md)✋[color](./数学/分析工具/matplotlib/artist特殊内容/color.md)✋[patch](./数学/分析工具/matplotlib/artist特殊内容/patch.md)✋[path](./数学/分析工具/matplotlib/artist特殊内容/path.md)
+		- artist图像 ✋[hist](./数学/分析工具/matplotlib/artist图像/hist.md)✋[plot](./数学/分析工具/matplotlib/artist图像/plot.md)✋[scatter](./数学/分析工具/matplotlib/artist图像/scatter.md)✋[step](./数学/分析工具/matplotlib/artist图像/step.md)
+		- 基础 ✋[bar2](./数学/分析工具/matplotlib/基础/bar2.md)✋[matplotlib](./数学/分析工具/matplotlib/基础/matplotlib.md)✋[vhline](./数学/分析工具/matplotlib/基础/vhline.md)
+		- 未分类 ✋[annotate](./数学/分析工具/matplotlib/未分类/annotate.md)✋[bar](./数学/分析工具/matplotlib/未分类/bar.md)✋[boxplot](./数学/分析工具/matplotlib/未分类/boxplot.md)✋[jointplot](./数学/分析工具/matplotlib/未分类/jointplot.md)✋[text](./数学/分析工具/matplotlib/未分类/text.md)✋[twin](./数学/分析工具/matplotlib/未分类/twin.md)
 	- numpy ✋[create](./数学/分析工具/numpy/create.md)✋[element](./数学/分析工具/numpy/element.md)✋[linalg](./数学/分析工具/numpy/linalg.md)✋[math](./数学/分析工具/numpy/math.md)✋[numpy](./数学/分析工具/numpy/numpy.md)✋[numpy数组操作](./数学/分析工具/numpy/numpy数组操作.md)✋[random](./数学/分析工具/numpy/random.md)✋[shape](./数学/分析工具/numpy/shape.md)✋[statistics](./数学/分析工具/numpy/statistics.md)
 	- pandas ✋[apply](./数学/分析工具/pandas/apply.md)✋[concate](./数学/分析工具/pandas/concate.md)✋[crosstab](./数学/分析工具/pandas/crosstab.md)✋[datetime](./数学/分析工具/pandas/datetime.md)✋[groupby](./数学/分析工具/pandas/groupby.md)✋[index](./数学/分析工具/pandas/index.md)✋[insert&del](./数学/分析工具/pandas/insert&del.md)✋[select](./数学/分析工具/pandas/select.md)✋[数据类型及转换](./数学/分析工具/pandas/数据类型及转换.md)✋[sort](./数学/分析工具/pandas/sort.md)✋[string](./数学/分析工具/pandas/string.md)✋[transform](./数学/分析工具/pandas/transform.md)✋[update](./数学/分析工具/pandas/update.md)✋[valueCounts](./数学/分析工具/pandas/valueCounts.md)
 	- scikit ✋[kstest](./数学/分析工具/scikit/kstest.md)✋[processing](./数学/分析工具/scikit/processing.md)✋[split](./数学/分析工具/scikit/split.md)
@@ -285,7 +285,7 @@
 ## 写作
 - 编辑器
 	- vim ✋[google](./写作/编辑器/vim/google.md)✋[idea](./写作/编辑器/vim/idea.md)✋[jupyter](./写作/编辑器/vim/jupyter.md)✋[pycharm](./写作/编辑器/vim/pycharm.md)✋[vim](./写作/编辑器/vim/vim.md)
-	- vscode ✋[代码模板](./写作/编辑器/vscode/代码模板.md)✋[快捷键](./写作/编辑器/vscode/快捷键.md)✋[python](./写作/编辑器/vscode/python.md)✋[任务](./写作/编辑器/vscode/任务.md)✋[sftp](./写作/编辑器/vscode/sftp.md)✋[设置同步](./写作/编辑器/vscode/设置同步.md)✋[terminal](./写作/编辑器/vscode/terminal.md)✋[vscode](./写作/编辑器/vscode/vscode.md)✋[智能补全](./写作/编辑器/vscode/智能补全.md)
+	- vscode ✋[快捷键](./写作/编辑器/vscode/快捷键.md)✋[python](./写作/编辑器/vscode/python.md)✋[任务](./写作/编辑器/vscode/任务.md)✋[sftp](./写作/编辑器/vscode/sftp.md)✋[设置同步](./写作/编辑器/vscode/设置同步.md)✋[snippets代码模板](./写作/编辑器/vscode/snippets代码模板.md)✋[terminal](./写作/编辑器/vscode/terminal.md)✋[vscode](./写作/编辑器/vscode/vscode.md)✋[智能补全](./写作/编辑器/vscode/智能补全.md)
 - 博客软件
 	- hexo ✋[安装](./写作/博客软件/hexo/安装.md)✋[部署](./写作/博客软件/hexo/部署.md)✋[markdown](./写作/博客软件/hexo/markdown.md)✋[next安装](./写作/博客软件/hexo/next安装.md)✋[next查看更多功能](./写作/博客软件/hexo/next查看更多功能.md)✋[next配置](./写作/博客软件/hexo/next配置.md)✋[next样式](./写作/博客软件/hexo/next样式.md)✋[next自定义页面](./写作/博客软件/hexo/next自定义页面.md)✋[配置](./写作/博客软件/hexo/配置.md)✋[热更新](./写作/博客软件/hexo/热更新.md)✋[图片](./写作/博客软件/hexo/图片.md)✋[样式](./写作/博客软件/hexo/样式.md)
 	- reveal ✋[结构](./写作/博客软件/reveal/结构.md)✋[markdown](./写作/博客软件/reveal/markdown.md)✋[碎片动画](./写作/博客软件/reveal/碎片动画.md)
@@ -298,7 +298,7 @@
 ## 音乐
 ✋[MusicTheory](./音乐/MusicTheory.md)✋[电子琴](./音乐/电子琴.md)✋[电子琴练习](./音乐/电子琴练习.md)✋[vexflow](./音乐/vexflow.md)✋[相爱](./音乐/相爱.md)
 ## 英语
-✋[phonics](./英语/phonics.md)✋[s01e01](./英语/s01e01.md)✋[英语发音基础](./英语/英语发音基础.md)✋[英语分析](./英语/英语分析.md)✋[英语学习](./英语/英语学习.md)
+✋[phonics](./英语/phonics.md)✋[s01e01](./英语/s01e01.md)✋[音标](./英语/音标.md)✋[英语分析](./英语/英语分析.md)✋[英语学习](./英语/英语学习.md)
 ## 影音制作
 - 录屏软件
 - manim ✋[coordinate](./影音制作/manim/coordinate.md)✋[manim](./影音制作/manim/manim.md)✋[mobject](./影音制作/manim/mobject.md)✋[orient](./影音制作/manim/orient.md)✋[scene](./影音制作/manim/scene.md)
