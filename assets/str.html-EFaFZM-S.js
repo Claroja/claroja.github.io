@@ -1,0 +1,10 @@
+import{_ as n}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as s,c as a,e as t}from"./app-MTzDpLgJ.js";const e={},c=t(`<h1 id="str" tabindex="-1"><a class="header-anchor" href="#str" aria-hidden="true">#</a> str</h1><p><code>__str__(self)</code>可以来控制<code>print()</code>和<code>str()</code>方法的返回</p><div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;重写了父类的__str__方法&quot;</span>
+
+
+wang <span class="token operator">=</span> Person<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 创建实例</span>
+<span class="token builtin">str</span><span class="token punctuation">(</span>wang<span class="token punctuation">)</span>  <span class="token comment"># &#39;重写了父类的__str__方法&#39;</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>wang<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># 重写了父类的__str__方法, 如果不重写会默认使用父类的__str__()方法, 打印&lt;__main__.Person object at 0x000001B31434CA30&gt;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,3),o=[c];function p(i,l){return s(),a("div",null,o)}const d=n(e,[["render",p],["__file","str.html.vue"]]);export{d as default};
