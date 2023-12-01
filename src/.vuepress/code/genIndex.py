@@ -1,10 +1,27 @@
 from pathlib import Path
 from pypinyin import pinyin, Style
 from itertools import chain
+import re
 
 path = Path('./src')
 lines = []
 root_list = []
+
+def getH(filePath):
+    
+    filename = filePath.parts[-1]
+
+    res = re.search(r'^\d+',filename)
+
+    if res:
+        res = res.group(0)
+
+        if len(res) == 1:
+            filename = '0' + filename
+
+    return ''.join(chain.from_iterable(pinyin(filename, style=Style.NORMAL)))
+
+
 def func(path, head_count, root_list):
     head_count += 1
 
@@ -16,7 +33,7 @@ def func(path, head_count, root_list):
         else:
             lines.append('#'* head_count + ' ' + f'{path.parts[-1]}\n')
         line = []
-        for mdfile in sorted(mdfiles, key=lambda s: ''.join(chain.from_iterable(pinyin(s.parts[-1], style=Style.TONE3)))):
+        for mdfile in sorted(mdfiles, key=getH):
             
             line.append(f'[{mdfile.stem}](./{str(mdfile).replace("src/","",1)})')
             # 处理sidebar.ts
@@ -36,7 +53,7 @@ def func(path, head_count, root_list):
         else:
             lines.append('#'* head_count + ' ' + f'{path.parts[-1]}\n')
 
-        for x in sorted(path.iterdir(), key=lambda s: ''.join(chain.from_iterable(pinyin(s.parts[-1], style=Style.TONE3)))):
+        for x in sorted(path.iterdir(), key=getH):
             new_dir = {
                 'text': x.parts[-1],
                 'prefix': f'{x.parts[-1]}',
@@ -66,6 +83,6 @@ content = [
 
 with open('./src/.vuepress/sidebar.ts','w',encoding='utf8') as f:
     f.write('\n'.join(content))
-# 火影忍者终极风暴羁绊/NARUTO X BORUTO
+
 
 print("索引完成")

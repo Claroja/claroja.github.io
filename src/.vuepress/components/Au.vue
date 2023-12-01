@@ -1,10 +1,10 @@
 <template>
 
-<span>
-    {{ w }}
-    <span ref="btn" v-on:click="run()">🔊</span>
-    <audio ref="au" :src="url" display="none"></audio>
-</span>
+    <span>
+        {{ w }}
+        <span ref="btn" v-on:click="run()">🔊</span>
+        <audio ref="au" :src="url" display="none"></audio>
+    </span>
 
 </template>
 
