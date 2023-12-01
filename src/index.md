@@ -17,7 +17,7 @@
 	- timer ✋[crontab](./编程基础/linux/timer/crontab.md)
 	- tool ✋[tmux](./编程基础/linux/tool/tmux.md)
 - 外设 ✋[圣手二代键盘连接](./编程基础/外设/圣手二代键盘连接.md)
-- windows ✋[常用软件](./编程基础/windows/常用软件.md)✋[scoop](./编程基础/windows/scoop.md)✋[shortcuts](./编程基础/windows/shortcuts.md)✋[win远程桌面](./编程基础/windows/win远程桌面.md)
+- windows ✋[常用软件](./编程基础/windows/常用软件.md)✋[常用设置](./编程基础/windows/常用设置.md)✋[scoop](./编程基础/windows/scoop.md)✋[shortcuts](./编程基础/windows/shortcuts.md)✋[win远程桌面](./编程基础/windows/win远程桌面.md)
 - 系统安装 ✋[ESP和MSR](./编程基础/系统安装/ESP和MSR.md)✋[UEFI和BIOS](./编程基础/系统安装/UEFI和BIOS.md)✋[分区](./编程基础/系统安装/分区.md)✋[网络配置](./编程基础/系统安装/网络配置.md)✋[装系统](./编程基础/系统安装/装系统.md)
 ## 编程语言
 - java
@@ -27,45 +27,60 @@
 	- log ✋[JavaLog](./编程语言/java/log/JavaLog.md)✋[JavaLog4j2](./编程语言/java/log/JavaLog4j2.md)✋[JavaLogger](./编程语言/java/log/JavaLogger.md)✋[JavaSlf4j](./编程语言/java/log/JavaSlf4j.md)✋[JavaSpringBootLog](./编程语言/java/log/JavaSpringBootLog.md)✋[Reflection](./编程语言/java/log/Reflection.md)✋[javaLog4j](./编程语言/java/log/javaLog4j.md)
 	- 其他 ✋[Annotation](./编程语言/java/其他/Annotation.md)✋[Collections](./编程语言/java/其他/Collections.md)✋[Generics](./编程语言/java/其他/Generics.md)✋[JWT](./编程语言/java/其他/JWT.md)✋[Jackson](./编程语言/java/其他/Jackson.md)✋[JavaLogback](./编程语言/java/其他/JavaLogback.md)
 	- 线程安全 ✋[JavaImmutableObject](./编程语言/java/线程安全/JavaImmutableObject.md)✋[JavaUtilConcurrent](./编程语言/java/线程安全/JavaUtilConcurrent.md)
-- nodejs ✋[eslint](./编程语言/nodejs/eslint.md)✋[npm](./编程语言/nodejs/npm.md)✋[prettier](./编程语言/nodejs/prettier.md)
+- javascript
+	- 1模块(module) ✋[mudule](./编程语言/javascript/1模块(module)/mudule.md)
+	- 2原始类型(primitive) ✋[变量](./编程语言/javascript/2原始类型(primitive)/变量.md)✋[boolean](./编程语言/javascript/2原始类型(primitive)/boolean.md)✋[date](./编程语言/javascript/2原始类型(primitive)/date.md)✋[encode](./编程语言/javascript/2原始类型(primitive)/encode.md)✋[json](./编程语言/javascript/2原始类型(primitive)/json.md)✋[literal](./编程语言/javascript/2原始类型(primitive)/literal.md)✋[nullUndefined](./编程语言/javascript/2原始类型(primitive)/nullUndefined.md)✋[number](./编程语言/javascript/2原始类型(primitive)/number.md)✋[string](./编程语言/javascript/2原始类型(primitive)/string.md)
+	- 3容器类型(container) ✋[array](./编程语言/javascript/3容器类型(container)/array.md)✋[arrayBuffer](./编程语言/javascript/3容器类型(container)/arrayBuffer.md)✋[blob](./编程语言/javascript/3容器类型(container)/blob.md)✋[typedArray](./编程语言/javascript/3容器类型(container)/typedArray.md)
+	- 4操作符(operator) ✋[比较运算符](./编程语言/javascript/4操作符(operator)/比较运算符.md)✋[赋值运算符](./编程语言/javascript/4操作符(operator)/赋值运算符.md)✋[逻辑运算符](./编程语言/javascript/4操作符(operator)/逻辑运算符.md)✋[数学运算符](./编程语言/javascript/4操作符(operator)/数学运算符.md)
+	- 5控制流(flowControl) ✋[符号&&控制流](./编程语言/javascript/5控制流(flowControl)/符号&&控制流.md)✋[条件控制流](./编程语言/javascript/5控制流(flowControl)/条件控制流.md)✋[循环控制流](./编程语言/javascript/5控制流(flowControl)/循环控制流.md)
+	- 6方法(function) ✋[function](./编程语言/javascript/6方法(function)/function.md)
+	- 7类与对象(class与object) ✋[bind](./编程语言/javascript/7类与对象(class与object)/bind.md)✋[class](./编程语言/javascript/7类与对象(class与object)/class.md)✋[object](./编程语言/javascript/7类与对象(class与object)/object.md)✋[this](./编程语言/javascript/7类与对象(class与object)/this.md)
+	- 8同步异步(promise) ✋[async&await](./编程语言/javascript/8同步异步(promise)/async&await.md)✋[promise](./编程语言/javascript/8同步异步(promise)/promise.md)
+- nodejs
+	- 部署依赖模块 ✋[axios](./编程语言/nodejs/部署依赖模块/axios.md)✋[lodash](./编程语言/nodejs/部署依赖模块/lodash.md)✋[threejs](./编程语言/nodejs/部署依赖模块/threejs.md)
+	- 辅助开发模块 ✋[eslint](./编程语言/nodejs/辅助开发模块/eslint.md)✋[prettier](./编程语言/nodejs/辅助开发模块/prettier.md)
+	- 模块与包 ✋[包管理npm](./编程语言/nodejs/模块与包/包管理npm.md)✋[模块module](./编程语言/nodejs/模块与包/模块module.md)
 - python
-	- 安装与配置 ✋[Python安装](./编程语言/python/安装与配置/Python安装.md)✋[pip](./编程语言/python/安装与配置/pip.md)✋[python虚拟环境](./编程语言/python/安装与配置/python虚拟环境.md)
-	- 标准方法 ✋[.md](./编程语言/python/标准方法/.md)✋[contextlib](./编程语言/python/标准方法/contextlib.md)✋[with](./编程语言/python/标准方法/with.md)
-	- 测试 ✋[test](./编程语言/python/测试/test.md)✋[timeit](./编程语言/python/测试/timeit.md)
-	- 成员操作 ✋[.md](./编程语言/python/成员操作/.md)✋[reflection](./编程语言/python/成员操作/reflection.md)
-	- 抽象与接口 ✋[abstractClass](./编程语言/python/抽象与接口/abstractClass.md)✋[interface](./编程语言/python/抽象与接口/interface.md)
-	- coroutines ✋[asyncio](./编程语言/python/coroutines/asyncio.md)✋[gevent](./编程语言/python/coroutines/gevent.md)✋[json](./编程语言/python/coroutines/json.md)✋[log](./编程语言/python/coroutines/log.md)✋[pathlib](./编程语言/python/coroutines/pathlib.md)✋[pickle](./编程语言/python/coroutines/pickle.md)✋[yield](./编程语言/python/coroutines/yield.md)✋[yieldfrom](./编程语言/python/coroutines/yieldfrom.md)
-	- database ✋[database](./编程语言/python/database/database.md)
-	- descriptor ✋[.md](./编程语言/python/descriptor/.md)
-	- 迭代 ✋[.md](./编程语言/python/迭代/.md)✋[generator](./编程语言/python/迭代/generator.md)✋[iterable&iterator](./编程语言/python/迭代/iterable&iterator.md)✋[yield](./编程语言/python/迭代/yield.md)
-	- 多进程 ✋[communication](./编程语言/python/多进程/communication.md)✋[event](./编程语言/python/多进程/event.md)✋[fifo](./编程语言/python/多进程/fifo.md)✋[forkspaw](./编程语言/python/多进程/forkspaw.md)✋[lock](./编程语言/python/多进程/lock.md)✋[mmap](./编程语言/python/多进程/mmap.md)✋[multiprocessing](./编程语言/python/多进程/multiprocessing.md)✋[pipes&queues](./编程语言/python/多进程/pipes&queues.md)✋[pool](./编程语言/python/多进程/pool.md)✋[process](./编程语言/python/多进程/process.md)✋[semaphore](./编程语言/python/多进程/semaphore.md)✋[shareval](./编程语言/python/多进程/shareval.md)✋[signal](./编程语言/python/多进程/signal.md)
-	- 多线程 ✋[pool](./编程语言/python/多线程/pool.md)✋[thread](./编程语言/python/多线程/thread.md)✋[threading&Thread&timer](./编程语言/python/多线程/threading&Thread&timer.md)✋[threadlocal](./编程语言/python/多线程/threadlocal.md)
-	- 函数方法 ✋[dec](./编程语言/python/函数方法/dec.md)✋[funcName](./编程语言/python/函数方法/funcName.md)✋[namespace](./编程语言/python/函数方法/namespace.md)
-	- io ✋[epoll](./编程语言/python/io/epoll.md)✋[poll](./编程语言/python/io/poll.md)
-	- 基本类型 ✋[datetime](./编程语言/python/基本类型/datetime.md)✋[stringformat](./编程语言/python/基本类型/stringformat.md)✋[typeBasic](./编程语言/python/基本类型/typeBasic.md)✋[typeCheck](./编程语言/python/基本类型/typeCheck.md)
-	- 集合类型 ✋[dict](./编程语言/python/集合类型/dict.md)✋[list](./编程语言/python/集合类型/list.md)✋[set](./编程语言/python/集合类型/set.md)
-	- 继承 ✋[inherit](./编程语言/python/继承/inherit.md)✋[继承](./编程语言/python/继承/继承.md)✋[菱形继承](./编程语言/python/继承/菱形继承.md)✋[super](./编程语言/python/继承/super.md)
-	- 流程控制 ✋[exception](./编程语言/python/流程控制/exception.md)✋[handleError](./编程语言/python/流程控制/handleError.md)✋[traceback](./编程语言/python/流程控制/traceback.md)
-	- 面向对象 ✋[class](./编程语言/python/面向对象/class.md)✋[classStaticMethod](./编程语言/python/面向对象/classStaticMethod.md)✋[cls](./编程语言/python/面向对象/cls.md)✋[metaclass](./编程语言/python/面向对象/metaclass.md)✋[property](./编程语言/python/面向对象/property.md)
-	- 模块与包 ✋[.md](./编程语言/python/模块与包/.md)✋[import](./编程语言/python/模块与包/import.md)✋[importlib](./编程语言/python/模块与包/importlib.md)✋[wheel](./编程语言/python/模块与包/wheel.md)
-	- 内置功能 ✋[builtInFunc](./编程语言/python/内置功能/builtInFunc.md)✋[global](./编程语言/python/内置功能/global.md)✋[max&min](./编程语言/python/内置功能/max&min.md)✋[min](./编程语言/python/内置功能/min.md)
-	- 其他 ✋[apscheduler](./编程语言/python/其他/apscheduler.md)✋[subprocess](./编程语言/python/其他/subprocess.md)
-	- 尚未归类 ✋[EAFP-LBYL](./编程语言/python/尚未归类/EAFP-LBYL.md)✋[appium](./编程语言/python/尚未归类/appium.md)✋[aws](./编程语言/python/尚未归类/aws.md)✋[传参](./编程语言/python/尚未归类/传参.md)✋[python___slots__](./编程语言/python/尚未归类/python___slots__.md)✋[pywin32](./编程语言/python/尚未归类/pywin32.md)✋[pywin32api](./编程语言/python/尚未归类/pywin32api.md)✋[pywin32gui](./编程语言/python/尚未归类/pywin32gui.md)✋[pywin32sendMessage](./编程语言/python/尚未归类/pywin32sendMessage.md)✋[pywinauto](./编程语言/python/尚未归类/pywinauto.md)✋[时间](./编程语言/python/尚未归类/时间.md)✋[thrift](./编程语言/python/尚未归类/thrift.md)✋[time](./编程语言/python/尚未归类/time.md)✋[typehint](./编程语言/python/尚未归类/typehint.md)✋[uiautomator2](./编程语言/python/尚未归类/uiautomator2.md)
-	- 生命周期 ✋[.md](./编程语言/python/生命周期/.md)
-	- socket ✋[socket](./编程语言/python/socket/socket.md)✋[tcp](./编程语言/python/socket/tcp.md)✋[udp](./编程语言/python/socket/udp.md)
-	- 锁 ✋[Lock与RLock](./编程语言/python/锁/Lock与RLock.md)✋[barrier](./编程语言/python/锁/barrier.md)✋[condition](./编程语言/python/锁/condition.md)✋[event](./编程语言/python/锁/event.md)✋[semaphore](./编程语言/python/锁/semaphore.md)
-	- 运算符重载 ✋[operatorsOverload](./编程语言/python/运算符重载/operatorsOverload.md)
-- 软考 ✋[操作系统知识](./编程语言/软考/操作系统知识.md)✋[计算机组成与结构](./编程语言/软考/计算机组成与结构.md)✋[介绍](./编程语言/软考/介绍.md)✋[数据库技术基础](./编程语言/软考/数据库技术基础.md)✋[系统配置与性能评价](./编程语言/软考/系统配置与性能评价.md)
+	- 1安装与配置 ✋[安装与配置](./编程语言/python/1安装与配置/安装与配置.md)✋[传参](./编程语言/python/1安装与配置/传参.md)✋[python虚拟环境](./编程语言/python/1安装与配置/python虚拟环境.md)
+	- 2模块与包 ✋[__import__](./编程语言/python/2模块与包/__import__.md)✋[import](./编程语言/python/2模块与包/import.md)✋[importlib](./编程语言/python/2模块与包/importlib.md)✋[pip](./编程语言/python/2模块与包/pip.md)✋[wheel](./编程语言/python/2模块与包/wheel.md)
+	- 3基本类型 ✋[格式化字符串(stringformat)](./编程语言/python/3基本类型/格式化字符串(stringformat).md)✋[类型检查(typeCheck)](./编程语言/python/3基本类型/类型检查(typeCheck).md)✋[时间类型(datetime)](./编程语言/python/3基本类型/时间类型(datetime).md)✋[time](./编程语言/python/3基本类型/time.md)✋[typehint](./编程语言/python/3基本类型/typehint.md)✋[原始类型(primitive)](./编程语言/python/3基本类型/原始类型(primitive).md)
+	- 4集合类型(container) ✋[dict](./编程语言/python/4集合类型(container)/dict.md)✋[list](./编程语言/python/4集合类型(container)/list.md)✋[set](./编程语言/python/4集合类型(container)/set.md)
+	- 5控制流(flowControl)
+		- 异常(exception) ✋[EAFP-LBYL](./编程语言/python/5控制流(flowControl)/异常(exception)/EAFP-LBYL.md)✋[exception](./编程语言/python/5控制流(flowControl)/异常(exception)/exception.md)✋[handleError](./编程语言/python/5控制流(flowControl)/异常(exception)/handleError.md)✋[traceback](./编程语言/python/5控制流(flowControl)/异常(exception)/traceback.md)
+	- 6方法(function) ✋[global](./编程语言/python/6方法(function)/global.md)✋[获取方法名称](./编程语言/python/6方法(function)/获取方法名称.md)✋[max&min](./编程语言/python/6方法(function)/max&min.md)✋[min](./编程语言/python/6方法(function)/min.md)✋[命名空间(namespace)](./编程语言/python/6方法(function)/命名空间(namespace).md)✋[内置方法(buildinfunc)](./编程语言/python/6方法(function)/内置方法(buildinfunc).md)✋[装饰器](./编程语言/python/6方法(function)/装饰器.md)
+	- 7面向对象
+		- 标准方法 ✋[bool](./编程语言/python/7面向对象/标准方法/bool.md)✋[call](./编程语言/python/7面向对象/标准方法/call.md)✋[contextlib](./编程语言/python/7面向对象/标准方法/contextlib.md)✋[len](./编程语言/python/7面向对象/标准方法/len.md)✋[repr](./编程语言/python/7面向对象/标准方法/repr.md)✋[str](./编程语言/python/7面向对象/标准方法/str.md)✋[with](./编程语言/python/7面向对象/标准方法/with.md)
+		- 成员操作 ✋[delattr](./编程语言/python/7面向对象/成员操作/delattr.md)✋[dict](./编程语言/python/7面向对象/成员操作/dict.md)✋[dir](./编程语言/python/7面向对象/成员操作/dir.md)✋[getattr](./编程语言/python/7面向对象/成员操作/getattr.md)✋[getattribute](./编程语言/python/7面向对象/成员操作/getattribute.md)✋[reflection](./编程语言/python/7面向对象/成员操作/reflection.md)✋[setattr](./编程语言/python/7面向对象/成员操作/setattr.md)✋[slots](./编程语言/python/7面向对象/成员操作/slots.md)✋[xxxitem](./编程语言/python/7面向对象/成员操作/xxxitem.md)
+		- 迭代 ✋[generator](./编程语言/python/7面向对象/迭代/generator.md)✋[iter](./编程语言/python/7面向对象/迭代/iter.md)✋[iterable&iterator](./编程语言/python/7面向对象/迭代/iterable&iterator.md)✋[yield](./编程语言/python/7面向对象/迭代/yield.md)
+		- 继承 ✋[inherit](./编程语言/python/7面向对象/继承/inherit.md)✋[继承](./编程语言/python/7面向对象/继承/继承.md)✋[菱形继承](./编程语言/python/7面向对象/继承/菱形继承.md)✋[mro](./编程语言/python/7面向对象/继承/mro.md)✋[super](./编程语言/python/7面向对象/继承/super.md)
+		- 基础 ✋[abstractClass](./编程语言/python/7面向对象/基础/abstractClass.md)✋[class](./编程语言/python/7面向对象/基础/class.md)✋[classStaticMethod](./编程语言/python/7面向对象/基础/classStaticMethod.md)✋[cls](./编程语言/python/7面向对象/基础/cls.md)✋[metaclass](./编程语言/python/7面向对象/基础/metaclass.md)✋[property](./编程语言/python/7面向对象/基础/property.md)
+		- 接口 ✋[interface](./编程语言/python/7面向对象/接口/interface.md)
+		- 描述符(descriptor) ✋[delete](./编程语言/python/7面向对象/描述符(descriptor)/delete.md)✋[get](./编程语言/python/7面向对象/描述符(descriptor)/get.md)✋[set](./编程语言/python/7面向对象/描述符(descriptor)/set.md)
+		- 生命周期 ✋[del](./编程语言/python/7面向对象/生命周期/del.md)✋[init](./编程语言/python/7面向对象/生命周期/init.md)✋[new](./编程语言/python/7面向对象/生命周期/new.md)
+		- 运算符重载 ✋[operatorsOverload](./编程语言/python/7面向对象/运算符重载/operatorsOverload.md)
+	- 8读写(io)
+		- 本地io ✋[asyncio](./编程语言/python/8读写(io)/本地io/asyncio.md)✋[gevent](./编程语言/python/8读写(io)/本地io/gevent.md)✋[json](./编程语言/python/8读写(io)/本地io/json.md)✋[log](./编程语言/python/8读写(io)/本地io/log.md)✋[pathlib](./编程语言/python/8读写(io)/本地io/pathlib.md)✋[pickle](./编程语言/python/8读写(io)/本地io/pickle.md)✋[yield](./编程语言/python/8读写(io)/本地io/yield.md)✋[yieldfrom](./编程语言/python/8读写(io)/本地io/yieldfrom.md)
+		- 基础 ✋[epoll](./编程语言/python/8读写(io)/基础/epoll.md)✋[poll](./编程语言/python/8读写(io)/基础/poll.md)✋[select](./编程语言/python/8读写(io)/基础/select.md)
+		- 网络io ✋[socket](./编程语言/python/8读写(io)/网络io/socket.md)✋[tcp](./编程语言/python/8读写(io)/网络io/tcp.md)✋[udp](./编程语言/python/8读写(io)/网络io/udp.md)
+	- 9进程 ✋[communication](./编程语言/python/9进程/communication.md)✋[event](./编程语言/python/9进程/event.md)✋[fifo](./编程语言/python/9进程/fifo.md)✋[forkspaw](./编程语言/python/9进程/forkspaw.md)✋[lock](./编程语言/python/9进程/lock.md)✋[mmap](./编程语言/python/9进程/mmap.md)✋[multiprocessing](./编程语言/python/9进程/multiprocessing.md)✋[pipes&queues](./编程语言/python/9进程/pipes&queues.md)✋[pool](./编程语言/python/9进程/pool.md)✋[process](./编程语言/python/9进程/process.md)✋[semaphore](./编程语言/python/9进程/semaphore.md)✋[shareval](./编程语言/python/9进程/shareval.md)✋[signal](./编程语言/python/9进程/signal.md)✋[subprocess](./编程语言/python/9进程/subprocess.md)
+	- 10线程 ✋[pool](./编程语言/python/10线程/pool.md)✋[thread](./编程语言/python/10线程/thread.md)✋[threading&Thread&timer](./编程语言/python/10线程/threading&Thread&timer.md)✋[threadlocal](./编程语言/python/10线程/threadlocal.md)
+	- 11协程
+	- 12锁 ✋[Lock与RLock](./编程语言/python/12锁/Lock与RLock.md)✋[barrier](./编程语言/python/12锁/barrier.md)✋[condition](./编程语言/python/12锁/condition.md)✋[event](./编程语言/python/12锁/event.md)✋[semaphore](./编程语言/python/12锁/semaphore.md)
+	- 13常用包 ✋[apscheduler](./编程语言/python/13常用包/apscheduler.md)✋[aws](./编程语言/python/13常用包/aws.md)✋[database](./编程语言/python/13常用包/database.md)✋[pywin32](./编程语言/python/13常用包/pywin32.md)✋[pywin32api](./编程语言/python/13常用包/pywin32api.md)✋[pywin32gui](./编程语言/python/13常用包/pywin32gui.md)✋[pywin32sendMessage](./编程语言/python/13常用包/pywin32sendMessage.md)✋[pywinauto](./编程语言/python/13常用包/pywinauto.md)✋[test](./编程语言/python/13常用包/test.md)✋[thrift](./编程语言/python/13常用包/thrift.md)
+- 软考 ✋[操作系统知识](./编程语言/软考/操作系统知识.md)✋[介绍](./编程语言/软考/介绍.md)✋[计算机组成与结构](./编程语言/软考/计算机组成与结构.md)✋[数据库技术基础](./编程语言/软考/数据库技术基础.md)✋[系统配置与性能评价](./编程语言/软考/系统配置与性能评价.md)
 - 通用知识
-	- io ✋[FileDescriptor](./编程语言/通用知识/io/FileDescriptor.md)✋[FileSystem](./编程语言/通用知识/io/FileSystem.md)✋[ansiEscapeCode](./编程语言/通用知识/io/ansiEscapeCode.md)✋[base64](./编程语言/通用知识/io/base64.md)✋[编码解码](./编程语言/通用知识/io/编码解码.md)✋[inode](./编程语言/通用知识/io/inode.md)✋[select](./编程语言/通用知识/io/select.md)✋[stdio](./编程语言/通用知识/io/stdio.md)✋[系统级IO](./编程语言/通用知识/io/系统级IO.md)✋[用户级IO](./编程语言/通用知识/io/用户级IO.md)
+	- io ✋[FileDescriptor](./编程语言/通用知识/io/FileDescriptor.md)✋[FileSystem](./编程语言/通用知识/io/FileSystem.md)✋[ansiEscapeCode](./编程语言/通用知识/io/ansiEscapeCode.md)✋[base64](./编程语言/通用知识/io/base64.md)✋[编码解码](./编程语言/通用知识/io/编码解码.md)✋[inode](./编程语言/通用知识/io/inode.md)✋[stdio](./编程语言/通用知识/io/stdio.md)✋[系统级IO](./编程语言/通用知识/io/系统级IO.md)✋[用户级IO](./编程语言/通用知识/io/用户级IO.md)
 	- 基础 ✋[进制转换](./编程语言/通用知识/基础/进制转换.md)✋[位运算](./编程语言/通用知识/基础/位运算.md)
 	- 结构与算法 ✋[算法复杂度](./编程语言/通用知识/结构与算法/算法复杂度.md)✋[treelib](./编程语言/通用知识/结构与算法/treelib.md)
 	- 网络 ✋[arpspoof](./编程语言/通用知识/网络/arpspoof.md)✋[cisco](./编程语言/通用知识/网络/cisco.md)✋[dhcp](./编程语言/通用知识/网络/dhcp.md)✋[hostBind](./编程语言/通用知识/网络/hostBind.md)✋[http](./编程语言/通用知识/网络/http.md)✋[interface](./编程语言/通用知识/网络/interface.md)✋[ip](./编程语言/通用知识/网络/ip.md)✋[loopback](./编程语言/通用知识/网络/loopback.md)✋[mac](./编程语言/通用知识/网络/mac.md)✋[macof](./编程语言/通用知识/网络/macof.md)✋[nat](./编程语言/通用知识/网络/nat.md)✋[network](./编程语言/通用知识/网络/network.md)✋[port](./编程语言/通用知识/网络/port.md)✋[router](./编程语言/通用知识/网络/router.md)✋[socket-tcp](./编程语言/通用知识/网络/socket-tcp.md)✋[socket-tftp](./编程语言/通用知识/网络/socket-tftp.md)✋[socket-udp](./编程语言/通用知识/网络/socket-udp.md)✋[socket](./编程语言/通用知识/网络/socket.md)✋[switch](./编程语言/通用知识/网络/switch.md)✋[tcp-http](./编程语言/通用知识/网络/tcp-http.md)✋[tcpdump](./编程语言/通用知识/网络/tcpdump.md)✋[udp-dns](./编程语言/通用知识/网络/udp-dns.md)
-	- 字符串 ✋[多行模式](./编程语言/通用知识/字符串/多行模式.md)✋[findall-finditer](./编程语言/通用知识/字符串/findall-finditer.md)✋[group](./编程语言/通用知识/字符串/group.md)✋[search-match](./编程语言/通用知识/字符串/search-match.md)✋[split](./编程语言/通用知识/字符串/split.md)✋[string](./编程语言/通用知识/字符串/string.md)✋[sub](./编程语言/通用知识/字符串/sub.md)✋[正则表达式](./编程语言/通用知识/字符串/正则表达式.md)
+	- 字符串 ✋[python_多行模式](./编程语言/通用知识/字符串/python_多行模式.md)✋[python_group](./编程语言/通用知识/字符串/python_group.md)✋[python_search&match](./编程语言/通用知识/字符串/python_search&match.md)✋[python_sub](./编程语言/通用知识/字符串/python_sub.md)✋[python_转义字符](./编程语言/通用知识/字符串/python_转义字符.md)✋[正则表达式](./编程语言/通用知识/字符串/正则表达式.md)
+- typescript ✋[安装和配置](./编程语言/typescript/安装和配置.md)✋[基础](./编程语言/typescript/基础.md)✋[类&对象(class&object)](./编程语言/typescript/类&对象(class&object).md)✋[类型(type)](./编程语言/typescript/类型(type).md)✋[webpack](./编程语言/typescript/webpack.md)
+## 方法论
+✋[方法论](./方法论/方法论.md)✋[jira](./方法论/jira.md)
 ## 法学
 - 基础 ✋[law](./法学/基础/law.md)✋[通则](./法学/基础/通则.md)
 - 民法
-	- 第1编_总则 ✋[10期间计算](./法学/民法/第1编_总则/10期间计算.md)✋[1基本规定](./法学/民法/第1编_总则/1基本规定.md)✋[2自然人](./法学/民法/第1编_总则/2自然人.md)✋[3法人](./法学/民法/第1编_总则/3法人.md)✋[4非法人组织](./法学/民法/第1编_总则/4非法人组织.md)✋[5民事权利](./法学/民法/第1编_总则/5民事权利.md)✋[6民事法律行为](./法学/民法/第1编_总则/6民事法律行为.md)✋[7代理](./法学/民法/第1编_总则/7代理.md)✋[8民事责任](./法学/民法/第1编_总则/8民事责任.md)✋[9诉讼时效](./法学/民法/第1编_总则/9诉讼时效.md)
+	- 第1编_总则 ✋[1基本规定](./法学/民法/第1编_总则/1基本规定.md)✋[2自然人](./法学/民法/第1编_总则/2自然人.md)✋[3法人](./法学/民法/第1编_总则/3法人.md)✋[4非法人组织](./法学/民法/第1编_总则/4非法人组织.md)✋[5民事权利](./法学/民法/第1编_总则/5民事权利.md)✋[6民事法律行为](./法学/民法/第1编_总则/6民事法律行为.md)✋[7代理](./法学/民法/第1编_总则/7代理.md)✋[8民事责任](./法学/民法/第1编_总则/8民事责任.md)✋[9诉讼时效](./法学/民法/第1编_总则/9诉讼时效.md)✋[10期间计算](./法学/民法/第1编_总则/10期间计算.md)
 	- 第2编_物权
 		- 第1分编_通则 ✋[1一般规定](./法学/民法/第2编_物权/第1分编_通则/1一般规定.md)✋[2物权的设立、变更、转让和消灭](./法学/民法/第2编_物权/第1分编_通则/2物权的设立、变更、转让和消灭.md)✋[3物权的保护](./法学/民法/第2编_物权/第1分编_通则/3物权的保护.md)
 		- 第3分编_所有权 ✋[4一般规定](./法学/民法/第2编_物权/第3分编_所有权/4一般规定.md)✋[5国家所有权和集体所有权、私人所有权](./法学/民法/第2编_物权/第3分编_所有权/5国家所有权和集体所有权、私人所有权.md)✋[6业主的建筑物区分所有权](./法学/民法/第2编_物权/第3分编_所有权/6业主的建筑物区分所有权.md)✋[7相邻关系](./法学/民法/第2编_物权/第3分编_所有权/7相邻关系.md)✋[8共有](./法学/民法/第2编_物权/第3分编_所有权/8共有.md)✋[9所有权取得的特别规定](./法学/民法/第2编_物权/第3分编_所有权/9所有权取得的特别规定.md)
@@ -73,28 +88,28 @@
 		- 第4分编_担保物权 ✋[16一般规定](./法学/民法/第2编_物权/第4分编_担保物权/16一般规定.md)✋[17抵押权](./法学/民法/第2编_物权/第4分编_担保物权/17抵押权.md)✋[18质权](./法学/民法/第2编_物权/第4分编_担保物权/18质权.md)✋[19留置权](./法学/民法/第2编_物权/第4分编_担保物权/19留置权.md)✋[20占有](./法学/民法/第2编_物权/第4分编_担保物权/20占有.md)
 	- 第3编_合同
 		- 第1分编_通则 ✋[1一般规定](./法学/民法/第3编_合同/第1分编_通则/1一般规定.md)✋[2合同的订立](./法学/民法/第3编_合同/第1分编_通则/2合同的订立.md)✋[3合同的效力](./法学/民法/第3编_合同/第1分编_通则/3合同的效力.md)✋[4合同的履行](./法学/民法/第3编_合同/第1分编_通则/4合同的履行.md)✋[5合同的保全](./法学/民法/第3编_合同/第1分编_通则/5合同的保全.md)✋[6合同的变更和转让](./法学/民法/第3编_合同/第1分编_通则/6合同的变更和转让.md)✋[7合同的权利义务终止](./法学/民法/第3编_合同/第1分编_通则/7合同的权利义务终止.md)✋[8违约责任](./法学/民法/第3编_合同/第1分编_通则/8违约责任.md)
-		- 第2分编_典型合同 ✋[10供用电、水、气、热力合同](./法学/民法/第3编_合同/第2分编_典型合同/10供用电、水、气、热力合同.md)✋[11赠与合同](./法学/民法/第3编_合同/第2分编_典型合同/11赠与合同.md)✋[12借款合同](./法学/民法/第3编_合同/第2分编_典型合同/12借款合同.md)✋[13保证合同](./法学/民法/第3编_合同/第2分编_典型合同/13保证合同.md)✋[14租赁合同](./法学/民法/第3编_合同/第2分编_典型合同/14租赁合同.md)✋[15融资租赁合同](./法学/民法/第3编_合同/第2分编_典型合同/15融资租赁合同.md)✋[16保理合同](./法学/民法/第3编_合同/第2分编_典型合同/16保理合同.md)✋[17承揽合同](./法学/民法/第3编_合同/第2分编_典型合同/17承揽合同.md)✋[18建设工程合同](./法学/民法/第3编_合同/第2分编_典型合同/18建设工程合同.md)✋[19运输合同](./法学/民法/第3编_合同/第2分编_典型合同/19运输合同.md)✋[20技术合同](./法学/民法/第3编_合同/第2分编_典型合同/20技术合同.md)✋[21保管合同](./法学/民法/第3编_合同/第2分编_典型合同/21保管合同.md)✋[22仓储合同](./法学/民法/第3编_合同/第2分编_典型合同/22仓储合同.md)✋[23委托合同](./法学/民法/第3编_合同/第2分编_典型合同/23委托合同.md)✋[24物业服务合同](./法学/民法/第3编_合同/第2分编_典型合同/24物业服务合同.md)✋[25纪合同](./法学/民法/第3编_合同/第2分编_典型合同/25纪合同.md)✋[26中介合同](./法学/民法/第3编_合同/第2分编_典型合同/26中介合同.md)✋[27合伙合同](./法学/民法/第3编_合同/第2分编_典型合同/27合伙合同.md)✋[9买卖合同](./法学/民法/第3编_合同/第2分编_典型合同/9买卖合同.md)
+		- 第2分编_典型合同 ✋[9买卖合同](./法学/民法/第3编_合同/第2分编_典型合同/9买卖合同.md)✋[10供用电、水、气、热力合同](./法学/民法/第3编_合同/第2分编_典型合同/10供用电、水、气、热力合同.md)✋[11赠与合同](./法学/民法/第3编_合同/第2分编_典型合同/11赠与合同.md)✋[12借款合同](./法学/民法/第3编_合同/第2分编_典型合同/12借款合同.md)✋[13保证合同](./法学/民法/第3编_合同/第2分编_典型合同/13保证合同.md)✋[14租赁合同](./法学/民法/第3编_合同/第2分编_典型合同/14租赁合同.md)✋[15融资租赁合同](./法学/民法/第3编_合同/第2分编_典型合同/15融资租赁合同.md)✋[16保理合同](./法学/民法/第3编_合同/第2分编_典型合同/16保理合同.md)✋[17承揽合同](./法学/民法/第3编_合同/第2分编_典型合同/17承揽合同.md)✋[18建设工程合同](./法学/民法/第3编_合同/第2分编_典型合同/18建设工程合同.md)✋[19运输合同](./法学/民法/第3编_合同/第2分编_典型合同/19运输合同.md)✋[20技术合同](./法学/民法/第3编_合同/第2分编_典型合同/20技术合同.md)✋[21保管合同](./法学/民法/第3编_合同/第2分编_典型合同/21保管合同.md)✋[22仓储合同](./法学/民法/第3编_合同/第2分编_典型合同/22仓储合同.md)✋[23委托合同](./法学/民法/第3编_合同/第2分编_典型合同/23委托合同.md)✋[24物业服务合同](./法学/民法/第3编_合同/第2分编_典型合同/24物业服务合同.md)✋[25纪合同](./法学/民法/第3编_合同/第2分编_典型合同/25纪合同.md)✋[26中介合同](./法学/民法/第3编_合同/第2分编_典型合同/26中介合同.md)✋[27合伙合同](./法学/民法/第3编_合同/第2分编_典型合同/27合伙合同.md)
 		- 第3分编_准合同 ✋[28无因管理](./法学/民法/第3编_合同/第3分编_准合同/28无因管理.md)✋[29不当得利](./法学/民法/第3编_合同/第3分编_准合同/29不当得利.md)
 	- 第4编_人格权 ✋[1一般规定](./法学/民法/第4编_人格权/1一般规定.md)✋[2生命权、身体权和健康权](./法学/民法/第4编_人格权/2生命权、身体权和健康权.md)✋[3姓名权和名称权](./法学/民法/第4编_人格权/3姓名权和名称权.md)✋[4肖像权](./法学/民法/第4编_人格权/4肖像权.md)✋[5名誉权和荣誉权](./法学/民法/第4编_人格权/5名誉权和荣誉权.md)✋[6隐私权和个人信息保护](./法学/民法/第4编_人格权/6隐私权和个人信息保护.md)
 	- 第5编_婚姻家庭 ✋[1一般规定](./法学/民法/第5编_婚姻家庭/1一般规定.md)✋[2结婚](./法学/民法/第5编_婚姻家庭/2结婚.md)✋[3家庭关系](./法学/民法/第5编_婚姻家庭/3家庭关系.md)✋[4离婚](./法学/民法/第5编_婚姻家庭/4离婚.md)✋[5收养](./法学/民法/第5编_婚姻家庭/5收养.md)
 	- 第6编_继承 ✋[1一般规定](./法学/民法/第6编_继承/1一般规定.md)✋[2法定继承](./法学/民法/第6编_继承/2法定继承.md)✋[3遗嘱继承和遗赠](./法学/民法/第6编_继承/3遗嘱继承和遗赠.md)✋[4遗产的处理](./法学/民法/第6编_继承/4遗产的处理.md)
-	- 第7编_侵权责任 ✋[10物和物件损害责任](./法学/民法/第7编_侵权责任/10物和物件损害责任.md)✋[1一般规定](./法学/民法/第7编_侵权责任/1一般规定.md)✋[2损害赔偿](./法学/民法/第7编_侵权责任/2损害赔偿.md)✋[3责任主体的特殊规定](./法学/民法/第7编_侵权责任/3责任主体的特殊规定.md)✋[4产品责任](./法学/民法/第7编_侵权责任/4产品责任.md)✋[5机动车交通事故责任](./法学/民法/第7编_侵权责任/5机动车交通事故责任.md)✋[6医疗损害责任](./法学/民法/第7编_侵权责任/6医疗损害责任.md)✋[7污染和生态破坏责任](./法学/民法/第7编_侵权责任/7污染和生态破坏责任.md)✋[8高度危险责任](./法学/民法/第7编_侵权责任/8高度危险责任.md)✋[9饲养动物损害责任](./法学/民法/第7编_侵权责任/9饲养动物损害责任.md)
+	- 第7编_侵权责任 ✋[1一般规定](./法学/民法/第7编_侵权责任/1一般规定.md)✋[2损害赔偿](./法学/民法/第7编_侵权责任/2损害赔偿.md)✋[3责任主体的特殊规定](./法学/民法/第7编_侵权责任/3责任主体的特殊规定.md)✋[4产品责任](./法学/民法/第7编_侵权责任/4产品责任.md)✋[5机动车交通事故责任](./法学/民法/第7编_侵权责任/5机动车交通事故责任.md)✋[6医疗损害责任](./法学/民法/第7编_侵权责任/6医疗损害责任.md)✋[7污染和生态破坏责任](./法学/民法/第7编_侵权责任/7污染和生态破坏责任.md)✋[8高度危险责任](./法学/民法/第7编_侵权责任/8高度危险责任.md)✋[9饲养动物损害责任](./法学/民法/第7编_侵权责任/9饲养动物损害责任.md)✋[10物和物件损害责任](./法学/民法/第7编_侵权责任/10物和物件损害责任.md)
 	- 法条原文 ✋[公司法](./法学/民法/法条原文/公司法.md)✋[民法典](./法学/民法/法条原文/民法典.md)✋[有关担保制度的解释](./法学/民法/法条原文/有关担保制度的解释.md)
 - 民诉
 	- 法条原文 ✋[民事诉讼法](./法学/民诉/法条原文/民事诉讼法.md)✋[民事诉讼法解释](./法学/民诉/法条原文/民事诉讼法解释.md)✋[最高人民法院关于民事诉讼证据的若干规定](./法学/民诉/法条原文/最高人民法院关于民事诉讼证据的若干规定.md)
 	- 总则 ✋[1任务、适用范围和基本原则](./法学/民诉/总则/1任务、适用范围和基本原则.md)✋[2管辖](./法学/民诉/总则/2管辖.md)✋[3审判组织](./法学/民诉/总则/3审判组织.md)✋[4回避](./法学/民诉/总则/4回避.md)✋[5诉讼参加人](./法学/民诉/总则/5诉讼参加人.md)✋[6证据](./法学/民诉/总则/6证据.md)
-## 方法论
-✋[方法论](./方法论/方法论.md)✋[jira](./方法论/jira.md)
 ## 后端
-- Spring
-	- JavaWeb基础 ✋[Filter](./后端/Spring/JavaWeb基础/Filter.md)✋[Listener](./后端/Spring/JavaWeb基础/Listener.md)✋[Servlet](./后端/Spring/JavaWeb基础/Servlet.md)✋[Tomcat](./后端/Spring/JavaWeb基础/Tomcat.md)
-	- MyBatisPlus ✋[MyBatisPlus](./后端/Spring/MyBatisPlus/MyBatisPlus.md)
-	- Spring ✋[AOP](./后端/Spring/Spring/AOP.md)✋[Spring](./后端/Spring/Spring/Spring.md)✋[SpringBoot](./后端/Spring/Spring/SpringBoot.md)✋[SpringSecurity](./后端/Spring/Spring/SpringSecurity.md)✋[SpringSecurity加密原理](./后端/Spring/Spring/SpringSecurity加密原理.md)
 - flask
 	- api ✋[api](./后端/flask/api/api.md)
 	- flask_jwt ✋[fresh](./后端/flask/flask_jwt/fresh.md)✋[jwt](./后端/flask/flask_jwt/jwt.md)✋[optional](./后端/flask/flask_jwt/optional.md)✋[permission](./后端/flask/flask_jwt/permission.md)✋[refresh](./后端/flask/flask_jwt/refresh.md)
 	- flask_sql ✋[context](./后端/flask/flask_sql/context.md)✋[migrate](./后端/flask/flask_sql/migrate.md)
 	- 基础 ✋[endpoint](./后端/flask/基础/endpoint.md)✋[project](./后端/flask/基础/project.md)
+- spring
+	- JavaWeb基础 ✋[Filter](./后端/spring/JavaWeb基础/Filter.md)✋[Listener](./后端/spring/JavaWeb基础/Listener.md)✋[Servlet](./后端/spring/JavaWeb基础/Servlet.md)✋[Tomcat](./后端/spring/JavaWeb基础/Tomcat.md)
+	- MyBatisPlus ✋[MyBatisPlus](./后端/spring/MyBatisPlus/MyBatisPlus.md)
+	- Spring ✋[AOP](./后端/spring/Spring/AOP.md)✋[Spring](./后端/spring/Spring/Spring.md)✋[SpringBoot](./后端/spring/Spring/SpringBoot.md)✋[SpringSecurity](./后端/spring/Spring/SpringSecurity.md)✋[SpringSecurity加密原理](./后端/spring/Spring/SpringSecurity加密原理.md)
+## 经济学
+✋[PMI](./经济学/PMI.md)✋[PPI](./经济学/PPI.md)✋[边际分析](./经济学/边际分析.md)✋[沉默成本](./经济学/沉默成本.md)✋[存量与增量](./经济学/存量与增量.md)✋[供给](./经济学/供给.md)✋[供需均衡](./经济学/供需均衡.md)✋[归因谬误](./经济学/归因谬误.md)✋[机会成本](./经济学/机会成本.md)✋[利率](./经济学/利率.md)✋[效用](./经济学/效用.md)✋[需求](./经济学/需求.md)✋[应用](./经济学/应用.md)
 ## 机器学习
 - 贝叶斯
 	- 贝叶斯网络 ✋[MontyHallProblem](./机器学习/贝叶斯/贝叶斯网络/MontyHallProblem.md)✋[贝叶斯网络理论知识](./机器学习/贝叶斯/贝叶斯网络/贝叶斯网络理论知识.md)✋[pgmpyEg](./机器学习/贝叶斯/贝叶斯网络/pgmpyEg.md)✋[pgmpy创建网络](./机器学习/贝叶斯/贝叶斯网络/pgmpy创建网络.md)✋[pgmpy模型训练](./机器学习/贝叶斯/贝叶斯网络/pgmpy模型训练.md)✋[pgmpy推理](./机器学习/贝叶斯/贝叶斯网络/pgmpy推理.md)
@@ -136,8 +151,6 @@
 - 自然语言处理
 	- spacy ✋[Containers](./机器学习/自然语言处理/spacy/Containers.md)✋[Lexeme](./机器学习/自然语言处理/spacy/Lexeme.md)✋[dep](./机器学习/自然语言处理/spacy/dep.md)✋[matcher](./机器学习/自然语言处理/spacy/matcher.md)✋[ner](./机器学习/自然语言处理/spacy/ner.md)✋[pos](./机器学习/自然语言处理/spacy/pos.md)✋[sentenceSegmentation](./机器学习/自然语言处理/spacy/sentenceSegmentation.md)✋[spacy](./机器学习/自然语言处理/spacy/spacy.md)✋[tokenization](./机器学习/自然语言处理/spacy/tokenization.md)✋[w2v](./机器学习/自然语言处理/spacy/w2v.md)
 	- 自然语言处理 ✋[attention](./机器学习/自然语言处理/自然语言处理/attention.md)✋[敏感词过滤](./机器学习/自然语言处理/自然语言处理/敏感词过滤.md)✋[multilabelClassification](./机器学习/自然语言处理/自然语言处理/multilabelClassification.md)✋[seq2seq](./机器学习/自然语言处理/自然语言处理/seq2seq.md)✋[singlabelClassification](./机器学习/自然语言处理/自然语言处理/singlabelClassification.md)✋[statistic](./机器学习/自然语言处理/自然语言处理/statistic.md)✋[word2vector](./机器学习/自然语言处理/自然语言处理/word2vector.md)
-## 经济学
-✋[PMI](./经济学/PMI.md)✋[PPI](./经济学/PPI.md)✋[边际分析](./经济学/边际分析.md)✋[沉默成本](./经济学/沉默成本.md)✋[存量与增量](./经济学/存量与增量.md)✋[供给](./经济学/供给.md)✋[供需均衡](./经济学/供需均衡.md)✋[归因谬误](./经济学/归因谬误.md)✋[机会成本](./经济学/机会成本.md)✋[利率](./经济学/利率.md)✋[效用](./经济学/效用.md)✋[需求](./经济学/需求.md)✋[应用](./经济学/应用.md)
 ## 会计
 - 经济法
 	- 法律制度 ✋[法律制度](./会计/经济法/法律制度/法律制度.md)
@@ -146,7 +159,7 @@
 	- 税法 ✋[财产和行为税](./会计/经济法/税法/财产和行为税.md)✋[个人所得税](./会计/经济法/税法/个人所得税.md)✋[企业所得税](./会计/经济法/税法/企业所得税.md)✋[税法](./会计/经济法/税法/税法.md)✋[消费税](./会计/经济法/税法/消费税.md)✋[增值税](./会计/经济法/税法/增值税.md)
 - 实务
 	- 非流动资产 ✋[长期股权投资](./会计/实务/非流动资产/长期股权投资.md)✋[长期债权投资](./会计/实务/非流动资产/长期债权投资.md)✋[固定资产](./会计/实务/非流动资产/固定资产.md)✋[投资性房地产](./会计/实务/非流动资产/投资性房地产.md)✋[无形资产](./会计/实务/非流动资产/无形资产.md)✋[债权投资](./会计/实务/非流动资产/债权投资.md)
-	- 负债 ✋[短期借款](./会计/实务/负债/短期借款.md)✋[非流动负债](./会计/实务/负债/非流动负债.md)✋[应交税费](./会计/实务/负债/应交税费.md)✋[应付及预收账款](./会计/实务/负债/应付及预收账款.md)✋[应付职工薪酬](./会计/实务/负债/应付职工薪酬.md)
+	- 负债 ✋[短期借款](./会计/实务/负债/短期借款.md)✋[非流动负债](./会计/实务/负债/非流动负债.md)✋[应付及预收账款](./会计/实务/负债/应付及预收账款.md)✋[应付职工薪酬](./会计/实务/负债/应付职工薪酬.md)✋[应交税费](./会计/实务/负债/应交税费.md)
 	- 流动资产 ✋[存货](./会计/实务/流动资产/存货.md)✋[货币资金](./会计/实务/流动资产/货币资金.md)✋[交易性金融资产](./会计/实务/流动资产/交易性金融资产.md)✋[应收及预付款项](./会计/实务/流动资产/应收及预付款项.md)
 	- 入门 ✋[概述](./会计/实务/入门/概述.md)✋[基础](./会计/实务/入门/基础.md)
 	- 实务_财务报告 ✋[财务报告](./会计/实务/实务_财务报告/财务报告.md)
@@ -155,7 +168,7 @@
 	- 实务_收入 ✋[收入](./会计/实务/实务_收入/收入.md)
 	- 所有者权益 ✋[留存收益](./会计/实务/所有者权益/留存收益.md)✋[实收资本或股本](./会计/实务/所有者权益/实收资本或股本.md)
 ## 爬虫
-- 其他 ✋[BeautifulSoup](./爬虫/其他/BeautifulSoup.md)✋[fiddler](./爬虫/其他/fiddler.md)✋[phantomjs](./爬虫/其他/phantomjs.md)✋[xpath](./爬虫/其他/xpath.md)
+- 其他 ✋[BeautifulSoup](./爬虫/其他/BeautifulSoup.md)✋[appium](./爬虫/其他/appium.md)✋[fiddler](./爬虫/其他/fiddler.md)✋[phantomjs](./爬虫/其他/phantomjs.md)✋[uiautomator2](./爬虫/其他/uiautomator2.md)✋[xpath](./爬虫/其他/xpath.md)
 - requests
 	- 代理 ✋[proxies](./爬虫/requests/代理/proxies.md)
 	- 请求与返回 ✋[get](./爬虫/requests/请求与返回/get.md)✋[header](./爬虫/requests/请求与返回/header.md)✋[post](./爬虫/requests/请求与返回/post.md)✋[redirect](./爬虫/requests/请求与返回/redirect.md)✋[response](./爬虫/requests/请求与返回/response.md)✋[session](./爬虫/requests/请求与返回/session.md)
@@ -190,23 +203,7 @@
 	- 浮动流 ✋[float](./前端/css/浮动流/float.md)✋[overflow](./前端/css/浮动流/overflow.md)
 	- 基础 ✋[feature](./前端/css/基础/feature.md)✋[inlineOrBlock](./前端/css/基础/inlineOrBlock.md)✋[intro](./前端/css/基础/intro.md)✋[loadCSS](./前端/css/基础/loadCSS.md)✋[selector](./前端/css/基础/selector.md)
 	- 字体与图片 ✋[font](./前端/css/字体与图片/font.md)✋[fontface](./前端/css/字体与图片/fontface.md)✋[spirit](./前端/css/字体与图片/spirit.md)
-- html
-	- 未分类 ✋[audio](./前端/html/未分类/audio.md)✋[svg](./前端/html/未分类/svg.md)
-- javaScript
-	- TypeScript ✋[babel](./前端/javaScript/TypeScript/babel.md)✋[class](./前端/javaScript/TypeScript/class.md)✋[init](./前端/javaScript/TypeScript/init.md)✋[intro](./前端/javaScript/TypeScript/intro.md)✋[type](./前端/javaScript/TypeScript/type.md)✋[webpack](./前端/javaScript/TypeScript/webpack.md)
-	- Webpack入门 ✋[Webpack开发环境](./前端/javaScript/Webpack入门/Webpack开发环境.md)✋[Webpack入门](./前端/javaScript/Webpack入门/Webpack入门.md)✋[Webpack生产环境](./前端/javaScript/Webpack入门/Webpack生产环境.md)✋[Webpack性能优化](./前端/javaScript/Webpack入门/Webpack性能优化.md)
-	- 安装配置 ✋[loadjs](./前端/javaScript/安装配置/loadjs.md)✋[mudule](./前端/javaScript/安装配置/mudule.md)
-	- 操作符 ✋[operator](./前端/javaScript/操作符/operator.md)
-	- 对象 ✋[bind](./前端/javaScript/对象/bind.md)✋[class](./前端/javaScript/对象/class.md)✋[object](./前端/javaScript/对象/object.md)✋[this](./前端/javaScript/对象/this.md)
-	- 方法 ✋[function](./前端/javaScript/方法/function.md)
-	- 控制流 ✋[flowControl](./前端/javaScript/控制流/flowControl.md)
-	- promise ✋[api](./前端/javaScript/promise/api.md)✋[keypoint](./前端/javaScript/promise/keypoint.md)✋[promise](./前端/javaScript/promise/promise.md)
-	- 容器类型 ✋[array](./前端/javaScript/容器类型/array.md)✋[arrayBuffer](./前端/javaScript/容器类型/arrayBuffer.md)✋[typedArray](./前端/javaScript/容器类型/typedArray.md)
-	- 三方包 ✋[Three-js入门](./前端/javaScript/三方包/Three-js入门.md)✋[axios](./前端/javaScript/三方包/axios.md)✋[axios2](./前端/javaScript/三方包/axios2.md)✋[for](./前端/javaScript/三方包/for.md)
-	- 数据类型 ✋[boolean](./前端/javaScript/数据类型/boolean.md)✋[changeVar](./前端/javaScript/数据类型/changeVar.md)✋[date](./前端/javaScript/数据类型/date.md)✋[literal](./前端/javaScript/数据类型/literal.md)✋[nullUndefined](./前端/javaScript/数据类型/nullUndefined.md)✋[number](./前端/javaScript/数据类型/number.md)✋[string](./前端/javaScript/数据类型/string.md)✋[variable](./前端/javaScript/数据类型/variable.md)
-	- 同步异步 ✋[promise](./前端/javaScript/同步异步/promise.md)✋[同步异步](./前端/javaScript/同步异步/同步异步.md)
-	- 未分类 ✋[js_debounceAndthrottle](./前端/javaScript/未分类/js_debounceAndthrottle.md)
-	- 文件读写 ✋[blob](./前端/javaScript/文件读写/blob.md)✋[encode](./前端/javaScript/文件读写/encode.md)✋[json](./前端/javaScript/文件读写/json.md)
+- html ✋[audio](./前端/html/audio.md)✋[svg](./前端/html/svg.md)
 - vue
 	- 1基础 ✋[1安装配置](./前端/vue/1基础/1安装配置.md)✋[2createApp](./前端/vue/1基础/2createApp.md)✋[3setup](./前端/vue/1基础/3setup.md)✋[4script&setup](./前端/vue/1基础/4script&setup.md)✋[css](./前端/vue/1基础/css.md)✋[event](./前端/vue/1基础/event.md)✋[总览](./前端/vue/1基础/总览.md)
 	- 2指令 ✋[v-cloak](./前端/vue/2指令/v-cloak.md)✋[v-for](./前端/vue/2指令/v-for.md)✋[v-html](./前端/vue/2指令/v-html.md)✋[v-if&v-show](./前端/vue/2指令/v-if&v-show.md)✋[v-once](./前端/vue/2指令/v-once.md)✋[v-pre](./前端/vue/2指令/v-pre.md)✋[v-text](./前端/vue/2指令/v-text.md)✋[异步组件suspense](./前端/vue/2指令/异步组件suspense.md)✋[指定位置teleport](./前端/vue/2指令/指定位置teleport.md)✋[自定义指令directive](./前端/vue/2指令/自定义指令directive.md)
@@ -215,9 +212,10 @@
 	- 5组件 ✋[1组间基础component](./前端/vue/5组件/1组间基础component.md)✋[2属性传值props](./前端/vue/5组件/2属性传值props.md)✋[3标签传值slot](./前端/vue/5组件/3标签传值slot.md)
 	- 6生命周期 ✋[hook](./前端/vue/6生命周期/hook.md)✋[lifecycle](./前端/vue/6生命周期/lifecycle.md)
 	- 7插件 ✋[pinia](./前端/vue/7插件/pinia.md)✋[plugin](./前端/vue/7插件/plugin.md)✋[router](./前端/vue/7插件/router.md)✋[vite](./前端/vue/7插件/vite.md)✋[vuex](./前端/vue/7插件/vuex.md)
+- webpack ✋[Webpack开发环境](./前端/webpack/Webpack开发环境.md)✋[Webpack入门](./前端/webpack/Webpack入门.md)✋[Webpack生产环境](./前端/webpack/Webpack生产环境.md)✋[Webpack性能优化](./前端/webpack/Webpack性能优化.md)
 - 未分类 ✋[其他](./前端/未分类/其他.md)
-## 嵌入式开发
-✋[c](./嵌入式开发/c.md)✋[mcu](./嵌入式开发/mcu.md)
+## 嵌入式
+✋[c](./嵌入式/c.md)✋[mcu](./嵌入式/mcu.md)
 ## 数据工程
 - flink
 	- 基础 ✋[exeMode](./数据工程/flink/基础/exeMode.md)✋[pyflink](./数据工程/flink/基础/pyflink.md)✋[state](./数据工程/flink/基础/state.md)✋[watermark](./数据工程/flink/基础/watermark.md)✋[window](./数据工程/flink/基础/window.md)
@@ -262,13 +260,13 @@
 	- 独立同分布 ✋[大数定律](./数学/概率论/独立同分布/大数定律.md)✋[独立性](./数学/概率论/独立同分布/独立性.md)✋[和的分布](./数学/概率论/独立同分布/和的分布.md)✋[平均值的分布](./数学/概率论/独立同分布/平均值的分布.md)✋[中心极限定理](./数学/概率论/独立同分布/中心极限定理.md)
 	- 多维 ✋[边缘分布](./数学/概率论/多维/边缘分布.md)✋[covariance](./数学/概率论/多维/covariance.md)✋[多维随机变量](./数学/概率论/多维/多维随机变量.md)✋[条件分布](./数学/概率论/多维/条件分布.md)
 	- 概率论 ✋[贝叶斯](./数学/概率论/概率论/贝叶斯.md)✋[独立概率](./数学/概率论/概率论/独立概率.md)✋[概率公理化](./数学/概率论/概率论/概率公理化.md)✋[古典派概率](./数学/概率论/概率论/古典派概率.md)✋[probability](./数学/概率论/概率论/probability.md)✋[全概率](./数学/概率论/概率论/全概率.md)✋[什么是概率](./数学/概率论/概率论/什么是概率.md)✋[事件的运算](./数学/概率论/概率论/事件的运算.md)✋[事件关系](./数学/概率论/概率论/事件关系.md)✋[条件概率](./数学/概率论/概率论/条件概率.md)✋[样本空间和事件](./数学/概率论/概率论/样本空间和事件.md)
-	- 离散分布 ✋[伯努利分布](./数学/概率论/离散分布/伯努利分布.md)✋[常见分布](./数学/概率论/离散分布/常见分布.md)✋[超几何分布](./数学/概率论/离散分布/超几何分布.md)✋[二项分布](./数学/概率论/离散分布/二项分布.md)✋[负二项分布](./数学/概率论/离散分布/负二项分布.md)✋[概率密度函数](./数学/概率论/离散分布/概率密度函数.md)✋[几何分布](./数学/概率论/离散分布/几何分布.md)✋[累积分布函数](./数学/概率论/离散分布/累积分布函数.md)✋[泊松分布](./数学/概率论/离散分布/泊松分布.md)
-	- 离散随机变量 ✋[方差](./数学/概率论/离散随机变量/方差.md)✋[概率质量函数](./数学/概率论/离散随机变量/概率质量函数.md)✋[矩](./数学/概率论/离散随机变量/矩.md)✋[累积分布函数](./数学/概率论/离散随机变量/累积分布函数.md)✋[期望](./数学/概率论/离散随机变量/期望.md)✋[随机变量](./数学/概率论/离散随机变量/随机变量.md)
-	- 离散一维和二维 ✋[二维随机变量](./数学/概率论/离散一维和二维/二维随机变量.md)✋[一维随机变量](./数学/概率论/离散一维和二维/一维随机变量.md)
 	- 连续 ✋[方差](./数学/概率论/连续/方差.md)✋[分位点](./数学/概率论/连续/分位点.md)✋[期望](./数学/概率论/连续/期望.md)
 	- 连续分布 ✋[F分布](./数学/概率论/连续分布/F分布.md)✋[常见分布](./数学/概率论/连续分布/常见分布.md)✋[几何分布](./数学/概率论/连续分布/几何分布.md)✋[卡方分布](./数学/概率论/连续分布/卡方分布.md)✋[t分布](./数学/概率论/连续分布/t分布.md)✋[正态分布](./数学/概率论/连续分布/正态分布.md)✋[指数分布](./数学/概率论/连续分布/指数分布.md)
 	- 连续随机变量
 	- 连续一维和二维 ✋[二维随机变量](./数学/概率论/连续一维和二维/二维随机变量.md)✋[一维随机变量](./数学/概率论/连续一维和二维/一维随机变量.md)
+	- 离散分布 ✋[伯努利分布](./数学/概率论/离散分布/伯努利分布.md)✋[常见分布](./数学/概率论/离散分布/常见分布.md)✋[超几何分布](./数学/概率论/离散分布/超几何分布.md)✋[二项分布](./数学/概率论/离散分布/二项分布.md)✋[负二项分布](./数学/概率论/离散分布/负二项分布.md)✋[概率密度函数](./数学/概率论/离散分布/概率密度函数.md)✋[几何分布](./数学/概率论/离散分布/几何分布.md)✋[累积分布函数](./数学/概率论/离散分布/累积分布函数.md)✋[泊松分布](./数学/概率论/离散分布/泊松分布.md)
+	- 离散随机变量 ✋[方差](./数学/概率论/离散随机变量/方差.md)✋[概率质量函数](./数学/概率论/离散随机变量/概率质量函数.md)✋[矩](./数学/概率论/离散随机变量/矩.md)✋[累积分布函数](./数学/概率论/离散随机变量/累积分布函数.md)✋[期望](./数学/概率论/离散随机变量/期望.md)✋[随机变量](./数学/概率论/离散随机变量/随机变量.md)
+	- 离散一维和二维 ✋[二维随机变量](./数学/概率论/离散一维和二维/二维随机变量.md)✋[一维随机变量](./数学/概率论/离散一维和二维/一维随机变量.md)
 - 基础 ✋[derivative](./数学/基础/derivative.md)✋[differential](./数学/基础/differential.md)✋[distance](./数学/基础/distance.md)✋[dot](./数学/基础/dot.md)✋[linear](./数学/基础/linear.md)✋[math](./数学/基础/math.md)
 - 数据分析 ✋[二次规划](./数学/数据分析/二次规划.md)✋[根因分析](./数学/数据分析/根因分析.md)✋[基本流程](./数学/数据分析/基本流程.md)✋[零一规划](./数学/数据分析/零一规划.md)✋[pv-uv-vv](./数学/数据分析/pv-uv-vv.md)✋[数据分析](./数学/数据分析/数据分析.md)✋[线性规划](./数学/数据分析/线性规划.md)✋[用户画像](./数学/数据分析/用户画像.md)✋[整数规划](./数学/数据分析/整数规划.md)
 - 统计学
@@ -277,10 +275,10 @@
 	- 统计模型-回归模型 ✋[多元回归](./数学/统计学/统计模型-回归模型/多元回归.md)✋[广义线性模型](./数学/统计学/统计模型-回归模型/广义线性模型.md)✋[logistic回归](./数学/统计学/统计模型-回归模型/logistic回归.md)✋[泊松回归](./数学/统计学/统计模型-回归模型/泊松回归.md)✋[一元回归](./数学/统计学/统计模型-回归模型/一元回归.md)
 	- 统计模型-基础 ✋[统计模型](./数学/统计学/统计模型-基础/统计模型.md)✋[最小化损失](./数学/统计学/统计模型-基础/最小化损失.md)
 	- 统计模型-评估 ✋[方差分析](./数学/统计学/统计模型-评估/方差分析.md)✋[广义线性模型的评估](./数学/统计学/统计模型-评估/广义线性模型的评估.md)✋[预测评估及变量选择](./数学/统计学/统计模型-评估/预测评估及变量选择.md)
-	- 推断性统计-估计-基础 ✋[点估计](./数学/统计学/推断性统计-估计-基础/点估计.md)✋[矩估计](./数学/统计学/推断性统计-估计-基础/矩估计.md)✋[区间估计](./数学/统计学/推断性统计-估计-基础/区间估计.md)✋[最大后验概率](./数学/统计学/推断性统计-估计-基础/最大后验概率.md)✋[最大似然估计](./数学/统计学/推断性统计-估计-基础/最大似然估计.md)
 	- 推断性统计-估计-假设检验-基础 ✋[假设检验](./数学/统计学/推断性统计-估计-假设检验-基础/假设检验.md)✋[假设检验的两类错误](./数学/统计学/推断性统计-估计-假设检验-基础/假设检验的两类错误.md)
 	- 推断性统计-估计-假设检验-双样本检验 ✋[F检验](./数学/统计学/推断性统计-估计-假设检验-双样本检验/F检验.md)✋[独立样本的t检验](./数学/统计学/推断性统计-估计-假设检验-双样本检验/独立样本的t检验.md)✋[卡方检验](./数学/统计学/推断性统计-估计-假设检验-双样本检验/卡方检验.md)✋[曼恩惠特尼U检验](./数学/统计学/推断性统计-估计-假设检验-双样本检验/曼恩惠特尼U检验.md)✋[配对样本的t检验](./数学/统计学/推断性统计-估计-假设检验-双样本检验/配对样本的t检验.md)✋[双样本检验](./数学/统计学/推断性统计-估计-假设检验-双样本检验/双样本检验.md)✋[威尔科克森符号秩检验](./数学/统计学/推断性统计-估计-假设检验-双样本检验/威尔科克森符号秩检验.md)
 	- 推断性统计-估计-假设检验-正态检验 ✋[正态分布方差检验](./数学/统计学/推断性统计-估计-假设检验-正态检验/正态分布方差检验.md)✋[正态分布均值检验](./数学/统计学/推断性统计-估计-假设检验-正态检验/正态分布均值检验.md)
+	- 推断性统计-估计-基础 ✋[点估计](./数学/统计学/推断性统计-估计-基础/点估计.md)✋[矩估计](./数学/统计学/推断性统计-估计-基础/矩估计.md)✋[区间估计](./数学/统计学/推断性统计-估计-基础/区间估计.md)✋[最大后验概率](./数学/统计学/推断性统计-估计-基础/最大后验概率.md)✋[最大似然估计](./数学/统计学/推断性统计-估计-基础/最大似然估计.md)
 	- 推断性统计-基础 ✋[抽样](./数学/统计学/推断性统计-基础/抽样.md)✋[统计量分布](./数学/统计学/推断性统计-基础/统计量分布.md)✋[样本统计量的性质](./数学/统计学/推断性统计-基础/样本统计量的性质.md)✋[总体和样本](./数学/统计学/推断性统计-基础/总体和样本.md)
 ## 写作
 - 编辑器
@@ -288,17 +286,14 @@
 	- vscode ✋[快捷键](./写作/编辑器/vscode/快捷键.md)✋[python](./写作/编辑器/vscode/python.md)✋[任务](./写作/编辑器/vscode/任务.md)✋[sftp](./写作/编辑器/vscode/sftp.md)✋[设置同步](./写作/编辑器/vscode/设置同步.md)✋[snippets代码模板](./写作/编辑器/vscode/snippets代码模板.md)✋[terminal](./写作/编辑器/vscode/terminal.md)✋[vscode](./写作/编辑器/vscode/vscode.md)✋[智能补全](./写作/编辑器/vscode/智能补全.md)
 - 博客软件
 	- hexo ✋[安装](./写作/博客软件/hexo/安装.md)✋[部署](./写作/博客软件/hexo/部署.md)✋[markdown](./写作/博客软件/hexo/markdown.md)✋[next安装](./写作/博客软件/hexo/next安装.md)✋[next查看更多功能](./写作/博客软件/hexo/next查看更多功能.md)✋[next配置](./写作/博客软件/hexo/next配置.md)✋[next样式](./写作/博客软件/hexo/next样式.md)✋[next自定义页面](./写作/博客软件/hexo/next自定义页面.md)✋[配置](./写作/博客软件/hexo/配置.md)✋[热更新](./写作/博客软件/hexo/热更新.md)✋[图片](./写作/博客软件/hexo/图片.md)✋[样式](./写作/博客软件/hexo/样式.md)
+	- pandoc ✋[基础](./写作/博客软件/pandoc/基础.md)
 	- reveal ✋[结构](./写作/博客软件/reveal/结构.md)✋[markdown](./写作/博客软件/reveal/markdown.md)✋[碎片动画](./写作/博客软件/reveal/碎片动画.md)
 	- vuepress ✋[markdown](./写作/博客软件/vuepress/markdown.md)
 - 文本内容
 	- latex ✋[代数符号](./写作/文本内容/latex/代数符号.md)✋[多行](./写作/文本内容/latex/多行.md)✋[基础](./写作/文本内容/latex/基础.md)✋[集合符号](./写作/文本内容/latex/集合符号.md)✋[几何符号](./写作/文本内容/latex/几何符号.md)✋[矩阵](./写作/文本内容/latex/矩阵.md)✋[逻辑符号](./写作/文本内容/latex/逻辑符号.md)✋[希腊符号](./写作/文本内容/latex/希腊符号.md)✋[组合符号](./写作/文本内容/latex/组合符号.md)
-	- markdown ✋[标题](./写作/文本内容/markdown/标题.md)✋[表情符号](./写作/文本内容/markdown/表情符号.md)✋[段落与换行](./写作/文本内容/markdown/段落与换行.md)✋[列表](./写作/文本内容/markdown/列表.md)✋[强调](./写作/文本内容/markdown/强调.md)✋[原理](./写作/文本内容/markdown/原理.md)✋[注释](./写作/文本内容/markdown/注释.md)
+	- markdown ✋[表情符号](./写作/文本内容/markdown/表情符号.md)✋[标题](./写作/文本内容/markdown/标题.md)✋[段落与换行](./写作/文本内容/markdown/段落与换行.md)✋[列表](./写作/文本内容/markdown/列表.md)✋[强调](./写作/文本内容/markdown/强调.md)✋[原理](./写作/文本内容/markdown/原理.md)✋[注释](./写作/文本内容/markdown/注释.md)
 	- 图形 ✋[echarts数据集](./写作/文本内容/图形/echarts数据集.md)✋[flowchart](./写作/文本内容/图形/flowchart.md)✋[mermaid](./写作/文本内容/图形/mermaid.md)✋[zoomit](./写作/文本内容/图形/zoomit.md)
 	- 最佳实践 ✋[工作笔记实践](./写作/文本内容/最佳实践/工作笔记实践.md)✋[考试笔记实践](./写作/文本内容/最佳实践/考试笔记实践.md)
-## 音乐
-✋[MusicTheory](./音乐/MusicTheory.md)✋[电子琴](./音乐/电子琴.md)✋[电子琴练习](./音乐/电子琴练习.md)✋[vexflow](./音乐/vexflow.md)✋[相爱](./音乐/相爱.md)
-## 英语
-✋[phonics](./英语/phonics.md)✋[s01e01](./英语/s01e01.md)✋[音标](./英语/音标.md)✋[英语分析](./英语/英语分析.md)✋[英语学习](./英语/英语学习.md)
 ## 影音制作
 - 录屏软件
 - manim ✋[coordinate](./影音制作/manim/coordinate.md)✋[manim](./影音制作/manim/manim.md)✋[mobject](./影音制作/manim/mobject.md)✋[orient](./影音制作/manim/orient.md)✋[scene](./影音制作/manim/scene.md)
@@ -306,5 +301,9 @@
 - manim-配置相关 ✋[color](./影音制作/manim-配置相关/color.md)✋[config](./影音制作/manim-配置相关/config.md)
 - openGL ✋[openGL](./影音制作/openGL/openGL.md)
 - 音频软件 ✋[audition](./影音制作/音频软件/audition.md)✋[melodyne](./影音制作/音频软件/melodyne.md)
+## 英语
+✋[phonics](./英语/phonics.md)✋[s01e01](./英语/s01e01.md)✋[音标](./英语/音标.md)✋[英语学习](./英语/英语学习.md)
+## 音乐
+✋[MusicTheory](./音乐/MusicTheory.md)✋[电子琴](./音乐/电子琴.md)✋[电子琴练习](./音乐/电子琴练习.md)✋[vexflow](./音乐/vexflow.md)✋[相爱](./音乐/相爱.md)
 ## 游戏
 ✋[传奇](./游戏/传奇.md)
