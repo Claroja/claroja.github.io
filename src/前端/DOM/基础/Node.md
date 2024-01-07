@@ -1,6 +1,5 @@
 # Node
 
-
 `Node`是一个基类，DOM中的`Element`，`Text`和`Comment`都继承于它。 换句话说，`Element`，`Text`和`Comment`是三种特殊的Node，它们分别叫做`ELEMENT_NODE`, `TEXT_NODE`和`COMMENT_NODE`。我们平时使用的HTML上的元素，即Element，是类型为ELEMENT_NODE的Node。
 
 [参考官网](https://developer.mozilla.org/zh-CN/docs/Web/API/Node/)

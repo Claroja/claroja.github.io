@@ -1,6 +1,5 @@
 # 获取Element
 
-
 ## 元素选择器(建议)
 通过样式选择器来获取`document.querySelector`或`document.querySelectorAll`.
 

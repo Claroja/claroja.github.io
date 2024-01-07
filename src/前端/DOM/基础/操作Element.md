@@ -7,13 +7,13 @@
 4. 操作元素样式: element.style/className
 
 
-
 ## 操作元素内容
 
 ### innerText和innerHTML
 1. innerText 不识别html标签, 去除空格和换行
 2. innerHTML 识别html标签 W3C标准 保留空格和换行的
 3. 这两个属性是可读写的, 可以获取元素里面的内容
+
 ```html
 <body>
     <div></div>
@@ -35,8 +35,6 @@
     </script>
 </body>
 ```
-
-
 
 ### 表单input.value
 1. 表单里面的值 文字内容是通过 value 来修改的
@@ -94,6 +92,8 @@
 ## 操作属性
 
 ### 常见属性
+
+
 ```html
 <body>
     <img src="images/1.jpg" alt="" title="wang">

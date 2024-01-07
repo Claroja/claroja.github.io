@@ -1,13 +1,13 @@
 # 增删Element
 
-
-
-
 ## 节点的增删改查
+
 ### 添加节点
 `document.createElement('tagName')`
 `node.appendChild(child)`方法将一个节点添加到指定父节点的子节点列表末尾。
 `node.insertBefore(child, 指定元素)`方法将一个节点添加到父节点的指定子节点前面。
+
+
 ```html
 <body>
     <ul>
@@ -28,7 +28,7 @@
 
 ```
 
-## 删除节点
+### 删除节点
 `node.removeChild()`方法从 DOM 中删除一个子节点，返回删除的节点
 ```html
 <body>
@@ -47,8 +47,9 @@
 </body>
 ```
 
-## 复制节点
+### 复制节点
 `node.cloneNode()`方法返回调用该方法的节点的一个副本。 也称为克隆节点/拷贝节点
+
 ```html
 <body>
     <ul>
@@ -67,10 +68,10 @@
 ```
 
 ## 创建元素的三种方法
-1. document.write 是直接将内容写入页面的内容流，但是文档流执行完毕，则它会导致页面全部重绘
-2. innerHTML 是将内容写入某个 DOM 节点，不会导致页面全部重绘
-3. innerHTML 创建多个元素效率更高（不要拼接字符串，采取数组形式拼接），结构稍微复杂
-4. createElement() 创建多个元素效率稍低一点点，但是结构更清晰
+1. `document.write` 是直接将内容写入页面的内容流，但是文档流执行完毕，则它会导致页面全部重绘
+2. `innerHTML` 是将内容写入某个 DOM 节点，不会导致页面全部重绘. `innerHTML` 创建多个元素效率更高（不要拼接字符串，采取数组形式拼接），结构稍微复杂
+3. `createElement()` 创建多个元素效率稍低一点点，但是结构更清晰
+
 总结：不同浏览器下，innerHTML 效率要比 creatElement 高
 
 
