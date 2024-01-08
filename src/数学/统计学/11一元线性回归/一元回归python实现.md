@@ -1,10 +1,5 @@
 # 一元回归
 
-
-
-
-
-
 ```python
 """
 beer	temperature
@@ -79,6 +74,8 @@ No. Observations:	30	AIC:	208.9
 Df Residuals:	28	BIC:	211.7
 Df Model:	1		
 Covariance Type:	nonrobust	
+
+
 ## 表格2
 coef	std err	t	P>|t|	[0.025	0.975]
 Intercept	34.6102	3.235	10.699	0.000	27.984	41.237
