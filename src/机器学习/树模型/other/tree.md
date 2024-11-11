@@ -123,11 +123,8 @@ Fbs has the highest Entropy, so we will use it at the Root Node, Precisely the s
 
 
 
-
-
-
-refs:
-https://medium.datadriveninvestor.com/the-basics-of-decision-trees-e5837cc2aba7
-https://medium.com/analytics-vidhya/classification-in-decision-tree-a-step-by-step-cart-classification-and-regression-tree-8e5f5228b11e
-https://arifromadhan19.medium.com/regrssion-in-decision-tree-a-step-by-step-cart-classification-and-regression-tree-196c6ac9711e
+## 参考
+1. https://medium.datadriveninvestor.com/the-basics-of-decision-trees-e5837cc2aba7
+2. https://medium.com/analytics-vidhya/classification-in-decision-tree-a-step-by-step-cart-classification-and-regression-tree-8e5f5228b11e
+3. https://arifromadhan19.medium.com/regrssion-in-decision-tree-a-step-by-step-cart-classification-and-regression-tree-196c6ac9711e
 

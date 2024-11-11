@@ -38,7 +38,7 @@ def func(path, head_count, root_list):
             line.append(f'[{mdfile.stem}](./{str(mdfile).replace("src/","",1)})')
             # 处理sidebar.ts
             root_list.append({
-                'text': mdfile.stem,
+                'text': f'📝{mdfile.stem}',
                 'link': f'{mdfile.parts[-1]}',
                 # 'collapsible': True,
             })
@@ -55,7 +55,7 @@ def func(path, head_count, root_list):
 
         for x in sorted(path.iterdir(), key=getH):
             new_dir = {
-                'text': x.parts[-1],
+                'text': f'📂{x.parts[-1]}',
                 'prefix': f'{x.parts[-1]}',
                 # 'link': f'/{x.parts[-1]}',
                 'collapsible': 'true',

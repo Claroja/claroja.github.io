@@ -10,10 +10,6 @@
 
 
 
-
-
-
-
 ## 使用pandoc生成
 参考[slide-shows](https://pandoc.org/MANUAL.html#slide-shows)与[Pandoc与Reveal.js制作幻灯片](https://zhuanlan.zhihu.com/p/113146276)
 

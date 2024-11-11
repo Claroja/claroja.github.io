@@ -8,6 +8,12 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a 
 irm get.scoop.sh | iex
 ```
 
+## 国内镜像
+scoop config SCOOP_REPO https://gitee.com/glsnames/scoop-installer
+scoop config SCOOP_REPO https://github.com/ScoopInstaller/Scoop
+scoop bucket rm main
+scoop bucket add main
+
 ## 文件夹说明
 
 路径|描述

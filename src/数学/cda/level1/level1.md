@@ -5,7 +5,7 @@
 业务理解-数据获取-数据处理-数据分析-结果展现
 ### 数据挖局的基本流程
 CRISP-DM(cross-industry standard process for data mining)跨行业数据挖掘标准流程:
-1. 商业理解(business understanding)
+1. 业务理解(business understanding)
 2. 数据理解(data understanding)
 3. 数据准备(data preparation)
 4. 建立模型(modeling)

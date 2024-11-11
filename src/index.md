@@ -12,7 +12,7 @@
 	- github ✋[actions](./编程基础/git/github/actions.md)
 - linux
 	- process ✋[backgroundProcess](./编程基础/linux/process/backgroundProcess.md)✋[daemon](./编程基础/linux/process/daemon.md)✋[jobs](./编程基础/linux/process/jobs.md)✋[ps](./编程基础/linux/process/ps.md)✋[signal](./编程基础/linux/process/signal.md)
-	- 其他 ✋[环境变量](./编程基础/linux/其他/环境变量.md)✋[目录结构](./编程基础/linux/其他/目录结构.md)✋[软件安装](./编程基础/linux/其他/软件安装.md)
+	- 其他 ✋[环境变量](./编程基础/linux/系统/环境变量.md)✋[目录结构](./编程基础/linux/系统/目录结构.md)✋[软件安装](./编程基础/linux/系统/软件安装.md)
 	- shell ✋[command](./编程基础/linux/shell/command.md)✋[datatype](./编程基础/linux/shell/datatype.md)✋[for](./编程基础/linux/shell/for.md)✋[if](./编程基础/linux/shell/if.md)✋[script](./编程基础/linux/shell/script.md)✋[shell](./编程基础/linux/shell/shell.md)✋[variable](./编程基础/linux/shell/variable.md)
 	- timer ✋[crontab](./编程基础/linux/timer/crontab.md)
 	- tool ✋[tmux](./编程基础/linux/tool/tmux.md)
@@ -90,13 +90,13 @@
 		- 第1分编_通则 ✋[1一般规定](./法学/民法/第3编_合同/第1分编_通则/1一般规定.md)✋[2合同的订立](./法学/民法/第3编_合同/第1分编_通则/2合同的订立.md)✋[3合同的效力](./法学/民法/第3编_合同/第1分编_通则/3合同的效力.md)✋[4合同的履行](./法学/民法/第3编_合同/第1分编_通则/4合同的履行.md)✋[5合同的保全](./法学/民法/第3编_合同/第1分编_通则/5合同的保全.md)✋[6合同的变更和转让](./法学/民法/第3编_合同/第1分编_通则/6合同的变更和转让.md)✋[7合同的权利义务终止](./法学/民法/第3编_合同/第1分编_通则/7合同的权利义务终止.md)✋[8违约责任](./法学/民法/第3编_合同/第1分编_通则/8违约责任.md)
 		- 第2分编_典型合同 ✋[9买卖合同](./法学/民法/第3编_合同/第2分编_典型合同/9买卖合同.md)✋[10供用电、水、气、热力合同](./法学/民法/第3编_合同/第2分编_典型合同/10供用电、水、气、热力合同.md)✋[11赠与合同](./法学/民法/第3编_合同/第2分编_典型合同/11赠与合同.md)✋[12借款合同](./法学/民法/第3编_合同/第2分编_典型合同/12借款合同.md)✋[13保证合同](./法学/民法/第3编_合同/第2分编_典型合同/13保证合同.md)✋[14租赁合同](./法学/民法/第3编_合同/第2分编_典型合同/14租赁合同.md)✋[15融资租赁合同](./法学/民法/第3编_合同/第2分编_典型合同/15融资租赁合同.md)✋[16保理合同](./法学/民法/第3编_合同/第2分编_典型合同/16保理合同.md)✋[17承揽合同](./法学/民法/第3编_合同/第2分编_典型合同/17承揽合同.md)✋[18建设工程合同](./法学/民法/第3编_合同/第2分编_典型合同/18建设工程合同.md)✋[19运输合同](./法学/民法/第3编_合同/第2分编_典型合同/19运输合同.md)✋[20技术合同](./法学/民法/第3编_合同/第2分编_典型合同/20技术合同.md)✋[21保管合同](./法学/民法/第3编_合同/第2分编_典型合同/21保管合同.md)✋[22仓储合同](./法学/民法/第3编_合同/第2分编_典型合同/22仓储合同.md)✋[23委托合同](./法学/民法/第3编_合同/第2分编_典型合同/23委托合同.md)✋[24物业服务合同](./法学/民法/第3编_合同/第2分编_典型合同/24物业服务合同.md)✋[25纪合同](./法学/民法/第3编_合同/第2分编_典型合同/25纪合同.md)✋[26中介合同](./法学/民法/第3编_合同/第2分编_典型合同/26中介合同.md)✋[27合伙合同](./法学/民法/第3编_合同/第2分编_典型合同/27合伙合同.md)
 		- 第3分编_准合同 ✋[28无因管理](./法学/民法/第3编_合同/第3分编_准合同/28无因管理.md)✋[29不当得利](./法学/民法/第3编_合同/第3分编_准合同/29不当得利.md)
-	- 第4编_人格权 ✋[1一般规定](./法学/民法/第4编_人格权/1一般规定.md)✋[2生命权、身体权和健康权](./法学/民法/第4编_人格权/2生命权、身体权和健康权.md)✋[3姓名权和名称权](./法学/民法/第4编_人格权/3姓名权和名称权.md)✋[4肖像权](./法学/民法/第4编_人格权/4肖像权.md)✋[5名誉权和荣誉权](./法学/民法/第4编_人格权/5名誉权和荣誉权.md)✋[6隐私权和个人信息保护](./法学/民法/第4编_人格权/6隐私权和个人信息保护.md)
-	- 第5编_婚姻家庭 ✋[1一般规定](./法学/民法/第5编_婚姻家庭/1一般规定.md)✋[2结婚](./法学/民法/第5编_婚姻家庭/2结婚.md)✋[3家庭关系](./法学/民法/第5编_婚姻家庭/3家庭关系.md)✋[4离婚](./法学/民法/第5编_婚姻家庭/4离婚.md)✋[5收养](./法学/民法/第5编_婚姻家庭/5收养.md)
-	- 第6编_继承 ✋[1一般规定](./法学/民法/第6编_继承/1一般规定.md)✋[2法定继承](./法学/民法/第6编_继承/2法定继承.md)✋[3遗嘱继承和遗赠](./法学/民法/第6编_继承/3遗嘱继承和遗赠.md)✋[4遗产的处理](./法学/民法/第6编_继承/4遗产的处理.md)
-	- 第7编_侵权责任 ✋[1一般规定](./法学/民法/第7编_侵权责任/1一般规定.md)✋[2损害赔偿](./法学/民法/第7编_侵权责任/2损害赔偿.md)✋[3责任主体的特殊规定](./法学/民法/第7编_侵权责任/3责任主体的特殊规定.md)✋[4产品责任](./法学/民法/第7编_侵权责任/4产品责任.md)✋[5机动车交通事故责任](./法学/民法/第7编_侵权责任/5机动车交通事故责任.md)✋[6医疗损害责任](./法学/民法/第7编_侵权责任/6医疗损害责任.md)✋[7污染和生态破坏责任](./法学/民法/第7编_侵权责任/7污染和生态破坏责任.md)✋[8高度危险责任](./法学/民法/第7编_侵权责任/8高度危险责任.md)✋[9饲养动物损害责任](./法学/民法/第7编_侵权责任/9饲养动物损害责任.md)✋[10物和物件损害责任](./法学/民法/第7编_侵权责任/10物和物件损害责任.md)
+	- 第4编_人格权 ✋[1一般规定](./法学/民法/4人格权/1一般规定.md)✋[2生命权、身体权和健康权](./法学/民法/4人格权/2生命权、身体权和健康权.md)✋[3姓名权和名称权](./法学/民法/4人格权/3姓名权和名称权.md)✋[4肖像权](./法学/民法/4人格权/4肖像权.md)✋[5名誉权和荣誉权](./法学/民法/4人格权/5名誉权和荣誉权.md)✋[6隐私权和个人信息保护](./法学/民法/4人格权/6隐私权和个人信息保护.md)
+	- 第5编_婚姻家庭 ✋[1一般规定](./法学/民法/5婚姻家庭/1一般规定.md)✋[2结婚](./法学/民法/5婚姻家庭/2结婚.md)✋[3家庭关系](./法学/民法/5婚姻家庭/3家庭关系.md)✋[4离婚](./法学/民法/5婚姻家庭/4离婚.md)✋[5收养](./法学/民法/5婚姻家庭/5收养.md)
+	- 第6编_继承 ✋[1一般规定](./法学/民法/6继承/1一般规定.md)✋[2法定继承](./法学/民法/6继承/2_0法定继承.md)✋[3遗嘱继承和遗赠](./法学/民法/6继承/4遗嘱继承和遗赠.md)✋[4遗产的处理](./法学/民法/6继承/4遗产的处理.md)
+	- 第7编_侵权责任 ✋[1一般规定](./法学/民法/7侵权责任/1一般规定.md)✋[2损害赔偿](./法学/民法/7侵权责任/2损害赔偿.md)✋[3责任主体的特殊规定](./法学/民法/7侵权责任/3_4安保责任.md)✋[4产品责任](./法学/民法/7侵权责任/4产品责任.md)✋[5机动车交通事故责任](./法学/民法/7侵权责任/5机动车交通事故责任.md)✋[6医疗损害责任](./法学/民法/7侵权责任/6医疗损害责任.md)✋[7污染和生态破坏责任](./法学/民法/7侵权责任/7污染和生态破坏责任.md)✋[8高度危险责任](./法学/民法/7侵权责任/8高度危险责任.md)✋[9饲养动物损害责任](./法学/民法/7侵权责任/9饲养动物损害责任.md)✋[10物和物件损害责任](./法学/民法/7侵权责任/10物和物件损害责任.md)
 	- 法条原文 ✋[公司法](./法学/民法/法条原文/公司法.md)✋[民法典](./法学/民法/法条原文/民法典.md)✋[有关担保制度的解释](./法学/民法/法条原文/有关担保制度的解释.md)
 - 民诉
-	- 法条原文 ✋[民事诉讼法](./法学/民诉/法条原文/民事诉讼法.md)✋[民事诉讼法解释](./法学/民诉/法条原文/民事诉讼法解释.md)✋[最高人民法院关于民事诉讼证据的若干规定](./法学/民诉/法条原文/最高人民法院关于民事诉讼证据的若干规定.md)
+	- 法条原文 ✋[民事诉讼法](./法学/民诉/法条原文/民事诉讼法.md)✋[民事诉讼法解释](./法学/民诉/法条原文/民事诉讼法解释.md)✋[最高人民法院关于民事诉讼证据的若干规定](./法学/民诉/法条原文/民诉证据.md)
 	- 总则 ✋[1任务、适用范围和基本原则](./法学/民诉/总则/1任务、适用范围和基本原则.md)✋[2管辖](./法学/民诉/总则/2管辖.md)✋[3审判组织](./法学/民诉/总则/3审判组织.md)✋[4回避](./法学/民诉/总则/4回避.md)✋[5诉讼参加人](./法学/民诉/总则/5诉讼参加人.md)✋[6证据](./法学/民诉/总则/6证据.md)
 ## 后端
 - flask
@@ -203,11 +203,11 @@
 	- 标准流 ✋[boxModel](./前端/css/标准流/boxModel.md)✋[display](./前端/css/标准流/display.md)
 	- 定位流 ✋[position](./前端/css/定位流/position.md)✋[zindex](./前端/css/定位流/zindex.md)
 	- 动画 ✋[transition](./前端/css/动画/transition.md)
-	- flex ✋[flex](./前端/css/flex/flex.md)
+	- flex ✋[flex](./前端/css/display/2flex.md)
 	- 浮动流 ✋[float](./前端/css/浮动流/float.md)✋[overflow](./前端/css/浮动流/overflow.md)
 	- 基础 ✋[feature](./前端/css/基础/feature.md)✋[inlineOrBlock](./前端/css/基础/inlineOrBlock.md)✋[intro](./前端/css/基础/intro.md)✋[loadCSS](./前端/css/基础/loadCSS.md)✋[selector](./前端/css/基础/selector.md)
 	- 字体与图片 ✋[font](./前端/css/字体与图片/font.md)✋[fontface](./前端/css/字体与图片/fontface.md)✋[spirit](./前端/css/字体与图片/spirit.md)
-- html ✋[audio](./前端/html/audio.md)✋[svg](./前端/html/svg.md)
+- html ✋[audio](./前端/html/audio.md)✋[svg](./前端/DOM/svgDom/svg.md)
 - vue
 	- 1基础 ✋[1安装配置](./前端/vue/1基础/1安装配置.md)✋[2createApp](./前端/vue/1基础/2createApp.md)✋[3setup](./前端/vue/1基础/3setup.md)✋[4script&setup](./前端/vue/1基础/4script&setup.md)✋[css](./前端/vue/1基础/css.md)✋[event](./前端/vue/1基础/event.md)✋[总览](./前端/vue/1基础/总览.md)
 	- 2指令 ✋[v-cloak](./前端/vue/2指令/v-cloak.md)✋[v-for](./前端/vue/2指令/v-for.md)✋[v-html](./前端/vue/2指令/v-html.md)✋[v-if&v-show](./前端/vue/2指令/v-if&v-show.md)✋[v-once](./前端/vue/2指令/v-once.md)✋[v-pre](./前端/vue/2指令/v-pre.md)✋[v-text](./前端/vue/2指令/v-text.md)✋[异步组件suspense](./前端/vue/2指令/异步组件suspense.md)✋[指定位置teleport](./前端/vue/2指令/指定位置teleport.md)✋[自定义指令directive](./前端/vue/2指令/自定义指令directive.md)
@@ -231,16 +231,16 @@
 	- state ✋[faultTolerance](./数据工程/flink/state/faultTolerance.md)✋[state](./数据工程/flink/state/state.md)
 	- window ✋[join](./数据工程/flink/window/join.md)✋[time](./数据工程/flink/window/time.md)✋[window](./数据工程/flink/window/window.md)
 - 数据库
-	- DDL ✋[column](./数据工程/数据库/DDL/column.md)✋[database](./数据工程/数据库/DDL/database.md)✋[index](./数据工程/数据库/DDL/index.md)✋[table](./数据工程/数据库/DDL/table.md)
-	- DML ✋[delete](./数据工程/数据库/DML/delete.md)✋[insert](./数据工程/数据库/DML/insert.md)✋[update](./数据工程/数据库/DML/update.md)
-	- TPL ✋[tpl](./数据工程/数据库/TPL/tpl.md)
-	- TYPE&FUNC ✋[aggFunc](./数据工程/数据库/TYPE&FUNC/aggFunc.md)✋[json](./数据工程/数据库/TYPE&FUNC/json.md)✋[num](./数据工程/数据库/TYPE&FUNC/num.md)✋[str](./数据工程/数据库/TYPE&FUNC/str.md)
-	- action ✋[pivot](./数据工程/数据库/action/pivot.md)✋[valuesTrows](./数据工程/数据库/action/valuesTrows.md)
-	- connect ✋[python](./数据工程/数据库/connect/python.md)✋[shell](./数据工程/数据库/connect/shell.md)
+	- DDL ✋[column](./数据工程/数据库/表/column.md)✋[database](./数据工程/数据库/库/数据库操作.md)✋[index](./数据工程/数据库/表/index.md)✋[table](./数据工程/数据库/表/table.md)
+	- DML ✋[delete](./数据工程/数据库/基础/DML/delete.md)✋[insert](./数据工程/数据库/基础/DML/insert.md)✋[update](./数据工程/数据库/基础/DML/update.md)
+	- TPL ✋[tpl](./数据工程/数据库/基础/TPL/tpl.md)
+	- TYPE&FUNC ✋[aggFunc](./数据工程/数据库/基础/TYPE&FUNC/aggFunc.md)✋[json](./数据工程/数据库/基础/TYPE&FUNC/json.md)✋[num](./数据工程/数据库/基础/TYPE&FUNC/num.md)✋[str](./数据工程/数据库/基础/TYPE&FUNC/str.md)
+	- action ✋[pivot](./数据工程/数据库/基础/action/pivot.md)✋[valuesTrows](./数据工程/数据库/基础/action/valuesTrows.md)
+	- connect ✋[python](./数据工程/数据库/数据库管理系统/python.md)✋[shell](./数据工程/数据库/数据库管理系统/shell.md)
 	- datawarehouse
 	- 基础 ✋[backupRestore](./数据工程/数据库/基础/backupRestore.md)✋[case](./数据工程/数据库/基础/case.md)✋[from](./数据工程/数据库/基础/from.md)✋[group](./数据工程/数据库/基础/group.md)✋[install](./数据工程/数据库/基础/install.md)✋[join](./数据工程/数据库/基础/join.md)✋[limit](./数据工程/数据库/基础/limit.md)✋[order](./数据工程/数据库/基础/order.md)✋[over](./数据工程/数据库/基础/over.md)✋[quotes](./数据工程/数据库/基础/quotes.md)✋[select](./数据工程/数据库/基础/select.md)✋[sql](./数据工程/数据库/基础/sql.md)✋[union](./数据工程/数据库/基础/union.md)✋[variable](./数据工程/数据库/基础/variable.md)✋[where](./数据工程/数据库/基础/where.md)
-	- other ✋[event](./数据工程/数据库/other/event.md)✋[procedure](./数据工程/数据库/other/procedure.md)✋[trigger](./数据工程/数据库/other/trigger.md)
-	- 未分类 ✋[as-withAs](./数据工程/数据库/未分类/as-withAs.md)✋[centos7](./数据工程/数据库/未分类/centos7.md)✋[count](./数据工程/数据库/未分类/count.md)✋[datetime](./数据工程/数据库/未分类/datetime.md)✋[docker](./数据工程/数据库/未分类/docker.md)✋[field](./数据工程/数据库/未分类/field.md)✋[pymysql](./数据工程/数据库/未分类/pymysql.md)✋[数据类型](./数据工程/数据库/未分类/数据类型.md)✋[sql](./数据工程/数据库/未分类/sql.md)✋[sqlalchemy](./数据工程/数据库/未分类/sqlalchemy.md)✋[subquery](./数据工程/数据库/未分类/subquery.md)✋[view](./数据工程/数据库/未分类/view.md)✋[win](./数据工程/数据库/未分类/win.md)✋[约束](./数据工程/数据库/未分类/约束.md)
+	- other ✋[event](./数据工程/数据库/库/事件(event).md)✋[procedure](./数据工程/数据库/库/存储过程(procedure).md)✋[trigger](./数据工程/数据库/库/触发器(trigger).md)
+	- 未分类 ✋[as-withAs](./数据工程/数据库/基础/未分类/as-withAs.md)✋[centos7](./数据工程/数据库/数据库管理系统/centos7.md)✋[count](./数据工程/数据库/表/count.md)✋[datetime](./数据工程/数据库/表/datetime.md)✋[docker](./数据工程/数据库/数据库管理系统/docker.md)✋[field](./数据工程/数据库/表/field.md)✋[pymysql](./数据工程/数据库/数据库管理系统/pymysql.md)✋[数据类型](./数据工程/数据库/表/数据类型.md)✋[sql](./数据工程/数据库/基础/未分类/sql.md)✋[sqlalchemy](./数据工程/数据库/数据库管理系统/sqlalchemy.md)✋[subquery](./数据工程/数据库/基础/未分类/subquery.md)✋[view](./数据工程/数据库/基础/未分类/view.md)✋[win](./数据工程/数据库/数据库管理系统/win.md)✋[约束](./数据工程/数据库/表/约束.md)
 - spark
 	- function ✋[actionFunc](./数据工程/spark/function/actionFunc.md)✋[broadcast](./数据工程/spark/function/broadcast.md)✋[cache](./数据工程/spark/function/cache.md)✋[checkpoint](./数据工程/spark/function/checkpoint.md)✋[dataframe](./数据工程/spark/function/dataframe.md)✋[dsl](./数据工程/spark/function/dsl.md)✋[functions](./数据工程/spark/function/functions.md)✋[partitionFunc](./数据工程/spark/function/partitionFunc.md)✋[session](./数据工程/spark/function/session.md)✋[sql](./数据工程/spark/function/sql.md)✋[transformationFunc](./数据工程/spark/function/transformationFunc.md)✋[udf](./数据工程/spark/function/udf.md)
 	- 基础 ✋[DAG](./数据工程/spark/基础/DAG.md)✋[SparkContxt](./数据工程/spark/基础/SparkContxt.md)✋[accumulator](./数据工程/spark/基础/accumulator.md)✋[createRDD](./数据工程/spark/基础/createRDD.md)✋[intro](./数据工程/spark/基础/intro.md)✋[rdd](./数据工程/spark/基础/rdd.md)✋[wordCount](./数据工程/spark/基础/wordCount.md)
@@ -308,14 +308,14 @@
 	- vscode ✋[快捷键](./写作/编辑器/vscode/快捷键.md)✋[python](./写作/编辑器/vscode/python.md)✋[任务](./写作/编辑器/vscode/任务.md)✋[sftp](./写作/编辑器/vscode/sftp.md)✋[设置同步](./写作/编辑器/vscode/设置同步.md)✋[snippets代码模板](./写作/编辑器/vscode/snippets代码模板.md)✋[terminal](./写作/编辑器/vscode/terminal.md)✋[vscode](./写作/编辑器/vscode/vscode.md)✋[智能补全](./写作/编辑器/vscode/智能补全.md)
 - 博客软件
 	- hexo ✋[安装](./写作/博客软件/hexo/安装.md)✋[部署](./写作/博客软件/hexo/部署.md)✋[markdown](./写作/博客软件/hexo/markdown.md)✋[next安装](./写作/博客软件/hexo/next安装.md)✋[next查看更多功能](./写作/博客软件/hexo/next查看更多功能.md)✋[next配置](./写作/博客软件/hexo/next配置.md)✋[next样式](./写作/博客软件/hexo/next样式.md)✋[next自定义页面](./写作/博客软件/hexo/next自定义页面.md)✋[配置](./写作/博客软件/hexo/配置.md)✋[热更新](./写作/博客软件/hexo/热更新.md)✋[图片](./写作/博客软件/hexo/图片.md)✋[样式](./写作/博客软件/hexo/样式.md)
-	- pandoc ✋[基础](./写作/博客软件/pandoc/基础.md)
+	- pandoc ✋[基础](./写作/博客软件/pandoc/pandoc基础.md)
 	- reveal ✋[结构](./写作/博客软件/reveal/结构.md)✋[markdown](./写作/博客软件/reveal/markdown.md)✋[碎片动画](./写作/博客软件/reveal/碎片动画.md)
 	- vuepress ✋[markdown](./写作/博客软件/vuepress/markdown.md)
 - 文本内容
 	- latex ✋[代数符号](./写作/文本内容/latex/代数符号.md)✋[多行](./写作/文本内容/latex/多行.md)✋[基础](./写作/文本内容/latex/基础.md)✋[集合符号](./写作/文本内容/latex/集合符号.md)✋[几何符号](./写作/文本内容/latex/几何符号.md)✋[矩阵](./写作/文本内容/latex/矩阵.md)✋[逻辑符号](./写作/文本内容/latex/逻辑符号.md)✋[希腊符号](./写作/文本内容/latex/希腊符号.md)✋[组合符号](./写作/文本内容/latex/组合符号.md)
 	- markdown ✋[表情符号](./写作/文本内容/markdown/表情符号.md)✋[标题](./写作/文本内容/markdown/标题.md)✋[段落与换行](./写作/文本内容/markdown/段落与换行.md)✋[列表](./写作/文本内容/markdown/列表.md)✋[强调](./写作/文本内容/markdown/强调.md)✋[原理](./写作/文本内容/markdown/原理.md)✋[注释](./写作/文本内容/markdown/注释.md)
 	- 图形 ✋[echarts数据集](./写作/文本内容/图形/echarts数据集.md)✋[flowchart](./写作/文本内容/图形/flowchart.md)✋[mermaid](./写作/文本内容/图形/mermaid.md)✋[zoomit](./写作/文本内容/图形/zoomit.md)
-	- 最佳实践 ✋[工作笔记实践](./写作/文本内容/最佳实践/工作笔记实践.md)✋[考试笔记实践](./写作/文本内容/最佳实践/考试笔记实践.md)
+	- 最佳实践 ✋[工作笔记实践](./写作/文本内容/最佳实践/工作笔记实践.md)✋[考试笔记实践](./写作/文本内容/最佳实践/方法论_考试2.md)
 ## 影音制作
 - 大明王朝1566 ✋[基础](./影音制作/大明王朝1566/基础.md)
 - 录屏软件

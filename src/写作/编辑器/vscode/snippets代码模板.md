@@ -46,6 +46,12 @@
 
 
 
+
+## fencedCodeBlock
+
+[参考](https://danielabaron.me/blog/vscode-markdown-basics-custom-fenced-languages/)
+
+
 ## 使用拓展
 可以在`extensions`中搜索`sinppet`相关的extension
 

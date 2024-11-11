@@ -105,6 +105,8 @@ df.groupby("order_id").agg({'ext_price': np.sum,
 ```python
 df.groupby('order_id').filter(lambda x: len(x) > 3) # 分组后个数大于2的组，只有girl
 ```
+
+
 参考:
 https://pbpython.com/pandas_transform.html
 https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html

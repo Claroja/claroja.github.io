@@ -1,9 +1,10 @@
 # path
 
+
+
 ## 特别注意
 <font style="background: hotpink">注意设置在"属性"中设置"以管理员身份运行此程序"</font>否则有些程序, 如`pywin32`某些功能, 如鼠标点击时间, 将无效.
 另外, 如果使用vscode, 也需要将vscode设置为"以管理员身份运行此程序", 否则无法打开管理员身份的python.exe
-
 
 ## 配置文件
 直接拷贝`setting.json`配置文件

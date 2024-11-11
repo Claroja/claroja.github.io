@@ -31,9 +31,6 @@ class svg{
         this.body.appendChild(graph?.body)
         return graph
     }
-
-
-
 }
 
 
@@ -95,7 +92,5 @@ class circle{
 
     }
 }
-
-
 export {createSvg, circle}
 ```

@@ -3,9 +3,7 @@
 CART uses Gini Impurity in the process of splitting the dataset into a decision tree.
 Mathematically, we can write Gini Impurity as following:
 $$I_{Gini} = 1 - \sum_{i=1}^{j}p_i^2$$
-$$I_{Gini} = 1 - (theProbabilityOfTarget"No")^2 - (theProbabilityOfTarget"YES")^2$$
-
-
+$$I_{Gini} = 1 - (theProbabilityOfTarget"No")^2 - (theProbabilityOfTarget"YES")^2$
 
 
 ## Classification
