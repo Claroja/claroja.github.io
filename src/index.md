@@ -113,7 +113,7 @@
 ## 机器学习
 - 贝叶斯
 	- 贝叶斯网络 ✋[MontyHallProblem](./机器学习/贝叶斯/贝叶斯网络/MontyHallProblem.md)✋[贝叶斯网络理论知识](./机器学习/贝叶斯/贝叶斯网络/贝叶斯网络理论知识.md)✋[pgmpyEg](./机器学习/贝叶斯/贝叶斯网络/pgmpyEg.md)✋[pgmpy创建网络](./机器学习/贝叶斯/贝叶斯网络/pgmpy创建网络.md)✋[pgmpy模型训练](./机器学习/贝叶斯/贝叶斯网络/pgmpy模型训练.md)✋[pgmpy推理](./机器学习/贝叶斯/贝叶斯网络/pgmpy推理.md)
-	- probability ✋[ConditionalProbability](./机器学习/贝叶斯/probability/ConditionalProbability.md)✋[ProbabilityAndLikelihood](./机器学习/贝叶斯/probability/ProbabilityAndLikelihood.md)✋[entropy](./机器学习/贝叶斯/probability/entropy.md)✋[expect](./机器学习/贝叶斯/probability/expect.md)✋[logOdds](./机器学习/贝叶斯/probability/logOdds.md)✋[maximumLikelihood](./机器学习/贝叶斯/probability/maximumLikelihood.md)
+	- probability ✋[ConditionalProbability](./机器学习/贝叶斯/probability/ConditionalProbability.md)✋[ProbabilityAndLikelihood](./机器学习/贝叶斯/probability/ProbabilityAndLikelihood.md)✋[entropy](./机器学习/贝叶斯/probability/entropy.md)✋[expect](./机器学习/贝叶斯/probability/expect.md)✋[logOdds](./机器学习/贝叶斯/probability/对数几率.md)✋[maximumLikelihood](./机器学习/贝叶斯/probability/似然与最大似然估计.md)
 - 降维 ✋[fa](./机器学习/降维/fa.md)✋[pca](./机器学习/降维/pca.md)
 - 聚类方法 ✋[层次聚类(hierarchical_clustering)](./机器学习/聚类方法/层次聚类(hierarchical_clustering).md)✋[kmeans](./机器学习/聚类方法/kmeans.md)✋[评估方法](./机器学习/聚类方法/评估方法.md)
 - 模型评估 ✋[混淆矩阵(confusionMatrix)](./机器学习/模型评估/混淆矩阵(confusionMatrix).md)✋[偏差和方差(bias&variance)](./机器学习/模型评估/偏差和方差(bias&variance).md)✋[roc](./机器学习/模型评估/roc.md)✋[topnEvalue](./机器学习/模型评估/topnEvalue.md)
@@ -139,7 +139,7 @@
 	- supply ✋[chainrule](./机器学习/深度学习/supply/chainrule.md)✋[forward](./机器学习/深度学习/supply/forward.md)✋[gradientDescent](./机器学习/深度学习/supply/gradientDescent.md)✋[regularization](./机器学习/深度学习/supply/regularization.md)
 - 树模型
 	- other ✋[classification](./机器学习/树模型/other/classification.md)✋[regression](./机器学习/树模型/other/regression.md)✋[tree](./机器学习/树模型/other/tree.md)
-	- tree ✋[AdaBoost](./机器学习/树模型/tree/AdaBoost.md)✋[GradientBoost](./机器学习/树模型/tree/GradientBoost.md)✋[cartTree](./机器学习/树模型/tree/cartTree.md)✋[classification](./机器学习/树模型/tree/classification.md)✋[gradientBoostClassification](./机器学习/树模型/tree/gradientBoostClassification.md)✋[pruning](./机器学习/树模型/tree/pruning.md)✋[randomforest](./机器学习/树模型/tree/randomforest.md)✋[rankNet](./机器学习/树模型/tree/rankNet.md)✋[regression](./机器学习/树模型/tree/regression.md)✋[regression2](./机器学习/树模型/tree/regression2.md)✋[xgboostClassification](./机器学习/树模型/tree/xgboostClassification.md)
+	- tree ✋[AdaBoost](./机器学习/树模型/6自适应提升树.md)✋[GradientBoost](./机器学习/树模型/7梯度提升_回归.md)✋[cartTree](./机器学习/树模型/tree/cartTree.md)✋[classification](./机器学习/树模型/4CART_分类树.md)✋[gradientBoostClassification](./机器学习/树模型/7梯度提升_分类.md)✋[pruning](./机器学习/树模型/剪枝.md)✋[randomforest](./机器学习/树模型/5随机森林.md)✋[rankNet](./机器学习/深度学习/rankNet.md)✋[regression](./机器学习/树模型/4CART_回归树.md)✋[regression2](./机器学习/树模型/8XGBoost_回归.md)✋[xgboostClassification](./机器学习/树模型/8XGBoost_分类.md)
 - transformers
 	- API ✋[autoClasses](./机器学习/transformers/API/autoClasses.md)✋[autoModel](./机器学习/transformers/API/autoModel.md)
 	- dataClean ✋[datasets](./机器学习/transformers/dataClean/datasets.md)✋[features](./机器学习/transformers/dataClean/features.md)✋[load](./机器学习/transformers/dataClean/load.md)✋[process](./机器学习/transformers/dataClean/process.md)

@@ -1,3 +1,0 @@
-# ProbabilityAndLikelihood
-
-alg_ProbabilityAndLikelihood
