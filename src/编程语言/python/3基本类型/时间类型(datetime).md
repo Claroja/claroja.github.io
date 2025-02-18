@@ -1,6 +1,5 @@
 # datetime
 
-
 timezone: 时区
 aware time: 有时区时间
 naive time: 无时区时间
@@ -16,16 +15,14 @@ naive time: 无时区时间
     字符串 -->|strptime类方法或fromisoformat类方法| datetime -->|timestamp实例方法| 时间戳;
     ```
 
-2. `date`对象,`time`对象, `datetime`对象都是`datetime`模块的一部分, 一般使用`datetime`对象的`date()`和`time()`方法获得两个对象, 而不是直接使用
+2. `date`对象, `time`对象, `datetime`对象都是`datetime`模块的一部分, 一般使用`datetime`对象的`date()`和`time()`方法获得两个对象, 而不是直接使用
 
     ```mermaid
     graph LR;
     datetime模块 --> datetime对象 & timedelta对象;
     datetime对象 --> date对象 & time对象
     ```
-
-
-
+    
 ## datetime对象
 datetime对象包含了date对象和time对象.
 
@@ -46,8 +43,6 @@ minute|0 <= minute < 60,
 second|0 <= second < 60,
 microsecond|0 <= microsecond < 1000000,
 tzinfo|fold in [0, 1].
-
-
 
 ### 类方法
 

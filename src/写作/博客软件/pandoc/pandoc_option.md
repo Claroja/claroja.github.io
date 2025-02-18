@@ -18,8 +18,12 @@ resource-path: ['C:\Users\Xinyu\AppData\Roaming\pandoc'] # 指定reference-doc(�
 ### 标题等级设置
 和markdown规范一致, 在marddown规范中, 一级标题`#`是文章的标题. 所以设置`shift-heading-level-by: -1`.
 
-
 ![alt text](pandoc_option/标题等级.png)
+
+
+
+
+
 
 
 ## 通用设置
@@ -43,7 +47,6 @@ resource-path: ['C:\Users\Xinyu\AppData\Roaming\pandoc'] # 指定reference-doc(�
 `-v, --version`|查看版本
 `-h, --help`|帮助信息
 
-
 ## 输入设置
 
 参数|描述
@@ -62,7 +65,6 @@ resource-path: ['C:\Users\Xinyu\AppData\Roaming\pandoc'] # 指定reference-doc(�
 `--extract-media=DIR`|
 `--abbreviations=FILE`|
 `--trace[=true|false]`|
-
 
 ## 输出配置
 
@@ -92,10 +94,6 @@ resource-path: ['C:\Users\Xinyu\AppData\Roaming\pandoc'] # 指定reference-doc(�
 `--request-header=NAME:VAL`|
 `--no-check-certificate[=true|false]`|
 
-
-
-
-
 ## 特殊的输出设置
 
 参数|描述
@@ -119,7 +117,6 @@ resource-path: ['C:\Users\Xinyu\AppData\Roaming\pandoc'] # 指定reference-doc(�
 `-T STRING, --title-prefix=STRING`|
 `-c URL, --css=URL`|
 `--reference-doc=FILE|URL`|
-
 
 
 ## 参考

@@ -404,6 +404,3 @@ plt.grid()
 plt.show()
 ```
 ![](./differential/3.png)
-
-
-参考:

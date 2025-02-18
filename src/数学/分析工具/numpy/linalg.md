@@ -1,12 +1,15 @@
 # linalg
 
 
-## 向量的长度
+linalg=linear（线性）+algebra（代数）
 
-```python
-np.linalg.norm(x)  # 第二范数
-np.linalg.norm(x,ord=1) # 第一范数
-```
+
+
+
+
+
+
+
 
 
 ## API
@@ -26,12 +29,17 @@ np.linalg.norm(x,ord=1) # 第一范数
 |	linalg.matrix_power(M, n)	|	Raise a square matrix to the (integer) power n.	|
 |	kron(a, b)	|	Kronecker product of two arrays.	|
 
+
+
 ## 分解
 |方法|描述|
 |	--	|	--	|
 |	linalg.cholesky(a)	|	Cholesky decomposition.	|
 |	linalg.qr(a[, mode])	|	Compute the qr factorization of a matrix.	|
 |	linalg.svd(a[, full_matrices, compute_uv])	|	Singular Value Decomposition.	|
+
+
+
 
 ## 特征值特征向量
 |方法|描述|
@@ -69,5 +77,5 @@ np.linalg.norm(x,ord=1) # 第一范数
 |	--	|	--	|
 |	linalg.LinAlgError	|	Generic Python-exception-derived object raised by linalg functions.	|
 
-参考:
-https://docs.scipy.org/doc/numpy/reference/routines.linalg.html
+## 参考:
+1. https://docs.scipy.org/doc/numpy/reference/routines.linalg.html

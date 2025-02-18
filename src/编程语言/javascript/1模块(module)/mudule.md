@@ -10,6 +10,7 @@
     - 如果JS文件有依赖关系, 则需要把被依赖的JS文件放前面, 先加载
 
 语法如下:
+
 - 内嵌在`<script>`标签内
 - 在`<script src="">`中引入
 - 在标签内部, 与具体时间绑定
@@ -43,38 +44,45 @@
 ES6规范了整个JS的语法, 而不仅仅是模块化部分. 各个浏览器和Node.js都几乎原生支持该规范. CommonJS都会被取代. 以后ES6会成为前后端的通用规范.
 
 ### 按需导入方法和对象
+
 通过`export`关键字, 指定具体变量和方法名, 在导入的时候也要使用`特定`的变量和方法名接收
+
 - 导出
-```js
-//demo1.js
-export const str = 'hello world'
-export function add(a,b){
-    return a+b
-}
-```
+
+  ```js
+  //demo1.js
+  export const str = 'hello world'
+  export function add(a,b){
+      return a+b
+  }
+  ```
 
 - 导入
-```js
-//demo2.js
-import { str, f } from 'demo1'
-```
+  
+  ```js
+  //demo2.js
+  import { str, f } from 'demo1'
+  ```
 
 ### 导出整个模块
+
 使用`export default`关键字, 将其后的`{}`所有内容作为`一个对象整体`导出, 接收者在导入时可以自定义名称
+
 - 导出
-```js
-//demo1.js
-export default {
-    a: 'hello',
-    b: 'world'      
-}
-```
+  ```js
+  //demo1.js
+  export default {
+      a: 'hello',
+      b: 'world'      
+  }
+  ```
 
 - 导入
-```js
-//demo2.js
-import obj from 'demo1'
-```
+
+  ```js
+  //demo2.js
+  import obj from 'demo1'
+  ```
 
 
 ## CommonJS规范
@@ -82,21 +90,23 @@ import obj from 'demo1'
 由Node.js推广使用, 通过`requeire`来引入模块, 通过`module.exports`来导出模块.
 
 - 引入模块例子
-```js
-//add.js
-function add(a, b) {
-  return a + b;
-}
-module.exports = {
-  add: add // key可以被其他模块获得
-}
-```
+  
+  ```js
+  //add.js
+  function add(a, b) {
+    return a + b;
+  }
+  module.exports = {
+    add: add // key可以被其他模块获得
+  }
+  ```
 
 - 加载模块例子
-```js
-var math = require('./add.js');
-math.add(1, 2)
-```
+  
+  ```js
+  var math = require('./add.js');
+  math.add(1, 2)
+  ```
 
 缺点:
 - 由于是服务端的规范(Node.js), 所以无法应用在浏览器, 可以通过Babel来转换为ES
@@ -106,6 +116,7 @@ math.add(1, 2)
 ## 将ES6语法转换为CommonJS
 
 ### 查看Node.js对ES6的支持情况
+
 通过`npm install -g es-checker`,运行`es-checker`可以查看Node.js现在对ES6的支持率.
 ```js
 ...
