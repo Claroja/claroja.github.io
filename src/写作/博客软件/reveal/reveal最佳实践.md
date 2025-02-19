@@ -7,11 +7,11 @@
 
 
 1. `main.js`正常
-  @[code](./reveal最佳实践/src(vue+vite)/main.js)
+  @[code](./reveal最佳实践/src/main.js)
 
 1. `App.vue`作为包裹标签, 要设置宽和高
 
-  @[code](./reveal最佳实践/src(vue+vite)/App.vue)
+  @[code](./reveal最佳实践/src/App.vue)
 
 
 3. `Slide1.vue`

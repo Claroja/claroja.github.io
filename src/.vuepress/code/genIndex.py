@@ -23,10 +23,12 @@ def getH(filePath):
 
 
 def func(path, head_count, root_list):
+    
     head_count += 1
-
+    
     mdfiles = list(path.glob('./*.md'))
-    # 如果包含.md文件且非index.md, 则拼贴.md文件名称
+    
+    # 如果包含.md文件且不包含index.md, 则拼贴.md文件名称
     if len(mdfiles) != 0 and (Path('./src/index.md') not in mdfiles):
         if head_count >= 3:
             lines.append('\t'* (head_count-3) + '-' + ' ' + f'{path.parts[-1]}' + ' ')
@@ -44,13 +46,14 @@ def func(path, head_count, root_list):
             })
         lines.append('✋'+'✋'.join(line)+'\n')
 
-    
     # 如果全是目录, 则依次遍历
+    
     else:
+        
         # 处理index.md
-        if head_count >= 3:
+        if head_count >= 3:  # 3级目录使用缩进表示
             lines.append('\t'* (head_count-3) + '-' + ' ' + f'{path.parts[-1]}' + '\n')
-        else:
+        else:  # 1~2级目录使用h1, h2表示
             lines.append('#'* head_count + ' ' + f'{path.parts[-1]}\n')
 
         for x in sorted(path.iterdir(), key=getH):

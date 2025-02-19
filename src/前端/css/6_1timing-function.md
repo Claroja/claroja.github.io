@@ -26,7 +26,9 @@ CSS 中设置一贝塞尔曲线的语法为：cubic-bezier(x2, y2, x3, y3)。这
     最简单的一种情况就是动画匀速进行，可以通过设置曲线为 cubic-bezier(0, 0, 1, 1) 来实现。
 
     如下图, 直线函数, 这就是条直线。随着时间 x 推移，完成度 y 稳步从 0 增长到 1。
-    <svg xmlns="http://www.w3.org/2000/svg" width="144" height="150" viewBox="0 0 144 150"><defs><style>@import url(https://fonts.googleapis.com/css?family=Open+Sans:bold,italic,bolditalic%7CPT+Mono);@font-face{font-family:'PT Mono';font-weight:700;font-style:normal;src:local('PT MonoBold'),url(/font/PTMonoBold.woff2) format('woff2'),url(/font/PTMonoBold.woff) format('woff'),url(/font/PTMonoBold.ttf) format('truetype')}</style></defs><g id="animation" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="Group" transform="translate(12 13)"><path id="Shape" stroke="#A7333A" stroke-width="2" d="M4.17 103.348L104.314 3.505"/><circle id="Oval" cx="4" cy="104" r="4" fill="#FFF" stroke="#DBAF88"/><text id="1" fill="#AF6E24" fill-rule="nonzero" font-family="OpenSans-Bold, Open Sans" font-size="10.28" font-weight="bold"><tspan x="0" y="125">1</tspan></text><circle id="Oval" cx="104" cy="4" r="4" fill="#FFF" stroke="#DBAF88"/><text id="2" fill="#AF6E24" fill-rule="nonzero" font-family="OpenSans-Bold, Open Sans" font-size="10.28" font-weight="bold"><tspan x="100.101" y="25">2</tspan></text></g></g></svg>
+    
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="144" height="150" viewBox="0 0 144 150"><g id="animation" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="Group" transform="translate(12 13)"><path id="Shape" stroke="#A7333A" stroke-width="2" d="M4.17 103.348L104.314 3.505"/><circle id="Oval" cx="4" cy="104" r="4" fill="#FFF" stroke="#DBAF88"/><text id="1" fill="#AF6E24" fill-rule="nonzero" font-family="OpenSans-Bold, Open Sans" font-size="10.28" font-weight="bold"><tspan x="0" y="125">1</tspan></text><circle id="Oval" cx="104" cy="4" r="4" fill="#FFF" stroke="#DBAF88"/><text id="2" fill="#AF6E24" fill-rule="nonzero" font-family="OpenSans-Bold, Open Sans" font-size="10.28" font-weight="bold"><tspan x="100.101" y="25">2</tspan></text></g></g></svg>
 
     css样式的写法为:
     ```css
@@ -40,13 +42,15 @@ CSS 中设置一贝塞尔曲线的语法为：cubic-bezier(x2, y2, x3, y3)。这
 
 2. 起始阶段快, 结束阶段慢. 贝塞尔曲线为cubic-bezier(0.0, 0.5, 0.5 ,1.0), 图像如下:
 
-    <svg xmlns="http://www.w3.org/2000/svg" width="149" height="187" viewBox="0 0 149 187"><defs><style>@import url(https://fonts.googleapis.com/css?family=Open+Sans:bold,italic,bolditalic%7CPT+Mono);@font-face{font-family:'PT Mono';font-weight:700;font-style:normal;src:local('PT MonoBold'),url(/font/PTMonoBold.woff2) format('woff2'),url(/font/PTMonoBold.woff) format('woff'),url(/font/PTMonoBold.ttf) format('truetype')}</style></defs><g id="animation" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="train-curve.svg"><path id="Path-13" stroke="#A7333A" stroke-width="2" d="M26.137 142.908c0-49.408 50.364-99.664 100.358-99.664"/><path id="Line" stroke="#DBAF88" stroke-linecap="square" d="M25.5 143.5V93.34"/><circle id="Oval-4" cx="26" cy="144" r="4" fill="#FFF" stroke="#DBAF88"/><text id="-2" fill="#AF6E24" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold"><tspan x="22" y="165">1</tspan></text><circle id="Oval-6" cx="26" cy="94" r="4" fill="#FFF" stroke="#DBAF88"/><text id="2" fill="#AF6E24" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold"><tspan x="22" y="87">2</tspan></text><path id="Line" stroke="#DBAF88" stroke-linecap="square" d="M75.5 43.5h50.636"/><circle id="Oval-5" cx="126" cy="44" r="4" fill="#FFF" stroke="#DBAF88"/><text id="4" fill="#AF6E24" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold"><tspan x="122" y="36">4</tspan></text><circle id="Oval-7" cx="76" cy="44" r="4" fill="#FFF" stroke="#DBAF88"/><text id="3" fill="#AF6E24" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold"><tspan x="72" y="36">3</tspan></text></g></g></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="149" height="187" viewBox="0 0 149 187"><g id="animation" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1"><g id="train-curve.svg"><path id="Path-13" stroke="#A7333A" stroke-width="2" d="M26.137 142.908c0-49.408 50.364-99.664 100.358-99.664"/><path id="Line" stroke="#DBAF88" stroke-linecap="square" d="M25.5 143.5V93.34"/><circle id="Oval-4" cx="26" cy="144" r="4" fill="#FFF" stroke="#DBAF88"/><text id="-2" fill="#AF6E24" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold"><tspan x="22" y="165">1</tspan></text><circle id="Oval-6" cx="26" cy="94" r="4" fill="#FFF" stroke="#DBAF88"/><text id="2" fill="#AF6E24" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold"><tspan x="22" y="87">2</tspan></text><path id="Line" stroke="#DBAF88" stroke-linecap="square" d="M75.5 43.5h50.636"/><circle id="Oval-5" cx="126" cy="44" r="4" fill="#FFF" stroke="#DBAF88"/><text id="4" fill="#AF6E24" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold"><tspan x="122" y="36">4</tspan></text><circle id="Oval-7" cx="76" cy="44" r="4" fill="#FFF" stroke="#DBAF88"/><text id="3" fill="#AF6E24" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold"><tspan x="72" y="36">3</tspan></text></g></g></svg>
+
 
 
 
 CSS 提供几条内建的曲线：linear、ease、ease-in、ease-out 和 ease-in-out。
 
 linear 其实就是 cubic-bezier(0, 0, 1, 1) 的简写, 其它的名称是以下贝塞尔曲线的简写：
+
 
 ![alt text](6timing-function/1.png)
 
@@ -83,12 +87,6 @@ linear 其实就是 cubic-bezier(0, 0, 1, 1) 的简写, 其它的名称是以下
         3. 2s —— -20%
         4. …
         5. 9s —— -90%
-
-
-
-
-
-
 
 
 
