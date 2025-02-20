@@ -1,9 +1,9 @@
 # jointplot
 
-
 ## 最佳实践
+
 1. 绘制联合分布和边缘分布
-    
+
     ```python
     import seaborn as sns
     penguins = sns.load_dataset("penguins")
@@ -11,7 +11,7 @@
     ```
 
 2. 自定义联合分布和边缘分布
-    
+
     ```python
     import seaborn as sns
     penguins = sns.load_dataset("penguins")
@@ -21,9 +21,10 @@
     ```
 
 ## jointplot
+
 1. Figure-level
 2. 绘制联合和边缘分布
-3. 底层通过kind控制, 可选{ “scatter” | “kde” | “hist” | “hex” | “reg” | “resid” }
+3. 底层通过kind控制, 可选{ “scatter”, “kde”, “hist”, “hex”, “reg”, “resid” }
 3. 布局使用JointGrid
 
 
@@ -36,7 +37,7 @@ seaborn.jointplot(
     x=None,                     # vectors or keys in data
     y=None,                     # vectors or keys in data
     hue=None,                   # vector or key in data
-    kind='scatter',             # { “scatter” | “kde” | “hist” | “hex” | “reg” | “resid” }
+    kind='scatter',             # { “scatter”,  “kde”,  “hist”,  “hex”,  “reg”, “resid” }
     height=6,                   # numeric. figture的高度, 正方形, 所以没有宽度
     ratio=5,                    # numeric. 边缘坐标轴的高度比率
     space=0.2,                  # numeric. 联合坐标轴和边缘坐标轴的间隔.

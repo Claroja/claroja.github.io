@@ -9,8 +9,9 @@ pd.Int`XX`Dtype|int|arrays.IntegerArray|'Int8', 'Int16', 'Int32', 'Int64', 'UInt
 pd.Float`XX`Dtype|float|arrays.FloatingArray|'Float32', 'Float64'
 pd.StringDtype|str|arrays.StringArray|'string'
 pd.BooleanDtype|bool|arrays.BooleanArray|'boolean'
-pd.DatetimeTZDtype|none|arrays.DatetimeArray|'datetime64[ns, <tz>]'
+pd.DatetimeTZDtype|none|arrays.DatetimeArray|datetime64[ns, tz]
 Categorical||Categorical|'category'
+
 另外还有一些不常用的数据类型, [参考](https://pandas.pydata.org/docs/user_guide/basics.html#dtypes)
 
 ✨object 类型可以存储任意的类型, 包含字符串. 
@@ -45,8 +46,6 @@ df.dtypes
 # datetime    datetime64[ns]
 # dtype: object
 ```
-
-
 
 ## 参考
 1. https://pandas.pydata.org/docs/user_guide/basics.html#dtypes
