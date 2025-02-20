@@ -1,0 +1,1 @@
+import{_}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as e,c as t}from"./app-9tftCahk.js";const c={};function r(o,a){return e(),t("div")}const f=_(c,[["render",r],["__file","2_1特征工程_创建特征create.html.vue"]]);export{f as default};

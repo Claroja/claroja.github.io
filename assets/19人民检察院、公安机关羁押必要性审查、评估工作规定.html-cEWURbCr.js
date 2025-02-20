@@ -1,0 +1,1 @@
+import{_}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as e,c as t}from"./app-9tftCahk.js";const c={};function o(r,n){return e(),t("div")}const f=_(c,[["render",o],["__file","19人民检察院、公安机关羁押必要性审查、评估工作规定.html.vue"]]);export{f as default};
