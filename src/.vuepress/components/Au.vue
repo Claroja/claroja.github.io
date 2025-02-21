@@ -8,30 +8,30 @@
         <audio ref="auA" :src="urlA" display="none"></audio>
     </span>
     
-    </template>
+</template>
     
-    <script setup>
-        import {ref} from "vue"
-        let { w } = defineProps(["w"])
-        let word = w.split('/')[0]
-        let phonicE = w.split('/')[1]
-        let phonicA = w.split('/')[3]
-        // console.log(phonicA)
-        
-        let urlE = "http://dict.youdao.com/dictvoice?audio=" + word + "&type=1"
-        let urlA = "http://dict.youdao.com/dictvoice?audio=" + word + "&type=2"
+<script setup>
+    import {ref} from "vue"
+    let { w } = defineProps(["w"])
+    let word = w.split('/')[0]
+    let phonicE = w.split('/')[1]
+    let phonicA = w.split('/')[3]
+    // console.log(phonicA)
     
-        const auE = ref()
-        const auA = ref()
-        function runE() {
-            auE.value.play()
-        }
-        function runA() {
-            auA.value.play()
-        }
-    </script>
+    let urlE = "http://dict.youdao.com/dictvoice?audio=" + word + "&type=1"
+    let urlA = "http://dict.youdao.com/dictvoice?audio=" + word + "&type=2"
+
+    const auE = ref()
+    const auA = ref()
+    function runE() {
+        auE.value.play()
+    }
+    function runA() {
+        auA.value.play()
+    }
+</script>
     
     
-    <style>
-    
-    </style>
+<style>
+
+</style>

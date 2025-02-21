@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "build": "vuepress build src",
-    "clean-dev": "python ./src/.vuepress/code/genIndex.py && vuepress dev src --clean-cache",
-    "dev": "python ./src/.vuepress/code/genIndex.py && vuepress dev src",
-    "deploy": "python3.9 ./src/.vuepress/code/genIndex.py && git add ./ && git commit -m 'update' && git push",
+    "clean-dev": "python3 ./src/.vuepress/code/genIndex.py && vuepress dev src --clean-cache",
+    "dev": "python3 ./src/.vuepress/code/genIndex.py && vuepress dev src",
+    "deploy": "python3 ./src/.vuepress/code/genIndex.py && git add ./ && git commit -m 'update' && git push",
     "update-package": "npx vp-update"
   },
   "devDependencies": {
