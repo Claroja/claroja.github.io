@@ -1,0 +1,1 @@
+import{_}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as o,a as e}from"./app-jdLxCr9I.js";const c={},s=e("p",null,"server 1.需要组播地址 2.发送到客户端对应端口 3.添加组播权限",-1),n=e("p",null,"client 1.绑定固定端口 2.加入组播地址",-1),r=[s,n];function l(a,i){return t(),o("div",null,r)}const m=_(c,[["render",l],["__file","3_5组播.html.vue"]]);export{m as default};

@@ -1,0 +1,16 @@
+import{_ as n}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as s,c as a,e}from"./app-jdLxCr9I.js";const t={},p=e(`<h1 id="repr" tabindex="-1"><a class="header-anchor" href="#repr" aria-hidden="true">#</a> repr</h1><p><code>repr</code>默认调用的是<code>__repr__()</code>方法, 默认实现时为了利于解释器读写</p><div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token builtin">repr</span><span class="token punctuation">(</span><span class="token string">&quot;wang&quot;</span><span class="token punctuation">)</span>  <span class="token comment"># &quot;&#39;wang&#39;&quot; , 加了单引号, 更利于解释器阅读</span>
+<span class="token builtin">str</span><span class="token punctuation">(</span><span class="token string">&quot;wang&quot;</span><span class="token punctuation">)</span>   <span class="token comment"># &#39;wang&#39;, 更利于人阅读</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-python line-numbers-mode" data-ext="py"><pre class="language-python"><code><span class="token keyword">class</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;重写了父类的__str__方法&quot;</span>
+
+    <span class="token keyword">def</span> <span class="token function">__repr__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token string">&quot;重写了父类的__repr__方法&quot;</span>
+
+
+wang <span class="token operator">=</span> Person<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 创建实例</span>
+<span class="token builtin">str</span><span class="token punctuation">(</span>wang<span class="token punctuation">)</span>  <span class="token comment"># &#39;重写了父类的__str__方法&#39;</span>
+<span class="token builtin">repr</span><span class="token punctuation">(</span>wang<span class="token punctuation">)</span> <span class="token comment"># &quot;重写了父类的__repr__方法&quot;</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>wang<span class="token punctuation">)</span>  <span class="token comment"># \`重写了父类的__str__方法\`. __str__()方法覆盖了__repr__()方法</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4),o=[p];function c(i,l){return s(),a("div",null,o)}const d=n(t,[["render",c],["__file","repr.html.vue"]]);export{d as default};
