@@ -95,7 +95,6 @@ export default hopeTheme({
       author: "王新宇",
     },    
     
-    
     blog: true,
 
     // install @waline/client before enabling it
