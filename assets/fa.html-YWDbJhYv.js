@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as o,a as c}from"./app-A10JnHE0.js";const _={},s=c("p",null,"主成分分析问题在于主成分不好解释, 因子分析可以帮助解释主成分. 因子分析方法众多, 如极大似然法, 主成分法. 主成分法是在主成分分析基础上进行因子旋转, 使得主成分更容易解释(这时主成分称为因子)",-1),a=[s];function n(r,l){return t(),o("div",null,a)}const m=e(_,[["render",n],["__file","fa.html.vue"]]);export{m as default};

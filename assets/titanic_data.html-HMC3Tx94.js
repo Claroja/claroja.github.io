@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as e,c}from"./app-A10JnHE0.js";const a={};function _(o,r){return e(),c("div")}const s=t(a,[["render",_],["__file","titanic_data.html.vue"]]);export{s as default};

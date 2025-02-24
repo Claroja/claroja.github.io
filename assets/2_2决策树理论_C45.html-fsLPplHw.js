@@ -1,0 +1,1 @@
+import{_}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as e,c as t,a as o}from"./app-A10JnHE0.js";const c={},s=o("p",null,"使用信息增益率",-1),n=[s];function r(a,l){return e(),t("div",null,n)}const m=_(c,[["render",r],["__file","2_2决策树理论_C45.html.vue"]]);export{m as default};

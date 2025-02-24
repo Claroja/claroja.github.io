@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as o,a as c}from"./app-jdLxCr9I.js";const s={},_=c("p",null,"在线编辑器: https://www.latexlive.com/home",-1),a=[_];function l(n,r){return t(),o("div",null,a)}const f=e(s,[["render",l],["__file","latex.html.vue"]]);export{f as default};
