@@ -92,6 +92,7 @@ Name: ext price, dtype: float64
 
 
 ## 分组transform
+
 通过transform也可以计算每个订单的总价格, 而且结果是没有去重
 ```python
 df.groupby('order_id')["ext_price"].transform('sum')
@@ -112,6 +113,8 @@ df.groupby('order_id')["ext_price"].transform('sum')
 Name: ext price, dtype: float64
 """
 ```
+
+
 ![](../apply/transform/3.png)
 
 可以看到在**Combine**这一步时, 没有将组内的数据进行**去重**.

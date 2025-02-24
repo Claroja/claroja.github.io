@@ -4,7 +4,7 @@
 
 数据透视表类似于分组操作.
 
-![alt text](../索引index_pivot/1.png)
+![alt text](./索引index_pivot/1.png)
 
 他们3个的区别是:
 1. pivot_table, crosstab相较于pivot方法多了聚合的方法.

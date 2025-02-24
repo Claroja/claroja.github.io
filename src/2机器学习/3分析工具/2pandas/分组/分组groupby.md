@@ -134,9 +134,7 @@ order_id
 10006    3724.49
 """
 ```
-
-
-[聚合](../2.png)
+![alt text](groupby/2.png)
 
 ## DataFrameGroupBy与SeriesGroupBy对象
 
