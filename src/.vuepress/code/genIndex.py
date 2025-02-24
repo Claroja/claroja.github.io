@@ -9,8 +9,6 @@ root_list = []
 
 HEADLEVEL = 4 # 从4级目录开始，使用列表表示
 
-
-
 def getH(filePath):
     
     filename = filePath.parts[-1]
@@ -32,13 +30,15 @@ def func(path, head_count, root_list):
     
     mdfiles = list(path.glob('./*.md'))
     
-    # 如果包含.md文件且不包含index.md, 则拼贴.md文件名称
-    if len(mdfiles) != 0 and (Path('./src/index.md') not in mdfiles):
-        if head_count >= HEADLEVEL:
-            lines.append('\t'* (head_count-HEADLEVEL) + '-' + ' ' + f'{path.parts[-1]}' + ' ')
-        else:
-            lines.append('#'* head_count + ' ' + f'{path.parts[-1]}\n')
+    
+    if len(mdfiles) != 0 and (Path('./src/index.md') not in mdfiles): # 如果包含.md文件且不包含index.md, 则拼贴.md文件名称
+        if head_count >= HEADLEVEL:  # 当标题深度大于HEADLEVEL时, 使用缩进表示
+            lines.append('\t' * (head_count-HEADLEVEL) + '-' + ' ' + f'{path.parts[-1]}' + ' ')
+        else:  # 当标题深度小于HEADLEVEL时, 使用`#`表示
+            lines.append('#' * head_count + ' ' + f'{path.parts[-1]}\n')
+        
         line = []
+        
         for mdfile in sorted(mdfiles, key=getH):
             
             line.append(f'[{mdfile.stem}](./{str(mdfile).replace("src/","",1)})')
@@ -50,9 +50,7 @@ def func(path, head_count, root_list):
             })
         lines.append('✋'+'✋'.join(line)+'\n')
 
-    # 如果全是目录, 则依次遍历
-    
-    else:
+    else: # 如果全是目录, 则依次遍历 
         
         # 处理index.md
         if head_count >= HEADLEVEL:  # 4级目录使用缩进表示
@@ -70,17 +68,22 @@ def func(path, head_count, root_list):
             }
             
             if x.is_dir() and x != Path('./src/.vuepress'): 
-                print(x)
                 root_list.append(new_dir)
-                func(x,head_count,new_dir['children'])
+                func(x, head_count, new_dir['children'])
         # 处理sidebar.ts
-        
+
+
+## 生成首页: index.md
+
 func(path, 0, root_list)
 
 with open('./src/index.md','w',encoding='utf8') as f:
     lines[0]= '# 首页\n'
     f.write(''.join(lines))
-    
+
+
+## 生成侧边栏索引: sidebar.ts
+
 content = [
     'import { sidebar } from "vuepress-theme-hope";',
     'export default sidebar({',
@@ -92,4 +95,39 @@ with open('./src/.vuepress/sidebar.ts','w',encoding='utf8') as f:
     f.write('\n'.join(content))
 
 
-print("索引完成")
+
+# 生成导航索引: navbar.ts
+
+
+nav_list = []
+
+path = Path('./src')
+for dir in sorted(list(path.iterdir()), key=getH):
+    if dir.is_dir() and dir != Path('./src/.vuepress'):
+        new_dir = {
+            'text': re.sub(r'^\d+', '', dir.parts[-1]),
+            'link': f"/#{dir.parts[-1]}",
+            'children': []
+        }
+        for dir_2 in sorted(list(Path(f'./src/{dir.parts[-1]}').iterdir()), key=getH):
+            if dir_2.is_dir() and dir != Path('./src/.vuepress'):
+                new_dir_2 ={
+                    'text': re.sub(r'^\d+', '', dir_2.parts[-1]),
+                    'link': f"/#{dir_2.parts[-1]}",
+                }
+                new_dir['children'].append(new_dir_2)
+        if len(new_dir['children']) == 0:
+            del new_dir['children']
+        
+        nav_list.append(new_dir)
+
+content = [
+    'import { navbar } from "vuepress-theme-hope";',
+    'export default navbar(',
+    f'{nav_list}',
+    ');'
+]
+
+with open('./src/.vuepress/navbar.ts','w',encoding='utf8') as f:
+    f.write('\n'.join(content))
+
