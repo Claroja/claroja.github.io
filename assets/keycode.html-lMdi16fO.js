@@ -1,0 +1,1 @@
+import{_ as t}from"./plugin-vue_export-helper-x3n3nnut.js";import{o,c,b as e}from"./app-nD1Z-e8V.js";const s="/assets/1-Du6kxBrr.jpg",r={},n=e("figure",null,[e("img",{src:s,alt:"",tabindex:"0",loading:"lazy"}),e("figcaption")],-1),_=[n];function a(i,l){return o(),c("div",null,_)}const m=t(r,[["render",a],["__file","keycode.html.vue"]]);export{m as default};
