@@ -4,7 +4,7 @@
 
 ## 缺失值
 
-[随机森林理论_模型](./../5_1%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E7%90%86%E8%AE%BA_%E6%A8%A1%E5%9E%8B.md)中介绍了异常值的处理方法, 但是scikitlearn官网[ensemble](https://scikit-learn.org/stable/modules/ensemble.html#ensemble), 并未对randomforest的缺失值处理方法做详细说明, 所以暂时按照[Missing Values Support](https://scikit-learn.org/stable/modules/tree.html#missing-values-support)理解:
+[随机森林理论_模型](./5_1随机森林理论_模型.md)中介绍了异常值的处理方法, 但是scikitlearn官网[ensemble](https://scikit-learn.org/stable/modules/ensemble.html#ensemble), 并未对randomforest的缺失值处理方法做详细说明, 所以暂时按照[Missing Values Support](https://scikit-learn.org/stable/modules/tree.html#missing-values-support)理解:
 1. 把缺失值当成一个类别
 2. 如果缺失值同时被预测为两个目标值, 且目标值权重相同, 则该缺失值会被分配给右侧节点
 3. 如果缺失值同时被越策为两个目标值, 且目标值权重不同, 则缺失值会预测权重更高的值

@@ -13,14 +13,14 @@ Google的应用商店团队Google Play于2016年提出的Wide&Deep模型. Wide&D
 
 Wide模型记录了用户的偏好.
 
-![alt text](./../deepWide/1.png)
+![alt text](./deepWide/1.png)
 
 
 ## Deep
 
 过了一段时间，用户对app的推荐内容感到疲倦，他们希望app能够推荐一些符合他们口味，但同时又能带来新鲜感的食物。因此我们选择Deep模型来解决这个问题，Deep模型会对每个query和item都生成低维的稠密embedding向量，并且在embedding空间中来查找彼此比较接近的ietm。举个例子，你会发现搜索炸鸡的用户一般也不会介意再吃个汉堡。下图展示了Deep模型示意图，可以看到在Embedding空间中，炸鸡和汉堡彼此距离比较近。
 
-![alt text](./../deepWide/2.png)
+![alt text](./deepWide/2.png)
 
 
 ## Deep & Wide
@@ -32,7 +32,7 @@ Wide模型记录了用户的偏好.
 
 了解到了这些问题之后，一个很自然的想法就是将Wide和Deep模型结合起来使用，如下图：
 
-![alt text](./../deepWide/3.png)
+![alt text](./deepWide/3.png)
 
 对于两个稀疏特征query="fried chicken" 以及 item="chicken fried rice"，我们同时丢入Wide模型(左边)和Deep模型(右边)进行训练。这样模型就兼具了记忆和泛化的能力，从而可以达到更好的推荐效果。
 
@@ -99,7 +99,7 @@ $$
 
 论文使用的Wide&Deep模型结构如下：
 
-![alt text](./../deepWide/4.png)
+![alt text](./deepWide/4.png)
 
 Wide部分的输入仅仅是已安装应用和曝光应用两类特征，其中已安装应用代表用户的历史行为，而曝光应用代表当前的待推荐应用。选择这两类特征的原因是充分发挥Wide部分“记忆能力”强的优势。
 

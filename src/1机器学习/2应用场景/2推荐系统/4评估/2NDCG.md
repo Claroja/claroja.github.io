@@ -107,7 +107,7 @@ $$ NDCG = \frac{DCG}{IDCG}  $$
 
 所以NDGC使用DCG/IDCG来表示，这样的话，NDCG就是一个相对值，那么不同query之间就可以通过NDCG值进行比较评估。
 
-![alt text](./../NDCG/1.png)
+![alt text](./NDCG/1.png)
 
 ## 参考
 1. https://zhuanlan.zhihu.com/p/448686098
