@@ -2,12 +2,22 @@ from pathlib import Path
 from pypinyin import pinyin, Style
 from itertools import chain
 import re
+import shutil
+import os
 
 path = Path('./src')
 lines = []
 root_list = []
 
 HEADLEVEL = 4 # 从4级目录开始，使用列表表示
+
+
+
+# 删除索引目录文件(在计算目录时, 不应该把索引计算在内, 所以要先删除)
+indexDir_path = Path('./src/index')
+if indexDir_path.exists(): shutil.rmtree(indexDir_path)
+
+
 
 def getH(filePath):
     
@@ -70,16 +80,66 @@ def func(path, head_count, root_list):
             if x.is_dir() and x != Path('./src/.vuepress'): 
                 root_list.append(new_dir)
                 func(x, head_count, new_dir['children'])
+        
         # 处理sidebar.ts
+
+
+
+
+func(path, 0, root_list)
+
+# with open('./src/index.md','w',encoding='utf8') as f:
+#     lines[0]= '# 首页\n'
+#     f.write(''.join(lines))
 
 
 ## 生成首页: index.md
 
-func(path, 0, root_list)
+### 定义保存文件的文件夹
+save_folder = './src/index'
+### 如果文件夹不存在，则创建它
+if not os.path.exists(save_folder):
+    os.makedirs(save_folder)
 
-with open('./src/index.md','w',encoding='utf8') as f:
-    lines[0]= '# 首页\n'
-    f.write(''.join(lines))
+current_title = None
+current_content = []
+
+
+def reduce_hash_count(line):
+    if line.startswith('#'):
+        return line[1:]
+    return line
+
+
+del lines[0]
+
+
+for line in lines:
+    if line.startswith('## '):
+        # 如果已经有当前标题，说明之前的内容块结束，保存到文件
+        if current_title:
+            file_path = os.path.join(save_folder, f"{current_title.strip()}.md")
+            with open(file_path, 'w', encoding='utf-8') as f:
+                for content_line in current_content:
+                    f.write(reduce_hash_count(content_line))
+            current_content = []
+        # 处理当前标题行，将 # 数量减 1 后添加到内容中
+        current_content.append(line)
+        # 更新当前标题
+        current_title = line[2:].strip()
+    else:
+        # 如果不是标题行，将内容添加到当前内容块
+        current_content.append(line)
+
+# 处理最后一个内容块
+if current_title and current_content:
+    file_path = os.path.join(save_folder, f"{current_title.strip()}.md")
+    with open(file_path, 'w', encoding='utf-8') as f:
+        for content_line in current_content:
+            f.write(reduce_hash_count(content_line))
+
+
+
 
 
 ## 生成侧边栏索引: sidebar.ts
@@ -96,6 +156,10 @@ with open('./src/.vuepress/sidebar.ts','w',encoding='utf8') as f:
 
 
 
+
+
+
+
 # 生成导航索引: navbar.ts
 
 
@@ -103,19 +167,20 @@ nav_list = []
 
 path = Path('./src')
 for dir in sorted(list(path.iterdir()), key=getH):
-    if dir.is_dir() and dir != Path('./src/.vuepress'):
+    if dir.is_dir() and dir != Path('./src/.vuepress') and dir != Path('./src/index'):
         new_dir = {
             'text': re.sub(r'^\d+', '', dir.parts[-1]),
-            'link': f"/#{dir.parts[-1]}",
+            'link': f"/index/{dir.parts[-1]}.md",
             'children': []
         }
-        for dir_2 in sorted(list(Path(f'./src/{dir.parts[-1]}').iterdir()), key=getH):
-            if dir_2.is_dir() and dir != Path('./src/.vuepress'):
-                new_dir_2 ={
-                    'text': re.sub(r'^\d+', '', dir_2.parts[-1]),
-                    'link': f"/#{dir_2.parts[-1]}",
-                }
-                new_dir['children'].append(new_dir_2)
+        # 导航栏不要二级了
+        # for dir_2 in sorted(list(Path(f'./src/{dir.parts[-1]}').iterdir()), key=getH):
+        #     if dir_2.is_dir() and dir != Path('./src/.vuepress'):
+        #         new_dir_2 ={
+        #             'text': re.sub(r'^\d+', '', dir_2.parts[-1]),
+        #             'link': f"/#{dir_2.parts[-1]}",
+        #         }
+        #         new_dir['children'].append(new_dir_2)
         if len(new_dir['children']) == 0:
             del new_dir['children']
         
