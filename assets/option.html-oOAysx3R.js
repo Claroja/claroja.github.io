@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as l,b as o}from"./app-7knaTE3M.js";const n={},s=o("p",null,"主要用来设置",-1),_=o("ol",null,[o("li",null,"X轴(xAxis)"),o("li",null,"Y轴(yAxis)")],-1),c=[s,_];function i(r,a){return t(),l("div",null,c)}const f=e(n,[["render",i],["__file","option.html.vue"]]);export{f as default};

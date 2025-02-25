@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o,c as _,b as t}from"./app-7knaTE3M.js";const n={},c=t("p",null,"将后缀.py改成.pyw 改完后，文件属性里面可以看到：Python File (no console) (.pyw) 显示no console，在运行的时候就不会弹出命令窗口了。",-1),s=[c];function l(r,a){return o(),_("div",null,s)}const f=e(n,[["render",l],["__file","隐藏命令窗口.html.vue"]]);export{f as default};
