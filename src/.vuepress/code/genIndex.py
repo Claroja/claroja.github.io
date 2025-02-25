@@ -51,7 +51,7 @@ def func(path, head_count, root_list):
         
         for mdfile in sorted(mdfiles, key=getH):
             
-            line.append(f'[{mdfile.stem}](./{str(mdfile).replace("src/","",1)})')
+            line.append(f'[{mdfile.stem}](/{str(mdfile).replace("src/","",1)})')
             # 处理sidebar.ts
             root_list.append({
                 'text': f'📝{mdfile.stem}',
